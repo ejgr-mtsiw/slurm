@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Builds and queues a slurm batch file for our prototypes
-# Usage: run.sh JOB_NAME N_TASKS N_NODES N_TASKS_PER_NODE PROTOTYPE DATASET_FILE REMOVE_DATASET QUEUE_SLURM REMOVE_SLURM
+# Usage: run.sh N_TASKS N_NODES N_TASKS_PER_NODE PROTOTYPE DATASET_FILE REMOVE_DATASET QUEUE_SLURM REMOVE_SLURM
 # 
 # N_TASKS is the real number of processes to use
 # N_NODES number of nodes to reserve
@@ -12,23 +12,23 @@
 # QUEUE_SLURM YES will queue file after build
 # REMOVE_SLURM YES will remove the file after queue
 
-if [ "$#" -ne 9 ]; then
+if [ "$#" -ne 8 ]; then
     echo "Illegal number of parameters"
 	exit 1
 fi
 
-JOB_NAME=$1
-RUN_TASKS=$2
-RUN_NODES=$3
-RUN_TASKS_PER_NODE=$4
-PROTOTYPE=$5
-DATASET_FILE=$6
-REMOVE_DATASET=$7
-QUEUE_SLURM=$8
-REMOVE_SLURM=$9
+RUN_TASKS=$1
+RUN_NODES=$2
+RUN_TASKS_PER_NODE=$3
+PROTOTYPE=$4
+DATASET_FILE=$5
+REMOVE_DATASET=$6
+QUEUE_SLURM=$7
+REMOVE_SLURM=$8
 
+JOB_NAME="${PROTOTYPE}-${RUN_NODES}x${RUN_TASKS_PER_NODE}-${DATASET_FILE}"
 #Output filename
-SLURM_FILE_NAME="$PROTOTYPE-$RUN_NODES.$RUN_TASKS_PER_NODE-$JOB_NAME.$(date +%s%N).sh"
+SLURM_FILE_NAME="$JOB_NAME.$(date +%s%N).sh"
 
 source "$(dirname $0)/base.sh"
 
