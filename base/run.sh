@@ -85,11 +85,13 @@ esac
 # Queue it?
 if [ $QUEUE_SLURM == "YES" ]
 then
-	sbatch $SLURM_FILE_NAME
+	echo "Queueing $SLURM_FILE_NAME"
+	sbatch "$SLURM_FILE_NAME"
 
-	if [ $REMOVE_SLURM == "YES"]
+	if [ $REMOVE_SLURM == "YES" ]
 	then
 		#Remove it
-		rm $SLURM_FILE_NAME
+		echo "Removing $SLURM_FILE_NAME"
+		rm "$SLURM_FILE_NAME"
 	fi
 fi
