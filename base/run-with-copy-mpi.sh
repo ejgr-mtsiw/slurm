@@ -25,9 +25,9 @@ then
 	then
 		chmod u+x "$EXE"
 		
-		echo "mpiexec -np $SLURM_NTASKS $EXE -d $DATASET_NAME -f $OUTPUT_DATASET_FILE"
+		echo "mpiexec -np $RUN_TASKS $EXE -d $DATASET_NAME -f $OUTPUT_DATASET_FILE"
 
-		time mpiexec -np $SLURM_NTASKS "$EXE" -d "$DATASET_NAME" -f "$OUTPUT_DATASET_FILE"
+		time mpiexec -np $RUN_TASKS "$EXE" -d "$DATASET_NAME" -f "$OUTPUT_DATASET_FILE"
 	else
 		echo "$EXE not found!"
 	fi

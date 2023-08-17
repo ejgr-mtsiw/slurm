@@ -1,9 +1,3 @@
-source "$SLURM_BASE_DIR/dataset-settings.sh"
-
-source "$SLURM_BASE_DIR/load-module.sh"
-
-source "$SLURM_BASE_DIR/set-partition-run.sh"
-
 ## DON'T CHANGE THIS!
 
 # Run
@@ -19,6 +13,9 @@ then
 		echo "Error copying $INPUT_DATASET_FILE to $OUTPUT_DATASET_FILE"
 		exit 1
 	fi
+
+	## Datasets are stored read-only to avoid accidental overwrite
+	chmod +w "$OUTPUT_DATASET_FILE"
 
 	echo "=== Running ==="
 	if [ -f "$EXE" ]
