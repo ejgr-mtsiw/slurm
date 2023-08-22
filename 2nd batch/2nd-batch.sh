@@ -32,7 +32,7 @@ cd P3
 
 for p in "${processes[@]}"
 do
-	bash "$SLURM_BASE_DIR/run.sh" "$p" 1 96 P3 c2_a8M_o2k_i100_u40_p26.h5 YES NO NO
+	bash "$SLURM_BASE_DIR/run.sh" "$p" 1 96 P3 c2_a8M_o2k_i100_u40_p26.h5 YES YES NO
 done
 
 cd ..
@@ -43,7 +43,7 @@ cd P4
 
 for p in "${processes[@]}"
 do
-	bash "$SLURM_BASE_DIR/run.sh" "$p" 1 96 P4 c2_a8M_o2k_i100_u40_p26.h5 YES NO NO
+	bash "$SLURM_BASE_DIR/run.sh" "$p" 1 96 P4 c2_a8M_o2k_i100_u40_p26.h5 YES YES NO
 done
 
 cd ..
