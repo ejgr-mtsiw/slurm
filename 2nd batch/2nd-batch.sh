@@ -13,7 +13,7 @@
 
 source "../base/base.sh"
 
-processes=(2 3 6 12 24 48 96 192)
+processes=(2 3 6 12 24 48 96) #192
 
 #P2: P1 and P2 must be run individually, because they use the disk
 mkdir -p P2
@@ -23,6 +23,8 @@ for p in "${processes[@]}"
 do
 	bash "$SLURM_BASE_DIR/run.sh" "$p" 1 96 P2 c2_a8M_o2k_i100_u40_p26.h5 YES NO NO
 done
+
+bash "$SLURM_BASE_DIR/run.sh" 192 2 96 P2 c2_a8M_o2k_i100_u40_p26.h5 YES NO NO
 
 cd ..
 
@@ -35,6 +37,8 @@ do
 	bash "$SLURM_BASE_DIR/run.sh" "$p" 1 96 P3 c2_a8M_o2k_i100_u40_p26.h5 YES YES NO
 done
 
+bash "$SLURM_BASE_DIR/run.sh" 192 2 96 P3 c2_a8M_o2k_i100_u40_p26.h5 YES YES NO
+
 cd ..
 
 #P4:
@@ -45,5 +49,7 @@ for p in "${processes[@]}"
 do
 	bash "$SLURM_BASE_DIR/run.sh" "$p" 1 96 P4 c2_a8M_o2k_i100_u40_p26.h5 YES YES NO
 done
+
+bash "$SLURM_BASE_DIR/run.sh" 192 2 96 P4 c2_a8M_o2k_i100_u40_p26.h5 YES YES NO
 
 cd ..
