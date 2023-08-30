@@ -29,14 +29,14 @@ for p in "${processes[@]}"
 do
 	for d in "${datasets[@]}"
 	do
-		bash "$SLURM_BASE_DIR/run.sh" "$p" 1 96 P3 "$d" YES NO NO
+		bash "$SLURM_BASE_DIR/run.sh" "$p" 1 96 P3 "$d" YES YES NO
 	done
 done
 
 #192 needs 2 nodes
 for d in "${datasets[@]}"
 do
-	bash "$SLURM_BASE_DIR/run.sh" 192 2 96 P3 "$d" YES NO NO
+	bash "$SLURM_BASE_DIR/run.sh" 192 2 96 P3 "$d" YES YES NO
 done
 
 cd ..
@@ -49,14 +49,14 @@ for p in "${processes[@]}"
 do
 	for d in "${datasets[@]}"
 	do
-		bash "$SLURM_BASE_DIR/run.sh" "$p" 1 96 P4 "$d" YES NO NO
+		bash "$SLURM_BASE_DIR/run.sh" "$p" 1 96 P4 "$d" YES YES NO
 	done
 done
 
 #192 needs 2 nodes
 for d in "${datasets[@]}"
 do
-	bash "$SLURM_BASE_DIR/run.sh" 192 2 96 P4 "$d" YES NO NO
+	bash "$SLURM_BASE_DIR/run.sh" 192 2 96 P4 "$d" YES YES NO
 done
 
 cd ..
