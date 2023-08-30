@@ -37,8 +37,10 @@ echo "#!/bin/bash" >> "$SLURM_FILE_NAME"
 echo "#SBATCH --job-name='$JOB_NAME'" >> "$SLURM_FILE_NAME"
 echo "#SBATCH --output=out.%x.%j" >> "$SLURM_FILE_NAME"
 
-echo "#SBATCH --nodes=$RUN_NODES" >> "$SLURM_FILE_NAME"
-echo "#SBATCH --ntasks-per-node=$RUN_TASKS_PER_NODE" >> "$SLURM_FILE_NAME"
+## Stopped being available on 2023/08/30
+#echo "#SBATCH --nodes=$RUN_NODES" >> "$SLURM_FILE_NAME"
+#echo "#SBATCH --ntasks-per-node=$RUN_TASKS_PER_NODE" >> "$SLURM_FILE_NAME"
+echo "#SBATCH --ntasks=$RUN_TASKS" >> "$SLURM_FILE_NAME"
 
 cat "$SLURM_BASE_DIR/set-partition-run.sh" >> $SLURM_FILE_NAME
 cat "$SLURM_BASE_DIR/load-module.sh" >> $SLURM_FILE_NAME
