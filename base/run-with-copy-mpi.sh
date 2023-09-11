@@ -1,9 +1,3 @@
-source "$SLURM_BASE_DIR/dataset-settings.sh"
-
-source "$SLURM_BASE_DIR/load-module.sh"
-
-source "$SLURM_BASE_DIR/set-partition-run.sh"
-
 ## DON'T CHANGE THIS!
 
 # Run
