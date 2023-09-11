@@ -12,7 +12,8 @@
 # QUEUE_SLURM YES will queue file after build
 # REMOVE_SLURM YES will remove the file after queue
 
-if [ "$#" -ne 8 ]; then
+if (( "$#" != 8 ))
+then
     echo "Illegal number of parameters"
 	exit 1
 fi
@@ -37,10 +38,14 @@ echo "#!/bin/bash" >> "$SLURM_FILE_NAME"
 echo "#SBATCH --job-name='$JOB_NAME'" >> "$SLURM_FILE_NAME"
 echo "#SBATCH --output=out.%x.%j" >> "$SLURM_FILE_NAME"
 
-## Stopped being available on 2023/08/30
-#echo "#SBATCH --nodes=$RUN_NODES" >> "$SLURM_FILE_NAME"
-#echo "#SBATCH --ntasks-per-node=$RUN_TASKS_PER_NODE" >> "$SLURM_FILE_NAME"
-echo "#SBATCH --ntasks=$RUN_TASKS" >> "$SLURM_FILE_NAME"
+## -1 on n_tasks enables manual distribution
+if (( $RUN_TASKS == -1 ))
+then
+	echo "#SBATCH --nodes=$RUN_NODES" >> "$SLURM_FILE_NAME"
+	echo "#SBATCH --ntasks-per-node=$RUN_TASKS_PER_NODE" >> "$SLURM_FILE_NAME"
+else
+	echo "#SBATCH --ntasks=$RUN_TASKS" >> "$SLURM_FILE_NAME"
+fi
 
 cat "$SLURM_BASE_DIR/set-partition-run.sh" >> $SLURM_FILE_NAME
 cat "$SLURM_BASE_DIR/load-module.sh" >> $SLURM_FILE_NAME
@@ -85,12 +90,12 @@ case $PROTOTYPE in
 esac
 
 # Queue it?
-if [ $QUEUE_SLURM == "YES" ]
+if [[ $QUEUE_SLURM == "YES" ]]
 then
 	echo "Queueing $SLURM_FILE_NAME"
 	sbatch "$SLURM_FILE_NAME"
 
-	if [ $REMOVE_SLURM == "YES" ]
+	if [[ $REMOVE_SLURM == "YES" ]]
 	then
 		#Remove it
 		echo "Removing $SLURM_FILE_NAME"
