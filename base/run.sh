@@ -38,13 +38,13 @@ echo "#!/bin/bash" >> "$SLURM_FILE_NAME"
 echo "#SBATCH --job-name='$JOB_NAME'" >> "$SLURM_FILE_NAME"
 echo "#SBATCH --output=out.%x.%j" >> "$SLURM_FILE_NAME"
 
-## -1 on n_tasks enables manual distribution
-if (( $RUN_TASKS == -1 ))
+## -1 on n_nodes enables auto distribution
+if (( $RUN_NODES == -1 ))
 then
+	echo "#SBATCH --ntasks=$RUN_TASKS" >> "$SLURM_FILE_NAME"
+else
 	echo "#SBATCH --nodes=$RUN_NODES" >> "$SLURM_FILE_NAME"
 	echo "#SBATCH --ntasks-per-node=$RUN_TASKS_PER_NODE" >> "$SLURM_FILE_NAME"
-else
-	echo "#SBATCH --ntasks=$RUN_TASKS" >> "$SLURM_FILE_NAME"
 fi
 
 cat "$SLURM_BASE_DIR/set-partition-run.sh" >> $SLURM_FILE_NAME
