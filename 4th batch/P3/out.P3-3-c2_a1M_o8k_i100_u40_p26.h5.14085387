@@ -1,0 +1,80 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-3-c2_a1M_o8k_i100_u40_p26.h5 on Sun Dec 17 14:38:22 WET 2023
+*    JOB_NAME                : P3-3-c2_a1M_o8k_i100_u40_p26.h5
+*    JOB_ID                  : 14085387
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc066
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 3
+*    SLURM_NTASKS            : 3
+*    SLURM_CPUS_ON_NODE      : 3
+*    SLURM_TASKS_PER_NODE    : 3
+*    SLURM_JOB_CPUS_PER_NODE : 3
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P3/P3-3-c2_a1M_o8k_i100_u40_p26.h5.1702819650295069170.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 3 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o8k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o8k_i100_u40_p26.h5'
+Using 3 processes
+
+Initializing MPI RMA: [0.003067s]
+Reading dataset: [0.476258s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 8000 
+Sorting dataset: [0.065155s]
+Removing duplicates: [0.062442s]
+  40 duplicate(s) removed
+Setting up JNSQ attributes: [0.001891s]
+  Max JNSQ: 1 [1 bits]
+Sorting dataset by class: [0.060032s]
+Checking classes: [0.000123s]
+  Class 0: 4065 item(s)
+  Class 1: 3895 item(s)
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 15833175
+  Estimated disjoint matrix size: 1843.23GB
+    Process 0 will manage 333312 attributes [0 -> 333311]
+    Process 1 will manage 333312 attributes [333312 -> 666623]
+    Process 2 will manage 333378 attributes [666624 -> 1000001]
+Applying set covering algorithm:
+  Selected attribute #988372, covers 6422317 lines [1165.803467s]
+  Selected attribute #785868, covers 3836821 lines [403.669983s]
+  Selected attribute #966542, covers 2276381 lines [240.034668s]
+  Selected attribute #155077, covers 1350489 lines [138.495712s]
+  Selected attribute #410152, covers 800740 lines [84.456909s]
+  Selected attribute #757036, covers 471231 lines [54.482052s]
+  Selected attribute #808139, covers 278242 lines [36.129578s]
+  Selected attribute #978385, covers 163758 lines [25.183783s]
+  Selected attribute #32143, covers 96553 lines [18.461161s]
+  Selected attribute #699713, covers 56855 lines [14.326807s]
+  Selected attribute #51990, covers 33075 lines [11.843760s]
+  Selected attribute #774091, covers 19469 lines [10.133875s]
+  Selected attribute #314956, covers 11414 lines [9.341077s]
+  Selected attribute #198620, covers 6641 lines [8.825031s]
+  Selected attribute #814818, covers 3897 lines [8.469690s]
+  Selected attribute #70278, covers 2274 lines [8.313421s]
+  Selected attribute #681496, covers 1291 lines [8.089643s]
+  Selected attribute #299569, covers 739 lines [8.048797s]
+  Selected attribute #896045, covers 419 lines [8.019403s]
+  Selected attribute #647928, covers 236 lines [8.001588s]
+  Selected attribute #455718, covers 127 lines [7.881520s]
+  Selected attribute #1000000, covers 102 lines [7.646761s]
+  Selected attribute #30288, covers 64 lines [7.602639s]
+  Selected attribute #706145, covers 30 lines [7.935367s]
+  Selected attribute #44058, covers 10 lines [7.954940s]
+Solution: { 30288 32143 44058 51990 70278 155077 198620 299569 314956 410152 455718 647928 681496 699713 706145 757036 774091 785868 808139 814818 896045 966542 978385 988372 1000000 }
+Solution has 25 attributes: 25 / 1000001 = 0.0025%
+
+All done! [2309.950684s]
+
+real	38m30.432s
+user	114m46.812s
+sys	0m0.930s
+Finished with job ID: 14085387

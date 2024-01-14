@@ -1,0 +1,79 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P4-2-c2_a1M_o2k_i100_u40_p26.h5 on Wed Aug 30 21:26:14 WEST 2023
+*    JOB_NAME                : P4-2-c2_a1M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 12443872
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[078-079]
+*    SLURM_NNODES            : 2
+*    SLURM_NPROCS            : 2
+*    SLURM_NTASKS            : 2
+*    SLURM_CPUS_ON_NODE      : 1
+*    SLURM_TASKS_PER_NODE    : 1(x2)
+*    SLURM_JOB_CPUS_PER_NODE : 1(x2)
+*    SLURM_MEM_PER_CPU       : 8000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm-files/4th batch/P4
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm-files/4th batch/P4/P4-2-c2_a1M_o2k_i100_u40_p26.h5.1693413807055632154.sh
+* ----------------------------------------------------------------
+/dev/shm/job12443872/slurm_script: line 39: /dataset-settings.sh: No such file or directory
+/dev/shm/job12443872/slurm_script: line 41: /load-module.sh: No such file or directory
+/dev/shm/job12443872/slurm_script: line 43: /set-partition-run.sh: No such file or directory
+=== Running ===
+mpiexec -np 2 /users3/uaberta/eribeiro/laid-by-lines/bin/laid-by-lines -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o2k_i100_u40_p26.h5'
+Using 2 processes
+
+Initializing MPI Shared Dataset: [0.002417s]
+Reading dataset: [0.051257s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 2000 
+Sorting dataset: [0.024792s]
+Removing duplicates: [0.023714s]
+  42 duplicate(s) removed
+Checking classes: [0.000043s]
+  Class 0: 964 item(s)
+  Class 1: 994 item(s)
+Setting up JNSQ attributes: [0.001844s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Estimated disjoint matrix size: 111.55GB
+  Number of lines in the disjoint matrix: 958216
+    Process 0 will generate 479108 lines [0 -> 479107]
+    Process 1 will generate 479108 lines [479108 -> 958215]
+Applying set covering algorithm:
+  Selected attribute #9, covers 391340 lines [92.452301s]
+  Selected attribute #55, covers 228534 lines [38.384327s]
+  Selected attribute #20, covers 136212 lines [21.912821s]
+  Selected attribute #51, covers 81674 lines [13.660469s]
+  Selected attribute #22, covers 48952 lines [8.493085s]
+  Selected attribute #45, covers 29207 lines [5.822158s]
+  Selected attribute #0, covers 17154 lines [3.924179s]
+  Selected attribute #3, covers 10160 lines [2.610571s]
+  Selected attribute #42, covers 6148 lines [2.316790s]
+  Selected attribute #17, covers 3592 lines [1.883941s]
+  Selected attribute #13, covers 2094 lines [1.608608s]
+  Selected attribute #2, covers 1262 lines [1.452457s]
+  Selected attribute #56, covers 737 lines [1.333766s]
+  Selected attribute #50, covers 434 lines [1.278731s]
+  Selected attribute #7, covers 265 lines [1.239769s]
+  Selected attribute #14, covers 157 lines [1.218235s]
+  Selected attribute #1000000, covers 105 lines [1.207095s]
+  Selected attribute #11, covers 85 lines [1.193415s]
+  Selected attribute #54, covers 50 lines [1.196830s]
+  Selected attribute #25, covers 27 lines [1.252624s]
+  Selected attribute #26, covers 16 lines [1.239377s]
+  Selected attribute #12, covers 7 lines [1.237626s]
+  Selected attribute #5, covers 3 lines [1.238929s]
+  Selected attribute #6, covers 1 lines [1.014912s]
+Solution: { 0 2 3 5 6 7 9 11 12 13 14 17 20 22 25 26 42 45 50 51 54 55 56 1000000 }
+Solution has 24 attributes: 24 / 1000001 = 0.0024%
+All done! [209.280273s]
+
+real	3m29.920s
+user	3m28.067s
+sys	0m0.948s
+Finished with job ID: 12443872

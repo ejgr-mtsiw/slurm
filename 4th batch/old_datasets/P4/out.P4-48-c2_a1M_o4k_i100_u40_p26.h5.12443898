@@ -1,0 +1,129 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P4-48-c2_a1M_o4k_i100_u40_p26.h5 on Wed Aug 30 21:04:51 WEST 2023
+*    JOB_NAME                : P4-48-c2_a1M_o4k_i100_u40_p26.h5
+*    JOB_ID                  : 12443898
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[071-072,079]
+*    SLURM_NNODES            : 3
+*    SLURM_NPROCS            : 48
+*    SLURM_NTASKS            : 48
+*    SLURM_CPUS_ON_NODE      : 7
+*    SLURM_TASKS_PER_NODE    : 7,1,40
+*    SLURM_JOB_CPUS_PER_NODE : 7,1,40
+*    SLURM_MEM_PER_CPU       : 8000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm-files/4th batch/P4
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm-files/4th batch/P4/P4-48-c2_a1M_o4k_i100_u40_p26.h5.1693413808313924155.sh
+* ----------------------------------------------------------------
+/dev/shm/job12443898/slurm_script: line 39: /dataset-settings.sh: No such file or directory
+/dev/shm/job12443898/slurm_script: line 41: /load-module.sh: No such file or directory
+/dev/shm/job12443898/slurm_script: line 43: /set-partition-run.sh: No such file or directory
+=== Running ===
+mpiexec -np 48 /users3/uaberta/eribeiro/laid-by-lines/bin/laid-by-lines -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o4k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o4k_i100_u40_p26.h5'
+Using 48 processes
+
+Initializing MPI Shared Dataset: [0.002407s]
+Reading dataset: [0.223726s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 4000 
+Sorting dataset: [0.032240s]
+Removing duplicates: [0.032878s]
+  42 duplicate(s) removed
+Checking classes: [0.000191s]
+  Class 0: 1965 item(s)
+  Class 1: 1993 item(s)
+Setting up JNSQ attributes: [0.001422s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Estimated disjoint matrix size: 455.91GB
+  Number of lines in the disjoint matrix: 3916245
+    Process 0 will generate 81588 lines [0 -> 81587]
+    Process 1 will generate 81588 lines [81588 -> 163175]
+    Process 2 will generate 81589 lines [163176 -> 244764]
+    Process 3 will generate 81588 lines [244765 -> 326352]
+    Process 4 will generate 81589 lines [326353 -> 407941]
+    Process 5 will generate 81588 lines [407942 -> 489529]
+    Process 6 will generate 81589 lines [489530 -> 571118]
+    Process 7 will generate 81588 lines [571119 -> 652706]
+    Process 8 will generate 81588 lines [652707 -> 734294]
+    Process 9 will generate 81589 lines [734295 -> 815883]
+    Process 10 will generate 81588 lines [815884 -> 897471]
+    Process 11 will generate 81589 lines [897472 -> 979060]
+    Process 12 will generate 81588 lines [979061 -> 1060648]
+    Process 13 will generate 81589 lines [1060649 -> 1142237]
+    Process 14 will generate 81588 lines [1142238 -> 1223825]
+    Process 15 will generate 81589 lines [1223826 -> 1305414]
+    Process 16 will generate 81588 lines [1305415 -> 1387002]
+    Process 17 will generate 81588 lines [1387003 -> 1468590]
+    Process 18 will generate 81589 lines [1468591 -> 1550179]
+    Process 19 will generate 81588 lines [1550180 -> 1631767]
+    Process 20 will generate 81589 lines [1631768 -> 1713356]
+    Process 21 will generate 81588 lines [1713357 -> 1794944]
+    Process 22 will generate 81589 lines [1794945 -> 1876533]
+    Process 23 will generate 81588 lines [1876534 -> 1958121]
+    Process 24 will generate 81588 lines [1958122 -> 2039709]
+    Process 25 will generate 81589 lines [2039710 -> 2121298]
+    Process 26 will generate 81588 lines [2121299 -> 2202886]
+    Process 27 will generate 81589 lines [2202887 -> 2284475]
+    Process 28 will generate 81588 lines [2284476 -> 2366063]
+    Process 29 will generate 81589 lines [2366064 -> 2447652]
+    Process 30 will generate 81588 lines [2447653 -> 2529240]
+    Process 31 will generate 81589 lines [2529241 -> 2610829]
+    Process 32 will generate 81588 lines [2610830 -> 2692417]
+    Process 33 will generate 81588 lines [2692418 -> 2774005]
+    Process 34 will generate 81589 lines [2774006 -> 2855594]
+    Process 35 will generate 81588 lines [2855595 -> 2937182]
+    Process 36 will generate 81589 lines [2937183 -> 3018771]
+    Process 37 will generate 81588 lines [3018772 -> 3100359]
+    Process 38 will generate 81589 lines [3100360 -> 3181948]
+    Process 39 will generate 81588 lines [3181949 -> 3263536]
+    Process 40 will generate 81588 lines [3263537 -> 3345124]
+    Process 41 will generate 81589 lines [3345125 -> 3426713]
+    Process 42 will generate 81588 lines [3426714 -> 3508301]
+    Process 43 will generate 81589 lines [3508302 -> 3589890]
+    Process 44 will generate 81588 lines [3589891 -> 3671478]
+    Process 45 will generate 81589 lines [3671479 -> 3753067]
+    Process 46 will generate 81588 lines [3753068 -> 3834655]
+    Process 47 will generate 81589 lines [3834656 -> 3916244]
+Applying set covering algorithm:
+  Selected attribute #32, covers 1568310 lines [17.115395s]
+  Selected attribute #61, covers 935071 lines [7.186673s]
+  Selected attribute #19, covers 566151 lines [4.562623s]
+  Selected attribute #6, covers 333650 lines [3.067269s]
+  Selected attribute #7, covers 203672 lines [1.875349s]
+  Selected attribute #59, covers 122602 lines [1.239675s]
+  Selected attribute #45, covers 73876 lines [1.017736s]
+  Selected attribute #5, covers 45022 lines [0.880739s]
+  Selected attribute #60, covers 27074 lines [0.424905s]
+  Selected attribute #47, covers 16391 lines [0.442407s]
+  Selected attribute #21, covers 9760 lines [0.394569s]
+  Selected attribute #15, covers 5896 lines [0.323032s]
+  Selected attribute #51, covers 3631 lines [0.276016s]
+  Selected attribute #18, covers 2029 lines [0.263930s]
+  Selected attribute #41, covers 1226 lines [0.254790s]
+  Selected attribute #31, covers 745 lines [0.236920s]
+  Selected attribute #25, covers 431 lines [0.230344s]
+  Selected attribute #9, covers 262 lines [0.224796s]
+  Selected attribute #16, covers 152 lines [0.223210s]
+  Selected attribute #1000000, covers 99 lines [0.223642s]
+  Selected attribute #8, covers 87 lines [0.222149s]
+  Selected attribute #49, covers 52 lines [0.233588s]
+  Selected attribute #10, covers 30 lines [0.219413s]
+  Selected attribute #29, covers 17 lines [0.221361s]
+  Selected attribute #17, covers 6 lines [0.188183s]
+  Selected attribute #35, covers 3 lines [0.168870s]
+Solution: { 5 6 7 8 9 10 15 16 17 18 19 21 25 29 31 32 35 41 45 47 49 51 59 60 61 1000000 }
+Solution has 26 attributes: 26 / 1000001 = 0.0026%
+All done! [42.133205s]
+
+real	0m44.893s
+user	4m26.707s
+sys	0m29.469s
+Finished with job ID: 12443898
+srun: Job 12443898 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 12443898

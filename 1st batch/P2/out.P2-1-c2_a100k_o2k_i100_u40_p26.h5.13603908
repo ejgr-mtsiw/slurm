@@ -1,0 +1,59 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P2-1-c2_a100k_o2k_i100_u40_p26.h5 on Sat Dec  2 18:32:29 WET 2023
+*    JOB_NAME                : P2-1-c2_a100k_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 13603908
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc066
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 1
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 1
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/1st batch/P2
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/1st batch/P2/P2-1-c2_a100k_o2k_i100_u40_p26.h5.1692308681892393463.sh
+* ----------------------------------------------------------------
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a100k_o2k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1701541950348370539_c2_a100k_o2k_i100_u40_p26.h5
+=== Running ===
+mpiexec -np 1 /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1701541950348370539_c2_a100k_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1701541950348370539_c2_a100k_o2k_i100_u40_p26.h5'
+Using 1 processes
+
+Disjoint matrix dataset not found.
+
+Initializing MPI RMA: [0s]
+Reading dataset: [0s]
+  Classes = 2 [1 bits]
+  Attributes = 100000 
+  Observations = 2000 
+Sorting dataset: [0s]
+Removing duplicates: [0s]
+  44 duplicate(s) removed
+Checking classes: [0s]
+  Class 0: 1006 item(s)
+  Class 1: 950 item(s)
+Setting up JNSQ attributes: [0s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0s]
+  Number of lines in the disjoint matrix: 955700
+    Process 0 will generate 955700 lines [0 -> 955699]
+Building disjoint matrix:
+  Estimated disjoint matrix size: 11.13GB (x2)
+  Line dataset done: [1s]
+  Column dataset done: [22s]
+Applying set covering algorithm:
+[23s]
+
+real	0m23.180s
+user	0m22.714s
+sys	0m0.216s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1701541950348370539_c2_a100k_o2k_i100_u40_p26.h5
+Finished with job ID: 13603908
+Submitted batch job 13603910

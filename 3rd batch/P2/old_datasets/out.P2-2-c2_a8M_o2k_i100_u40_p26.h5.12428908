@@ -1,0 +1,88 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P2-2-c2_a8M_o2k_i100_u40_p26.h5 on Mon Aug 28 15:20:54 WEST 2023
+*    JOB_NAME                : P2-2-c2_a8M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 12428908
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[068-069]
+*    SLURM_NNODES            : 2
+*    SLURM_NPROCS            : 2
+*    SLURM_NTASKS            : 2
+*    SLURM_CPUS_ON_NODE      : 1
+*    SLURM_TASKS_PER_NODE    : 1(x2)
+*    SLURM_JOB_CPUS_PER_NODE : 1(x2)
+*    SLURM_MEM_PER_CPU       : 4750
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm-files/3rd batch/P2
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm-files/3rd batch/P2/P2-2-c2_a8M_o2k_i100_u40_p26.h5.1693231511920314718.sh
+* ----------------------------------------------------------------
+/dev/shm/job12428908/slurm_script: line 41: /dataset-settings.sh: No such file or directory
+/dev/shm/job12428908/slurm_script: line 43: /load-module.sh: No such file or directory
+/dev/shm/job12428908/slurm_script: line 45: /set-partition-run.sh: No such file or directory
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1693232454809966554_c2_a8M_o2k_i100_u40_p26.h5
+=== Running ===
+mpiexec -np 2 /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1693232454809966554_c2_a8M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1693232454809966554_c2_a8M_o2k_i100_u40_p26.h5'
+Using 2 processes
+
+Disjoint matrix dataset not found.
+
+Initializing MPI RMA: [0.000124s]
+Reading dataset: [3.960005s]
+  Classes = 2 [1 bits]
+  Attributes = 8000000 
+  Observations = 2000 
+Sorting dataset: [0.229692s]
+Removing duplicates: [0.297473s]
+  42 duplicate(s) removed
+Checking classes: [0.000068s]
+  Class 0: 999 item(s)
+  Class 1: 959 item(s)
+Setting up JNSQ attributes: [0.007226s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.005310s]
+  Number of lines in the disjoint matrix: 958041
+    Process 0 will generate 479020 lines [0 -> 479019]
+    Process 1 will generate 479021 lines [479020 -> 958040]
+Building disjoint matrix:
+  Estimated disjoint matrix size: 892.25GB (x2)
+  Line dataset done: [2466.634033s]
+  Column dataset done: [1794.182739s]
+Applying set covering algorithm:
+  Selected attribute #11, covers 389574 lines [0.265414s]
+  Selected attribute #49, covers 230083 lines [12747.663086s]
+  Selected attribute #0, covers 134740 lines [2732.045166s]
+  Selected attribute #61, covers 82190 lines [3329.423584s]
+  Selected attribute #8, covers 48831 lines [1586.072144s]
+  Selected attribute #2, covers 29220 lines [979.040955s]
+  Selected attribute #17, covers 17482 lines [478.530090s]
+  Selected attribute #56, covers 10516 lines [324.464172s]
+  Selected attribute #7, covers 6199 lines [181.973877s]
+  Selected attribute #36, covers 3684 lines [91.707031s]
+  Selected attribute #20, covers 2164 lines [71.714577s]
+  Selected attribute #55, covers 1337 lines [33.108624s]
+  Selected attribute #3, covers 811 lines [19.899208s]
+  Selected attribute #37, covers 477 lines [10.769563s]
+  Selected attribute #44, covers 279 lines [6.541623s]
+  Selected attribute #18, covers 162 lines [3.976618s]
+  Selected attribute #8000000, covers 100 lines [2.281089s]
+  Selected attribute #24, covers 84 lines [1.389731s]
+  Selected attribute #45, covers 51 lines [1.301405s]
+  Selected attribute #10, covers 27 lines [0.861739s]
+  Selected attribute #63, covers 18 lines [0.459189s]
+  Selected attribute #23, covers 8 lines [0.310562s]
+  Selected attribute #29, covers 4 lines [0.156955s]
+Solution: { 0 2 3 7 8 10 11 17 18 20 23 24 29 36 37 44 45 49 55 56 61 63 8000000 }
+Solution has 23 attributes: 23 / 8000001 = 0.0003%
+All done! [27114.914062s]
+
+real	451m55.877s
+user	113m25.639s
+sys	82m54.404s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1693232454809966554_c2_a8M_o2k_i100_u40_p26.h5
+Finished with job ID: 12428908
+Submitted batch job 12431203

@@ -1,0 +1,99 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-24-c2_a1M_o4k_i100_u40_p26.h5 on Mon Sep 11 19:54:20 WEST 2023
+*    JOB_NAME                : P3-24-c2_a1M_o4k_i100_u40_p26.h5
+*    JOB_ID                  : 12495830
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[068-070]
+*    SLURM_NNODES            : 3
+*    SLURM_NPROCS            : 24
+*    SLURM_NTASKS            : 24
+*    SLURM_CPUS_ON_NODE      : 4
+*    SLURM_TASKS_PER_NODE    : 4,10(x2)
+*    SLURM_JOB_CPUS_PER_NODE : 4,10(x2)
+*    SLURM_MEM_PER_CPU       : 8000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P3/P3-24-c2_a1M_o4k_i100_u40_p26.h5.1694456899825597297.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 24 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o4k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o4k_i100_u40_p26.h5'
+Using 24 processes
+
+Initializing MPI RMA: [0.002020s]
+Reading dataset: [0.187789s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 4000 
+Sorting dataset: [0.032842s]
+Removing duplicates: [0.033178s]
+  40 duplicate(s) removed
+Checking classes: [0.000129s]
+  Class 0: 1970 item(s)
+  Class 1: 1990 item(s)
+Setting up JNSQ attributes: [0.001370s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 3920300
+  Estimated disjoint matrix size: 456.38GB
+    Process 0 will manage 41664 attributes [0 -> 41663]
+    Process 1 will manage 41664 attributes [41664 -> 83327]
+    Process 2 will manage 41664 attributes [83328 -> 124991]
+    Process 3 will manage 41664 attributes [124992 -> 166655]
+    Process 4 will manage 41664 attributes [166656 -> 208319]
+    Process 5 will manage 41664 attributes [208320 -> 249983]
+    Process 6 will manage 41664 attributes [249984 -> 291647]
+    Process 7 will manage 41664 attributes [291648 -> 333311]
+    Process 8 will manage 41664 attributes [333312 -> 374975]
+    Process 9 will manage 41664 attributes [374976 -> 416639]
+    Process 10 will manage 41664 attributes [416640 -> 458303]
+    Process 11 will manage 41728 attributes [458304 -> 500031]
+    Process 12 will manage 41664 attributes [500032 -> 541695]
+    Process 13 will manage 41664 attributes [541696 -> 583359]
+    Process 14 will manage 41664 attributes [583360 -> 625023]
+    Process 15 will manage 41664 attributes [625024 -> 666687]
+    Process 16 will manage 41664 attributes [666688 -> 708351]
+    Process 17 will manage 41664 attributes [708352 -> 750015]
+    Process 18 will manage 41664 attributes [750016 -> 791679]
+    Process 19 will manage 41664 attributes [791680 -> 833343]
+    Process 20 will manage 41664 attributes [833344 -> 875007]
+    Process 21 will manage 41664 attributes [875008 -> 916671]
+    Process 22 will manage 41664 attributes [916672 -> 958335]
+    Process 23 will manage 41728 attributes [958336 -> 1000063]
+Applying set covering algorithm:
+  Selected attribute #776774, covers 1645878 lines [39.839455s]
+  Selected attribute #180414, covers 946677 lines [17.093386s]
+  Selected attribute #251128, covers 554159 lines [9.907662s]
+  Selected attribute #529432, covers 323077 lines [5.803070s]
+  Selected attribute #941504, covers 189370 lines [3.374825s]
+  Selected attribute #901639, covers 109888 lines [1.985107s]
+  Selected attribute #484350, covers 63576 lines [1.154602s]
+  Selected attribute #98578, covers 37132 lines [0.676579s]
+  Selected attribute #477510, covers 21445 lines [0.401340s]
+  Selected attribute #344983, covers 12341 lines [0.239743s]
+  Selected attribute #953964, covers 7169 lines [0.144282s]
+  Selected attribute #401626, covers 4169 lines [0.092237s]
+  Selected attribute #827478, covers 2330 lines [0.061305s]
+  Selected attribute #924312, covers 1345 lines [0.041978s]
+  Selected attribute #726983, covers 767 lines [0.031982s]
+  Selected attribute #376225, covers 419 lines [0.025663s]
+  Selected attribute #516575, covers 232 lines [0.021964s]
+  Selected attribute #389903, covers 127 lines [0.019716s]
+  Selected attribute #1000000, covers 99 lines [0.018809s]
+  Selected attribute #836998, covers 62 lines [0.017615s]
+  Selected attribute #959743, covers 30 lines [0.017308s]
+  Selected attribute #958493, covers 8 lines [0.017142s]
+Solution: { 98578 180414 251128 344983 376225 389903 401626 477510 484350 516575 529432 726983 776774 827478 836998 901639 924312 941504 953964 958493 959743 1000000 }
+Solution has 22 attributes: 22 / 1000001 = 0.0022%
+
+All done! [81.326836s]
+
+real	1m22.922s
+user	4m19.529s
+sys	1m5.505s
+Finished with job ID: 12495830
+srun: Job 12495830 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 12495830

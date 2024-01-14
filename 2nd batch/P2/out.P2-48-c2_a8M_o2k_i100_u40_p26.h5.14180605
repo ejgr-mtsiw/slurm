@@ -1,0 +1,3385 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P2-48-c2_a8M_o2k_i100_u40_p26.h5 on Tue Jan  2 23:27:02 WET 2024
+*    JOB_NAME                : P2-48-c2_a8M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 14180605
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc077
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 48
+*    SLURM_NTASKS            : 48
+*    SLURM_CPUS_ON_NODE      : 48
+*    SLURM_TASKS_PER_NODE    : 48
+*    SLURM_JOB_CPUS_PER_NODE : 48
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : hpc067.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/2nd batch/P2
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/2nd batch/P2/P2-48-c2_a8M_o2k_i100_u40_p26.h5.1692715001729823344.sh
+* ----------------------------------------------------------------
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1704238022976784697_c2_a8M_o2k_i100_u40_p26.h5
+=== Running ===
+mpiexec -np 48 /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1704238022976784697_c2_a8M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1704238022976784697_c2_a8M_o2k_i100_u40_p26.h5'
+Using 48 processes
+
+Disjoint matrix dataset not found.
+
+Initializing MPI RMA: [0.001104s]
+Reading dataset: [1.072600s]
+  Classes = 2 [1 bits]
+  Attributes = 8000000 
+  Observations = 2000 
+Sorting dataset: [0.143812s]
+Removing duplicates: [0.164244s]
+  42 duplicate(s) removed
+Checking classes: [0.000127s]
+  Class 0: 972 item(s)
+  Class 1: 986 item(s)
+Setting up JNSQ attributes: [0.007813s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000159s]
+  Number of lines in the disjoint matrix: 958392
+    Process 0 will generate 19966 lines [0 -> 19965]
+    Process 1 will generate 19967 lines [19966 -> 39932]
+    Process 2 will generate 19966 lines [39933 -> 59898]
+    Process 3 will generate 19967 lines [59899 -> 79865]
+    Process 4 will generate 19966 lines [79866 -> 99831]
+    Process 5 will generate 19967 lines [99832 -> 119798]
+    Process 6 will generate 19966 lines [119799 -> 139764]
+    Process 7 will generate 19967 lines [139765 -> 159731]
+    Process 8 will generate 19966 lines [159732 -> 179697]
+    Process 9 will generate 19967 lines [179698 -> 199664]
+    Process 10 will generate 19966 lines [199665 -> 219630]
+    Process 11 will generate 19967 lines [219631 -> 239597]
+    Process 12 will generate 19966 lines [239598 -> 259563]
+    Process 13 will generate 19967 lines [259564 -> 279530]
+    Process 14 will generate 19966 lines [279531 -> 299496]
+    Process 15 will generate 19967 lines [299497 -> 319463]
+    Process 16 will generate 19966 lines [319464 -> 339429]
+    Process 17 will generate 19967 lines [339430 -> 359396]
+    Process 18 will generate 19966 lines [359397 -> 379362]
+    Process 19 will generate 19967 lines [379363 -> 399329]
+    Process 20 will generate 19966 lines [399330 -> 419295]
+    Process 21 will generate 19967 lines [419296 -> 439262]
+    Process 22 will generate 19966 lines [439263 -> 459228]
+    Process 23 will generate 19967 lines [459229 -> 479195]
+    Process 24 will generate 19966 lines [479196 -> 499161]
+    Process 25 will generate 19967 lines [499162 -> 519128]
+    Process 26 will generate 19966 lines [519129 -> 539094]
+    Process 27 will generate 19967 lines [539095 -> 559061]
+    Process 28 will generate 19966 lines [559062 -> 579027]
+    Process 29 will generate 19967 lines [579028 -> 598994]
+    Process 30 will generate 19966 lines [598995 -> 618960]
+    Process 31 will generate 19967 lines [618961 -> 638927]
+    Process 32 will generate 19966 lines [638928 -> 658893]
+    Process 33 will generate 19967 lines [658894 -> 678860]
+    Process 34 will generate 19966 lines [678861 -> 698826]
+    Process 35 will generate 19967 lines [698827 -> 718793]
+    Process 36 will generate 19966 lines [718794 -> 738759]
+    Process 37 will generate 19967 lines [738760 -> 758726]
+    Process 38 will generate 19966 lines [758727 -> 778692]
+    Process 39 will generate 19967 lines [778693 -> 798659]
+    Process 40 will generate 19966 lines [798660 -> 818625]
+    Process 41 will generate 19967 lines [818626 -> 838592]
+    Process 42 will generate 19966 lines [838593 -> 858558]
+    Process 43 will generate 19967 lines [858559 -> 878525]
+    Process 44 will generate 19966 lines [878526 -> 898491]
+    Process 45 will generate 19967 lines [898492 -> 918458]
+    Process 46 will generate 19966 lines [918459 -> 938424]
+    Process 47 will generate 19967 lines [938425 -> 958391]
+Building disjoint matrix:
+  Estimated disjoint matrix size: 892.57GB (x2)
+  Line dataset done: [3545.019287s]
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 1:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 30:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 36:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 40:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 2:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 14:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 12:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 15:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 16:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 26:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 22:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 20:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 25:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 31:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 34:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 42:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 8:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 9:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 19:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 21:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 24:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 27:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 28:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 29:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 32:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 35:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 38:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 6:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 44:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 46:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 5:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 41:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 43:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 0:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 4:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 7:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 10:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 17:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 45:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 33:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 37:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 39:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 47:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 3:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 11:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 13:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 18:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 23:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072731] *** Process received signal ***
+[hpc077:4072731] Signal: Aborted (6)
+[hpc077:4072731] Signal code:  (-6)
+[hpc077:4072707] *** Process received signal ***
+[hpc077:4072707] Signal: Aborted (6)
+[hpc077:4072707] Signal code:  (-6)
+[hpc077:4072711] *** Process received signal ***
+[hpc077:4072711] Signal: Aborted (6)
+[hpc077:4072711] Signal code:  (-6)
+[hpc077:4072708] *** Process received signal ***
+[hpc077:4072708] Signal: Aborted (6)
+[hpc077:4072708] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072812] *** Process received signal ***
+[hpc077:4072719] *** Process received signal ***
+[hpc077:4072719] Signal: Aborted (6)
+[hpc077:4072719] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072763] *** Process received signal ***
+[hpc077:4072763] Signal: Aborted (6)
+[hpc077:4072763] Signal code:  (-6)
+[hpc077:4072750] *** Process received signal ***
+[hpc077:4072750] Signal: Aborted (6)
+[hpc077:4072750] Signal code:  (-6)
+[hpc077:4072725] *** Process received signal ***
+[hpc077:4072725] Signal: Aborted (6)
+[hpc077:4072725] Signal code:  (-6)
+[hpc077:4072812] Signal: Aborted (6)
+[hpc077:4072812] Signal code:  (-6)
+[hpc077:4072705] *** Process received signal ***
+[hpc077:4072705] Signal: Aborted (6)
+[hpc077:4072705] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072710] *** Process received signal ***
+[hpc077:4072710] Signal: Aborted (6)
+[hpc077:4072710] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072765] *** Process received signal ***
+[hpc077:4072765] Signal: Aborted (6)
+[hpc077:4072765] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072820] *** Process received signal ***
+[hpc077:4072820] Signal: Aborted (6)
+[hpc077:4072820] Signal code:  (-6)
+[hpc077:4072798] *** Process received signal ***
+[hpc077:4072798] Signal: Aborted (6)
+[hpc077:4072798] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072706] *** Process received signal ***
+[hpc077:4072706] Signal: Aborted (6)
+[hpc077:4072706] Signal code:  (-6)
+[hpc077:4072822] *** Process received signal ***
+[hpc077:4072822] Signal: Aborted (6)
+[hpc077:4072822] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072714] *** Process received signal ***
+[hpc077:4072714] Signal: Aborted (6)
+[hpc077:4072714] Signal code:  (-6)
+[hpc077:4072808] *** Process received signal ***
+[hpc077:4072808] Signal: Aborted (6)
+[hpc077:4072808] Signal code:  (-6)
+[hpc077:4072727] *** Process received signal ***
+[hpc077:4072727] Signal: Aborted (6)
+[hpc077:4072727] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072716] *** Process received signal ***
+[hpc077:4072716] Signal: Aborted (6)
+[hpc077:4072716] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072717] *** Process received signal ***
+[hpc077:4072717] Signal: Aborted (6)
+[hpc077:4072717] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072735] *** Process received signal ***
+[hpc077:4072735] Signal: Aborted (6)
+[hpc077:4072735] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072721] *** Process received signal ***
+[hpc077:4072721] Signal: Aborted (6)
+[hpc077:4072721] Signal code:  (-6)
+[hpc077:4072718] *** Process received signal ***
+[hpc077:4072718] Signal: Aborted (6)
+[hpc077:4072718] Signal code:  (-6)
+[hpc077:4072743] *** Process received signal ***
+[hpc077:4072743] Signal: Aborted (6)
+[hpc077:4072743] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072771] *** Process received signal ***
+[hpc077:4072771] Signal: Aborted (6)
+[hpc077:4072771] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072753] *** Process received signal ***
+[hpc077:4072753] Signal: Aborted (6)
+[hpc077:4072753] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072748] *** Process received signal ***
+[hpc077:4072748] Signal: Aborted (6)
+[hpc077:4072748] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072758] *** Process received signal ***
+[hpc077:4072758] Signal: Aborted (6)
+[hpc077:4072758] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072781] *** Process received signal ***
+[hpc077:4072781] Signal: Aborted (6)
+[hpc077:4072781] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072784] *** Process received signal ***
+[hpc077:4072784] Signal: Aborted (6)
+[hpc077:4072784] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072775] *** Process received signal ***
+[hpc077:4072775] Signal: Aborted (6)
+[hpc077:4072775] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072794] *** Process received signal ***
+[hpc077:4072794] Signal: Aborted (6)
+[hpc077:4072794] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072811] *** Process received signal ***
+[hpc077:4072811] Signal: Aborted (6)
+[hpc077:4072811] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072786] *** Process received signal ***
+[hpc077:4072786] Signal: Aborted (6)
+[hpc077:4072786] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072802] *** Process received signal ***
+[hpc077:4072802] Signal: Aborted (6)
+[hpc077:4072802] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072709] *** Process received signal ***
+[hpc077:4072709] Signal: Aborted (6)
+[hpc077:4072709] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072712] *** Process received signal ***
+[hpc077:4072712] Signal: Aborted (6)
+[hpc077:4072712] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072713] *** Process received signal ***
+[hpc077:4072713] Signal: Aborted (6)
+[hpc077:4072713] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072715] *** Process received signal ***
+[hpc077:4072715] Signal: Aborted (6)
+[hpc077:4072715] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072747] *** Process received signal ***
+[hpc077:4072747] Signal: Aborted (6)
+[hpc077:4072747] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072742] *** Process received signal ***
+[hpc077:4072742] Signal: Aborted (6)
+[hpc077:4072742] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072739] *** Process received signal ***
+[hpc077:4072739] Signal: Aborted (6)
+[hpc077:4072739] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072752] *** Process received signal ***
+[hpc077:4072752] Signal: Aborted (6)
+[hpc077:4072752] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072704] *** Process received signal ***
+[hpc077:4072704] Signal: Aborted (6)
+[hpc077:4072704] Signal code:  (-6)
+[hpc077:4072745] *** Process received signal ***
+[hpc077:4072745] Signal: Aborted (6)
+[hpc077:4072745] Signal code:  (-6)
+[hpc077:4072746] *** Process received signal ***
+[hpc077:4072746] Signal: Aborted (6)
+[hpc077:4072746] Signal code:  (-6)
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc077:4072720] *** Process received signal ***
+[hpc077:4072720] Signal: Aborted (6)
+[hpc077:4072720] Signal code:  (-6)
+[hpc077:4072765] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072765] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072765] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072765] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072765] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072765] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072765] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072765] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072765] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072765] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072765] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072765] *** End of error message ***
+[hpc077:4072707] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072707] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072707] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072707] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072707] [ 4] [hpc077:4072727] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072727] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072727] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072727] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072727] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072727] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072727] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072727] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072727] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072727] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072727] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072727] *** End of error message ***
+[hpc077:4072748] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072748] [ 1] [hpc077:4072758] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072758] [ 1] [hpc077:4072781] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072781] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072781] [ 2] [hpc077:4072710] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072710] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072710] [ 2] [hpc077:4072775] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072775] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072775] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072775] [hpc077:4072820] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072820] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072820] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072820] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072820] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072820] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072820] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072820] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072820] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072820] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072820] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072820] *** End of error message ***
+[hpc077:4072798] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072798] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072798] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072798] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072798] [ 4] [hpc077:4072706] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072706] [hpc077:4072822] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072822] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072822] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072822] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072822] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072822] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072822] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072822] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072822] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072822] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072822] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072822] *** End of error message ***
+/lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072707] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072707] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072707] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072707] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072707] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072707] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072707] *** End of error message ***
+[hpc077:4072716] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072716] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072716] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072716] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072716] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072716] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072716] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072716] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072716] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072716] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072716] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072716] *** End of error message ***
+[hpc077:4072742] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072742] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072742] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072742] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072742] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072742] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072742] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072742] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072742] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072742] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072742] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072742] *** End of error message ***
+[hpc077:4072739] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072739] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072739] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072739] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072739] [ 4] [hpc077:4072771] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072771] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072771] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072771] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072771] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072771] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072771] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072771] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072771] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072771] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072771] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072771] *** End of error message ***
+[hpc077:4072704] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072704] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072704] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072704] [ 3] [hpc077:4072721] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072721] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072721] [ 2] [hpc077:4072753] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072753] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072753] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072753] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072753] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072753] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072753] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072753] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072753] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072753] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072753] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072753] *** End of error message ***
+[hpc077:4072718] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072718] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072718] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072718] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072718] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072718] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072718] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072718] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072718] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072718] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072718] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072743] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072743] [ 1] [hpc077:4072725] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072725] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072725] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072725] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072725] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072725] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072725] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072725] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072725] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072725] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072725] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072725] *** End of error message ***
+/lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072748] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072748] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072748] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072748] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072748] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072748] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072748] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072748] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072748] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072748] *** End of error message ***
+[hpc077:4072745] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072745] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072745] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072745] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072745] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072745] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072745] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072745] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+/lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072758] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072758] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072758] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072758] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072758] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072758] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072758] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072758] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072758] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072758] *** End of error message ***
+[hpc077:4072763] [ 0] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072781] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072781] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072781] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072781] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072781] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072781] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072781] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072781] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072781] *** End of error message ***
+[hpc077:4072720] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072720] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072720] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072720] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072720] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072739] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072739] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072739] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072739] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072739] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072739] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072739] *** End of error message ***
+/lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072710] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072710] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072710] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072710] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072710] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072710] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072710] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072710] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072710] *** End of error message ***
+[hpc077:4072794] [ 0] [hpc077:4072811] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072811] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072811] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072811] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072811] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072811] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072811] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072811] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072811] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072811] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072811] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072811] *** End of error message ***
+[hpc077:4072786] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072786] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072786] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072786] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072786] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072786] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072786] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072786] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072786] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072786] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072786] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072786] *** End of error message ***
+[hpc077:4072750] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072750] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072750] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072750] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072750] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072750] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072750] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072750] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072750] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072750] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072750] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072750] *** End of error message ***
+[hpc077:4072752] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072752] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072752] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072752] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072752] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072752] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072752] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072752] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072752] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072752] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072752] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072752] *** End of error message ***
+[ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072775] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072775] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072775] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072775] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072775] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072775] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072775] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072775] *** End of error message ***
+[hpc077:4072802] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072802] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072802] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072802] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072802] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072802] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072802] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072802] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072802] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072802] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072802] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072802] *** End of error message ***
+/lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072798] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072798] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072798] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072798] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072798] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072798] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072798] *** End of error message ***
+[ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072706] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072706] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072706] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072706] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072706] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072706] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072706] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072706] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072706] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072706] *** End of error message ***
+[hpc077:4072731] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072731] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072731] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072731] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072731] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072731] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072731] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072731] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072731] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072731] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072731] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072731] *** End of error message ***
+[hpc077:4072711] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072711] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072711] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072711] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072711] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072711] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072711] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072711] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072711] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072711] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072711] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072711] *** End of error message ***
+[hpc077:4072714] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072714] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072714] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072714] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072714] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072714] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072714] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072714] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072714] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072714] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072714] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072714] *** End of error message ***
+[hpc077:4072808] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072808] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072808] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072808] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072808] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072808] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072808] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072808] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072808] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072808] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072808] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072808] *** End of error message ***
+[hpc077:4072713] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072713] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072713] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072713] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072713] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072713] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072713] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072713] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072713] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072713] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072713] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072713] *** End of error message ***
+[hpc077:4072708] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072708] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072708] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072708] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072708] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072708] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072708] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072708] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072708] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072708] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072708] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072708] *** End of error message ***
+[hpc077:4072746] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072746] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072746] [ 2] [hpc077:4072745] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072745] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072745] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072745] *** End of error message ***
+[hpc077:4072784] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072784] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072784] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072784] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072784] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072784] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072784] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072784] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072784] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072784] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072784] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072784] *** End of error message ***
+/lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072763] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072763] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072763] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072763] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072763] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072763] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072763] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072763] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072763] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072763] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072763] *** End of error message ***
+/lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072794] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072794] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072794] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072794] [hpc077:4072712] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072712] [ 1] [hpc077:4072715] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072715] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072715] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072715] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072715] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072715] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072747] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072747] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072747] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072747] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072747] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072747] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072747] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072747] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072747] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072747] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072747] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072747] *** End of error message ***
+[hpc077:4072717] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072717] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072717] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072717] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072717] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072717] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072717] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072717] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072717] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072717] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072717] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072717] *** End of error message ***
+[hpc077:4072735] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072735] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072735] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072735] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072735] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072735] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072735] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072735] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072735] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072735] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072735] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072735] *** End of error message ***
+/lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072720] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072720] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072720] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072720] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072720] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072720] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072720] *** End of error message ***
+/lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072704] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072704] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072704] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072704] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072704] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072704] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072704] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072704] *** End of error message ***
+/lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072721] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072721] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072721] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072721] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072721] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072721] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072721] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072721] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072721] *** End of error message ***
+[hpc077:4072718] *** End of error message ***
+/lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072743] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072743] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072743] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072743] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072743] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072743] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072743] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072743] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072743] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072743] *** End of error message ***
+[hpc077:4072812] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072812] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072812] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072812] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072812] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072812] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072812] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072812] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072812] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072812] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072812] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072812] *** End of error message ***
+[hpc077:4072719] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072719] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072719] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072719] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072719] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072719] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072719] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072719] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072719] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072719] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072719] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072719] *** End of error message ***
+[hpc077:4072705] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072705] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072705] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072705] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072705] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072705] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072705] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072705] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072705] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072705] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072705] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072705] *** End of error message ***
+[ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072794] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072794] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072794] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072794] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072794] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072794] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072794] *** End of error message ***
+/lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072712] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072712] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072712] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072712] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072712] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072712] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072712] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072712] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072712] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072712] *** End of error message ***
+[hpc077:4072715] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072715] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072715] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072715] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072715] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072715] *** End of error message ***
+[hpc077:4072709] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc077:4072709] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc077:4072709] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072709] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072709] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072709] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072709] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072709] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072709] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072709] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072709] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072709] *** End of error message ***
+/lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc077:4072746] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc077:4072746] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc077:4072746] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc077:4072746] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc077:4072746] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc077:4072746] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc077:4072746] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc077:4072746] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc077:4072746] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 41 with PID 4072794 on node hpc077 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+
+real	128m38.913s
+user	0m20.529s
+sys	13m5.829s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1704238022976784697_c2_a8M_o2k_i100_u40_p26.h5
+Finished with job ID: 14180605
+Submitted batch job 14197854

@@ -1,0 +1,25 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-1-c2_a16M_o2k_i100_u40_p26.h5 on Mon Aug 21 22:26:08 WEST 2023
+*    JOB_NAME                : P3-1-c2_a16M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 12402489
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc075
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 96
+*    SLURM_NTASKS            : 96
+*    SLURM_CPUS_ON_NODE      : 96
+*    SLURM_TASKS_PER_NODE    : 96
+*    SLURM_JOB_CPUS_PER_NODE : 96
+*    SLURM_MEM_PER_CPU       : 4750
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm-files/1st batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm-files/1st batch/P3/P3-1-c2_a16M_o2k_i100_u40_p26.h5.1692653168090688243.sh
+* ----------------------------------------------------------------
+/dev/shm/job12402489/slurm_script: line 40: /dataset-settings.sh: No such file or directory
+/dev/shm/job12402489/slurm_script: line 42: /load-module.sh: No such file or directory
+/dev/shm/job12402489/slurm_script: line 44: /set-partition-run.sh: No such file or directory
+Input dataset not found! [/users3/uaberta/eribeiro/datasets/c2_a16M_o2k_i100_u40_p26.h5]
+Finished with job ID: 12402489

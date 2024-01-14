@@ -1,0 +1,255 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-192-c10_a100k_0500k_u100_i100_p26.h5 on Tue Jan  2 23:14:31 WET 2024
+*    JOB_NAME                : P3-192-c10_a100k_0500k_u100_i100_p26.h5
+*    JOB_ID                  : 14181910
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[066-068,070-072,075-077]
+*    SLURM_NNODES            : 9
+*    SLURM_NPROCS            : 192
+*    SLURM_NTASKS            : 192
+*    SLURM_CPUS_ON_NODE      : 8
+*    SLURM_TASKS_PER_NODE    : 8,48,32,7,15,1,15,11,55
+*    SLURM_JOB_CPUS_PER_NODE : 8,48,32,7,15,1,15,11,55
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/big_dataset
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/big_dataset/P3-192-c10_a100k_0500k_u100_i100_p26.h5.1704062947543995469.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 192 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c10_a100k_0500k_u100_i100_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c10_a100k_0500k_u100_i100_p26.h5'
+Using 192 processes
+
+Initializing MPI RMA: [0.017943s]
+Reading dataset: [20.984596s]
+  Classes = 10 [4 bits]
+  Attributes = 100000 
+  Observations = 500000 
+Sorting dataset: [0.825867s]
+Removing duplicates: [0.519611s]
+  100 duplicate(s) removed
+Setting up JNSQ attributes: [0.009059s]
+  Max JNSQ: 1 [1 bits]
+Sorting dataset by class: [0.764693s]
+Checking classes: [0.004814s]
+  Class 0: 49807 item(s)
+  Class 1: 49873 item(s)
+  Class 2: 49952 item(s)
+  Class 3: 49908 item(s)
+  Class 4: 50087 item(s)
+  Class 5: 50222 item(s)
+  Class 6: 50099 item(s)
+  Class 7: 49905 item(s)
+  Class 8: 49764 item(s)
+  Class 9: 50283 item(s)
+Calculating disjoint matrix lines to generate: [0.000001s]
+  Number of lines in the disjoint matrix: 112454867195
+  Estimated disjoint matrix size: 1309160.05GB
+    Process 0 will manage 512 attributes [0 -> 511]
+    Process 1 will manage 512 attributes [512 -> 1023]
+    Process 2 will manage 512 attributes [1024 -> 1535]
+    Process 3 will manage 512 attributes [1536 -> 2047]
+    Process 4 will manage 512 attributes [2048 -> 2559]
+    Process 5 will manage 512 attributes [2560 -> 3071]
+    Process 6 will manage 512 attributes [3072 -> 3583]
+    Process 7 will manage 512 attributes [3584 -> 4095]
+    Process 8 will manage 512 attributes [4096 -> 4607]
+    Process 9 will manage 512 attributes [4608 -> 5119]
+    Process 10 will manage 512 attributes [5120 -> 5631]
+    Process 11 will manage 512 attributes [5632 -> 6143]
+    Process 12 will manage 512 attributes [6144 -> 6655]
+    Process 13 will manage 512 attributes [6656 -> 7167]
+    Process 14 will manage 512 attributes [7168 -> 7679]
+    Process 15 will manage 512 attributes [7680 -> 8191]
+    Process 16 will manage 512 attributes [8192 -> 8703]
+    Process 17 will manage 512 attributes [8704 -> 9215]
+    Process 18 will manage 512 attributes [9216 -> 9727]
+    Process 19 will manage 512 attributes [9728 -> 10239]
+    Process 20 will manage 512 attributes [10240 -> 10751]
+    Process 21 will manage 512 attributes [10752 -> 11263]
+    Process 22 will manage 512 attributes [11264 -> 11775]
+    Process 23 will manage 512 attributes [11776 -> 12287]
+    Process 24 will manage 512 attributes [12288 -> 12799]
+    Process 25 will manage 512 attributes [12800 -> 13311]
+    Process 26 will manage 512 attributes [13312 -> 13823]
+    Process 27 will manage 512 attributes [13824 -> 14335]
+    Process 28 will manage 512 attributes [14336 -> 14847]
+    Process 29 will manage 512 attributes [14848 -> 15359]
+    Process 30 will manage 512 attributes [15360 -> 15871]
+    Process 31 will manage 512 attributes [15872 -> 16383]
+    Process 32 will manage 512 attributes [16384 -> 16895]
+    Process 33 will manage 512 attributes [16896 -> 17407]
+    Process 34 will manage 512 attributes [17408 -> 17919]
+    Process 35 will manage 512 attributes [17920 -> 18431]
+    Process 36 will manage 512 attributes [18432 -> 18943]
+    Process 37 will manage 512 attributes [18944 -> 19455]
+    Process 38 will manage 512 attributes [19456 -> 19967]
+    Process 39 will manage 512 attributes [19968 -> 20479]
+    Process 40 will manage 512 attributes [20480 -> 20991]
+    Process 41 will manage 512 attributes [20992 -> 21503]
+    Process 42 will manage 512 attributes [21504 -> 22015]
+    Process 43 will manage 512 attributes [22016 -> 22527]
+    Process 44 will manage 512 attributes [22528 -> 23039]
+    Process 45 will manage 512 attributes [23040 -> 23551]
+    Process 46 will manage 512 attributes [23552 -> 24063]
+    Process 47 will manage 1024 attributes [24064 -> 25087]
+    Process 48 will manage 512 attributes [25088 -> 25599]
+    Process 49 will manage 512 attributes [25600 -> 26111]
+    Process 50 will manage 512 attributes [26112 -> 26623]
+    Process 51 will manage 512 attributes [26624 -> 27135]
+    Process 52 will manage 512 attributes [27136 -> 27647]
+    Process 53 will manage 512 attributes [27648 -> 28159]
+    Process 54 will manage 512 attributes [28160 -> 28671]
+    Process 55 will manage 512 attributes [28672 -> 29183]
+    Process 56 will manage 512 attributes [29184 -> 29695]
+    Process 57 will manage 512 attributes [29696 -> 30207]
+    Process 58 will manage 512 attributes [30208 -> 30719]
+    Process 59 will manage 512 attributes [30720 -> 31231]
+    Process 60 will manage 512 attributes [31232 -> 31743]
+    Process 61 will manage 512 attributes [31744 -> 32255]
+    Process 62 will manage 512 attributes [32256 -> 32767]
+    Process 63 will manage 512 attributes [32768 -> 33279]
+    Process 64 will manage 512 attributes [33280 -> 33791]
+    Process 65 will manage 512 attributes [33792 -> 34303]
+    Process 66 will manage 512 attributes [34304 -> 34815]
+    Process 67 will manage 512 attributes [34816 -> 35327]
+    Process 68 will manage 512 attributes [35328 -> 35839]
+    Process 69 will manage 512 attributes [35840 -> 36351]
+    Process 70 will manage 512 attributes [36352 -> 36863]
+    Process 71 will manage 512 attributes [36864 -> 37375]
+    Process 72 will manage 512 attributes [37376 -> 37887]
+    Process 73 will manage 512 attributes [37888 -> 38399]
+    Process 74 will manage 512 attributes [38400 -> 38911]
+    Process 75 will manage 512 attributes [38912 -> 39423]
+    Process 76 will manage 512 attributes [39424 -> 39935]
+    Process 77 will manage 512 attributes [39936 -> 40447]
+    Process 78 will manage 512 attributes [40448 -> 40959]
+    Process 79 will manage 512 attributes [40960 -> 41471]
+    Process 80 will manage 512 attributes [41472 -> 41983]
+    Process 81 will manage 512 attributes [41984 -> 42495]
+    Process 82 will manage 512 attributes [42496 -> 43007]
+    Process 83 will manage 512 attributes [43008 -> 43519]
+    Process 84 will manage 512 attributes [43520 -> 44031]
+    Process 85 will manage 512 attributes [44032 -> 44543]
+    Process 86 will manage 512 attributes [44544 -> 45055]
+    Process 87 will manage 512 attributes [45056 -> 45567]
+    Process 88 will manage 512 attributes [45568 -> 46079]
+    Process 89 will manage 512 attributes [46080 -> 46591]
+    Process 90 will manage 512 attributes [46592 -> 47103]
+    Process 91 will manage 512 attributes [47104 -> 47615]
+    Process 92 will manage 512 attributes [47616 -> 48127]
+    Process 93 will manage 512 attributes [48128 -> 48639]
+    Process 94 will manage 512 attributes [48640 -> 49151]
+    Process 95 will manage 1024 attributes [49152 -> 50175]
+    Process 96 will manage 512 attributes [50176 -> 50687]
+    Process 97 will manage 512 attributes [50688 -> 51199]
+    Process 98 will manage 512 attributes [51200 -> 51711]
+    Process 99 will manage 512 attributes [51712 -> 52223]
+    Process 100 will manage 512 attributes [52224 -> 52735]
+    Process 101 will manage 512 attributes [52736 -> 53247]
+    Process 102 will manage 512 attributes [53248 -> 53759]
+    Process 103 will manage 512 attributes [53760 -> 54271]
+    Process 104 will manage 512 attributes [54272 -> 54783]
+    Process 105 will manage 512 attributes [54784 -> 55295]
+    Process 106 will manage 512 attributes [55296 -> 55807]
+    Process 107 will manage 512 attributes [55808 -> 56319]
+    Process 108 will manage 512 attributes [56320 -> 56831]
+    Process 109 will manage 512 attributes [56832 -> 57343]
+    Process 110 will manage 512 attributes [57344 -> 57855]
+    Process 111 will manage 512 attributes [57856 -> 58367]
+    Process 112 will manage 512 attributes [58368 -> 58879]
+    Process 113 will manage 512 attributes [58880 -> 59391]
+    Process 114 will manage 512 attributes [59392 -> 59903]
+    Process 115 will manage 512 attributes [59904 -> 60415]
+    Process 116 will manage 512 attributes [60416 -> 60927]
+    Process 117 will manage 512 attributes [60928 -> 61439]
+    Process 118 will manage 512 attributes [61440 -> 61951]
+    Process 119 will manage 512 attributes [61952 -> 62463]
+    Process 120 will manage 512 attributes [62464 -> 62975]
+    Process 121 will manage 512 attributes [62976 -> 63487]
+    Process 122 will manage 512 attributes [63488 -> 63999]
+    Process 123 will manage 512 attributes [64000 -> 64511]
+    Process 124 will manage 512 attributes [64512 -> 65023]
+    Process 125 will manage 512 attributes [65024 -> 65535]
+    Process 126 will manage 512 attributes [65536 -> 66047]
+    Process 127 will manage 512 attributes [66048 -> 66559]
+    Process 128 will manage 512 attributes [66560 -> 67071]
+    Process 129 will manage 512 attributes [67072 -> 67583]
+    Process 130 will manage 512 attributes [67584 -> 68095]
+    Process 131 will manage 512 attributes [68096 -> 68607]
+    Process 132 will manage 512 attributes [68608 -> 69119]
+    Process 133 will manage 512 attributes [69120 -> 69631]
+    Process 134 will manage 512 attributes [69632 -> 70143]
+    Process 135 will manage 512 attributes [70144 -> 70655]
+    Process 136 will manage 512 attributes [70656 -> 71167]
+    Process 137 will manage 512 attributes [71168 -> 71679]
+    Process 138 will manage 512 attributes [71680 -> 72191]
+    Process 139 will manage 512 attributes [72192 -> 72703]
+    Process 140 will manage 512 attributes [72704 -> 73215]
+    Process 141 will manage 512 attributes [73216 -> 73727]
+    Process 142 will manage 512 attributes [73728 -> 74239]
+    Process 143 will manage 1024 attributes [74240 -> 75263]
+    Process 144 will manage 512 attributes [75264 -> 75775]
+    Process 145 will manage 512 attributes [75776 -> 76287]
+    Process 146 will manage 512 attributes [76288 -> 76799]
+    Process 147 will manage 512 attributes [76800 -> 77311]
+    Process 148 will manage 512 attributes [77312 -> 77823]
+    Process 149 will manage 512 attributes [77824 -> 78335]
+    Process 150 will manage 512 attributes [78336 -> 78847]
+    Process 151 will manage 512 attributes [78848 -> 79359]
+    Process 152 will manage 512 attributes [79360 -> 79871]
+    Process 153 will manage 512 attributes [79872 -> 80383]
+    Process 154 will manage 512 attributes [80384 -> 80895]
+    Process 155 will manage 512 attributes [80896 -> 81407]
+    Process 156 will manage 512 attributes [81408 -> 81919]
+    Process 157 will manage 512 attributes [81920 -> 82431]
+    Process 158 will manage 512 attributes [82432 -> 82943]
+    Process 159 will manage 512 attributes [82944 -> 83455]
+    Process 160 will manage 512 attributes [83456 -> 83967]
+    Process 161 will manage 512 attributes [83968 -> 84479]
+    Process 162 will manage 512 attributes [84480 -> 84991]
+    Process 163 will manage 512 attributes [84992 -> 85503]
+    Process 164 will manage 512 attributes [85504 -> 86015]
+    Process 165 will manage 512 attributes [86016 -> 86527]
+    Process 166 will manage 512 attributes [86528 -> 87039]
+    Process 167 will manage 512 attributes [87040 -> 87551]
+    Process 168 will manage 512 attributes [87552 -> 88063]
+    Process 169 will manage 512 attributes [88064 -> 88575]
+    Process 170 will manage 512 attributes [88576 -> 89087]
+    Process 171 will manage 512 attributes [89088 -> 89599]
+    Process 172 will manage 512 attributes [89600 -> 90111]
+    Process 173 will manage 512 attributes [90112 -> 90623]
+    Process 174 will manage 512 attributes [90624 -> 91135]
+    Process 175 will manage 512 attributes [91136 -> 91647]
+    Process 176 will manage 512 attributes [91648 -> 92159]
+    Process 177 will manage 512 attributes [92160 -> 92671]
+    Process 178 will manage 512 attributes [92672 -> 93183]
+    Process 179 will manage 512 attributes [93184 -> 93695]
+    Process 180 will manage 512 attributes [93696 -> 94207]
+    Process 181 will manage 512 attributes [94208 -> 94719]
+    Process 182 will manage 512 attributes [94720 -> 95231]
+    Process 183 will manage 512 attributes [95232 -> 95743]
+    Process 184 will manage 512 attributes [95744 -> 96255]
+    Process 185 will manage 512 attributes [96256 -> 96767]
+    Process 186 will manage 512 attributes [96768 -> 97279]
+    Process 187 will manage 512 attributes [97280 -> 97791]
+    Process 188 will manage 512 attributes [97792 -> 98303]
+    Process 189 will manage 512 attributes [98304 -> 98815]
+    Process 190 will manage 512 attributes [98816 -> 99327]
+    Process 191 will manage 674 attributes [99328 -> 100001]
+Applying set covering algorithm:
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 110 with PID 2590291 on node hpc072 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+
+real	3m3.937s
+user	21m58.847s
+sys	1m40.613s
+Finished with job ID: 14181910

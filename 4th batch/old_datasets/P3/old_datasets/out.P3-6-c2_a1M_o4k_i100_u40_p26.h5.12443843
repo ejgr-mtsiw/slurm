@@ -1,0 +1,86 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-6-c2_a1M_o4k_i100_u40_p26.h5 on Wed Aug 30 21:16:53 WEST 2023
+*    JOB_NAME                : P3-6-c2_a1M_o4k_i100_u40_p26.h5
+*    JOB_ID                  : 12443843
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc079
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 6
+*    SLURM_NTASKS            : 6
+*    SLURM_CPUS_ON_NODE      : 6
+*    SLURM_TASKS_PER_NODE    : 6
+*    SLURM_JOB_CPUS_PER_NODE : 6
+*    SLURM_MEM_PER_CPU       : 8000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm-files/4th batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm-files/4th batch/P3/P3-6-c2_a1M_o4k_i100_u40_p26.h5.1693413804733639516.sh
+* ----------------------------------------------------------------
+/dev/shm/job12443843/slurm_script: line 39: /dataset-settings.sh: No such file or directory
+/dev/shm/job12443843/slurm_script: line 41: /load-module.sh: No such file or directory
+/dev/shm/job12443843/slurm_script: line 43: /set-partition-run.sh: No such file or directory
+=== Running ===
+mpiexec -np 6 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o4k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o4k_i100_u40_p26.h5'
+Using 6 processes
+
+Initializing MPI RMA: [0.002507s]
+Reading dataset: [0.281212s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 4000 
+Sorting dataset: [0.056262s]
+Removing duplicates: [0.053413s]
+  42 duplicate(s) removed
+Checking classes: [0.000229s]
+  Class 0: 1965 item(s)
+  Class 1: 1993 item(s)
+Setting up JNSQ attributes: [0.004610s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 3916245
+  Estimated disjoint matrix size: 455.91GB
+    Process 0 will manage 166656 attributes [0 -> 166655]
+    Process 1 will manage 166656 attributes [166656 -> 333311]
+    Process 2 will manage 166720 attributes [333312 -> 500031]
+    Process 3 will manage 166656 attributes [500032 -> 666687]
+    Process 4 will manage 166656 attributes [666688 -> 833343]
+    Process 5 will manage 166720 attributes [833344 -> 1000063]
+Applying set covering algorithm:
+  Selected attribute #32, covers 1568310 lines [146.435944s]
+  Selected attribute #61, covers 935071 lines [62.682961s]
+  Selected attribute #19, covers 566151 lines [37.331253s]
+  Selected attribute #6, covers 333650 lines [22.606342s]
+  Selected attribute #7, covers 203672 lines [13.292975s]
+  Selected attribute #59, covers 122602 lines [8.098649s]
+  Selected attribute #45, covers 73876 lines [4.913926s]
+  Selected attribute #5, covers 45022 lines [2.955483s]
+  Selected attribute #60, covers 27074 lines [1.831263s]
+  Selected attribute #47, covers 16391 lines [1.086442s]
+  Selected attribute #21, covers 9760 lines [0.680826s]
+  Selected attribute #15, covers 5896 lines [0.407335s]
+  Selected attribute #51, covers 3631 lines [0.246122s]
+  Selected attribute #18, covers 2029 lines [0.160013s]
+  Selected attribute #41, covers 1226 lines [0.096586s]
+  Selected attribute #31, covers 745 lines [0.064960s]
+  Selected attribute #25, covers 431 lines [0.047014s]
+  Selected attribute #9, covers 262 lines [0.032972s]
+  Selected attribute #16, covers 152 lines [0.026785s]
+  Selected attribute #1000000, covers 99 lines [0.021568s]
+  Selected attribute #8, covers 87 lines [0.019731s]
+  Selected attribute #49, covers 52 lines [0.020791s]
+  Selected attribute #10, covers 30 lines [0.016731s]
+  Selected attribute #29, covers 17 lines [0.017039s]
+  Selected attribute #17, covers 6 lines [0.015646s]
+  Selected attribute #35, covers 3 lines [0.014883s]
+Solution: { 5 6 7 8 9 10 15 16 17 18 19 21 25 29 31 32 35 41 45 47 49 51 59 60 61 1000000 }
+Solution has 26 attributes: 26 / 1000001 = 0.0026%
+
+All done! [303.591278s]
+
+real	5m4.381s
+user	30m14.418s
+sys	0m2.346s
+Finished with job ID: 12443843

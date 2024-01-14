@@ -1,0 +1,63 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P2-1-c2_a4M_o2k_i100_u40_p26.h5 on Sat Dec  2 01:50:02 WET 2023
+*    JOB_NAME                : P2-1-c2_a4M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 13601688
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc068
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 1
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 1
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : hpc068.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/1st batch/P2
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/1st batch/P2/P2-1-c2_a4M_o2k_i100_u40_p26.h5.1692456179254447517.sh
+* ----------------------------------------------------------------
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a4M_o2k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1701481803725173380_c2_a4M_o2k_i100_u40_p26.h5
+=== Running ===
+mpiexec -np 1 /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1701481803725173380_c2_a4M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1701481803725173380_c2_a4M_o2k_i100_u40_p26.h5'
+Using 1 processes
+
+Disjoint matrix dataset not found.
+
+Initializing MPI RMA: [0s]
+Reading dataset: [0s]
+  Classes = 2 [1 bits]
+  Attributes = 4000000 
+  Observations = 2000 
+Sorting dataset: [0s]
+Removing duplicates: [0s]
+  43 duplicate(s) removed
+Checking classes: [0s]
+  Class 0: 984 item(s)
+  Class 1: 973 item(s)
+Setting up JNSQ attributes: [0s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0s]
+  Number of lines in the disjoint matrix: 957432
+    Process 0 will generate 957432 lines [0 -> 957431]
+Building disjoint matrix:
+  Estimated disjoint matrix size: 445.84GB (x2)
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 0 with PID 118007 on node hpc068 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+
+real	0m22.487s
+user	0m1.429s
+sys	0m17.947s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1701481803725173380_c2_a4M_o2k_i100_u40_p26.h5
+Finished with job ID: 13601688
+Submitted batch job 13601689
+slurmstepd: error: Detected 1 oom_kill event in StepId=13601688.batch. Some of the step tasks have been OOM Killed.

@@ -17,9 +17,9 @@
 
 source "../base/base.sh"
 
-processes=(2 3 6 12 24 48 96 192)
+processes=(192 96 48 24 12 6 3 2)
 
-datasets=(c2_a1M_o1k_i100_u40_p26.h5 c2_a1M_o2k_i100_u40_p26.h5 c2_a1M_o4k_i100_u40_p26.h5 c2_a1M_o8k_i100_u40_p26.h5 c2_a1M_o16k_i100_u40_p26.h5)
+datasets=(c2_a1M_o1k_i100_u40_p26.h5 c2_a1M_o2k_i100_u40_p26.h5 c2_a1M_o4k_i100_u40_p26.h5 c2_a1M_o8k_i100_u40_p26.h5 c2_a1M_o16k_i100_u40_p26.h5 p.cavique_c2_a1000000_o2000_novo.h5)
 
 #P3:
 mkdir -p P3

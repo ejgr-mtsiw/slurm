@@ -1,0 +1,84 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-6-c2_a1M_o2k_i100_u40_p26.h5 on Wed Aug 30 21:16:22 WEST 2023
+*    JOB_NAME                : P3-6-c2_a1M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 12443842
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[078-079]
+*    SLURM_NNODES            : 2
+*    SLURM_NPROCS            : 6
+*    SLURM_NTASKS            : 6
+*    SLURM_CPUS_ON_NODE      : 4
+*    SLURM_TASKS_PER_NODE    : 4,2
+*    SLURM_JOB_CPUS_PER_NODE : 4,2
+*    SLURM_MEM_PER_CPU       : 8000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm-files/4th batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm-files/4th batch/P3/P3-6-c2_a1M_o2k_i100_u40_p26.h5.1693413804686627639.sh
+* ----------------------------------------------------------------
+/dev/shm/job12443842/slurm_script: line 39: /dataset-settings.sh: No such file or directory
+/dev/shm/job12443842/slurm_script: line 41: /load-module.sh: No such file or directory
+/dev/shm/job12443842/slurm_script: line 43: /set-partition-run.sh: No such file or directory
+=== Running ===
+mpiexec -np 6 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o2k_i100_u40_p26.h5'
+Using 6 processes
+
+Initializing MPI RMA: [0.002721s]
+Reading dataset: [0.147444s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 2000 
+Sorting dataset: [0.025059s]
+Removing duplicates: [0.026740s]
+  42 duplicate(s) removed
+Checking classes: [0.000101s]
+  Class 0: 964 item(s)
+  Class 1: 994 item(s)
+Setting up JNSQ attributes: [0.001350s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 958216
+  Estimated disjoint matrix size: 111.55GB
+    Process 0 will manage 166656 attributes [0 -> 166655]
+    Process 1 will manage 166656 attributes [166656 -> 333311]
+    Process 2 will manage 166720 attributes [333312 -> 500031]
+    Process 3 will manage 166656 attributes [500032 -> 666687]
+    Process 4 will manage 166656 attributes [666688 -> 833343]
+    Process 5 will manage 166720 attributes [833344 -> 1000063]
+Applying set covering algorithm:
+  Selected attribute #9, covers 391340 lines [43.014675s]
+  Selected attribute #55, covers 228534 lines [17.916809s]
+  Selected attribute #20, covers 136212 lines [10.491892s]
+  Selected attribute #51, covers 81674 lines [6.279238s]
+  Selected attribute #22, covers 48952 lines [3.748782s]
+  Selected attribute #45, covers 29207 lines [2.248591s]
+  Selected attribute #0, covers 17154 lines [1.346210s]
+  Selected attribute #3, covers 10160 lines [0.792035s]
+  Selected attribute #42, covers 6148 lines [0.466386s]
+  Selected attribute #17, covers 3592 lines [0.287577s]
+  Selected attribute #13, covers 2094 lines [0.168227s]
+  Selected attribute #2, covers 1262 lines [0.097307s]
+  Selected attribute #56, covers 737 lines [0.060394s]
+  Selected attribute #50, covers 434 lines [0.037171s]
+  Selected attribute #7, covers 265 lines [0.023671s]
+  Selected attribute #14, covers 157 lines [0.014586s]
+  Selected attribute #1000000, covers 105 lines [0.010037s]
+  Selected attribute #11, covers 85 lines [0.008026s]
+  Selected attribute #54, covers 50 lines [0.007050s]
+  Selected attribute #25, covers 27 lines [0.005117s]
+  Selected attribute #26, covers 16 lines [0.004154s]
+  Selected attribute #12, covers 7 lines [0.003339s]
+  Selected attribute #5, covers 3 lines [0.003051s]
+  Selected attribute #6, covers 1 lines [0.003039s]
+Solution: { 0 2 3 5 6 7 9 11 12 13 14 17 20 22 25 26 42 45 50 51 54 55 56 1000000 }
+Solution has 24 attributes: 24 / 1000001 = 0.0024%
+
+All done! [87.270302s]
+
+real	1m28.279s
+user	5m42.612s
+sys	0m6.285s
+Finished with job ID: 12443842

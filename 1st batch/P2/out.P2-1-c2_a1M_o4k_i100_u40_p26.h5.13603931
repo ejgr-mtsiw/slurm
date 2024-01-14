@@ -1,0 +1,51 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P2-1-c2_a1M_o4k_i100_u40_p26.h5 on Sat Dec  2 18:37:07 WET 2023
+*    JOB_NAME                : P2-1-c2_a1M_o4k_i100_u40_p26.h5
+*    JOB_ID                  : 13603931
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc079
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 1
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 1
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : hpc079.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/1st batch/P2
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/1st batch/P2/P2-1-c2_a1M_o4k_i100_u40_p26.h5.1692308682027216551.sh
+* ----------------------------------------------------------------
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a1M_o4k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1701542228673513422_c2_a1M_o4k_i100_u40_p26.h5
+=== Running ===
+mpiexec -np 1 /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1701542228673513422_c2_a1M_o4k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1701542228673513422_c2_a1M_o4k_i100_u40_p26.h5'
+Using 1 processes
+
+Disjoint matrix dataset not found.
+
+Initializing MPI RMA: [0s]
+Reading dataset: [0s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 4000 
+Sorting dataset: [0s]
+Removing duplicates: [0s]
+  40 duplicate(s) removed
+Checking classes: [0s]
+  Class 0: 1970 item(s)
+  Class 1: 1990 item(s)
+Setting up JNSQ attributes: [0s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0s]
+  Number of lines in the disjoint matrix: 3920300
+    Process 0 will generate 3920300 lines [0 -> 3920299]
+Building disjoint matrix:
+  Estimated disjoint matrix size: 456.38GB (x2)
+  Line dataset done: [30s]
+slurmstepd: error: *** JOB 13603931 ON hpc079 CANCELLED AT 2023-12-02T18:40:46 ***
+srun: error: Slurm job 13603931 has expired
+srun: Check SLURM_JOB_ID environment variable. Expired or invalid job 13603931

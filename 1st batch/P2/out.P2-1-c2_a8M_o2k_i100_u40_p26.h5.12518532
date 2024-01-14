@@ -1,0 +1,134 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P2-1-c2_a8M_o2k_i100_u40_p26.h5 on Wed Sep 13 11:06:42 WEST 2023
+*    JOB_NAME                : P2-1-c2_a8M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 12518532
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc069
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 1
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 1
+*    SLURM_MEM_PER_CPU       : 8000
+*    SUBMIT_HOST             : hpc066.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/1st batch/P2
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/1st batch/P2/P2-1-c2_a8M_o2k_i100_u40_p26.h5.1692456179368512552.sh
+* ----------------------------------------------------------------
+/dev/shm/job12518532/slurm_script: line 40: /dataset-settings.sh: No such file or directory
+/dev/shm/job12518532/slurm_script: line 42: /load-module.sh: No such file or directory
+/dev/shm/job12518532/slurm_script: line 44: /set-partition-run.sh: No such file or directory
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1694599602951533693_c2_a8M_o2k_i100_u40_p26.h5
+=== Running ===
+mpiexec -np 1 /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1694599602951533693_c2_a8M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1694599602951533693_c2_a8M_o2k_i100_u40_p26.h5'
+Using 1 processes
+
+Disjoint matrix dataset not found.
+
+Initializing MPI RMA: [0.000075s]
+Reading dataset: [0.295497s]
+  Classes = 2 [1 bits]
+  Attributes = 8000000 
+  Observations = 2000 
+Sorting dataset: [0.126329s]
+Removing duplicates: [0.141153s]
+  42 duplicate(s) removed
+Checking classes: [0.000220s]
+  Class 0: 972 item(s)
+  Class 1: 986 item(s)
+Setting up JNSQ attributes: [0.005711s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.002115s]
+  Number of lines in the disjoint matrix: 958392
+    Process 0 will generate 958392 lines [0 -> 958391]
+Building disjoint matrix:
+  Estimated disjoint matrix size: 892.57GB (x2)
+  Line dataset done: [1641.567017s]
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+HDF5-DIAG: Error detected in HDF5 (1.14.0) MPI-process 0:
+  #000: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1390 in H5Dwrite(): can't synchronously write data
+    major: Dataset
+    minor: Write failed
+  #001: /tmp/hdf5/hdf5-1.14.0/src/H5D.c line 1333 in H5D__write_api_common(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2282 in H5VL_dataset_write_direct(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #003: /tmp/hdf5/hdf5-1.14.0/src/H5VLcallback.c line 2237 in H5VL__dataset_write(): dataset write failed
+    major: Virtual Object Layer
+    minor: Write failed
+  #004: /tmp/hdf5/hdf5-1.14.0/src/H5VLnative_dataset.c line 408 in H5VL__native_dataset_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #005: /tmp/hdf5/hdf5-1.14.0/src/H5Dio.c line 739 in H5D__write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #006: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 921 in H5D__contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #007: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 493 in H5D__select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #008: /tmp/hdf5/hdf5-1.14.0/src/H5Dselect.c line 230 in H5D__select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #009: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1544 in H5D__contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #010: /tmp/hdf5/hdf5-1.14.0/src/H5VM.c line 1400 in H5VM_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #011: /tmp/hdf5/hdf5-1.14.0/src/H5Dcontig.c line 1473 in H5D__contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #012: /tmp/hdf5/hdf5-1.14.0/src/H5Fio.c line 190 in H5F_shared_block_write(): write through page buffer failed
+    major: Low-level I/O
+    minor: Write failed
+  #013: /tmp/hdf5/hdf5-1.14.0/src/H5PB.c line 1017 in H5PB_write(): write through metadata accumulator failed
+    major: Page Buffering
+    minor: Write failed
+  #014: /tmp/hdf5/hdf5-1.14.0/src/H5Faccum.c line 832 in H5F__accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #015: /tmp/hdf5/hdf5-1.14.0/src/H5FDint.c line 306 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #016: /tmp/hdf5/hdf5-1.14.0/src/H5FDmpio.c line 1710 in H5FD__mpio_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+laid-hdf5-mpi: src/dataset_hdf5_mpi.c:155: write_to_hdf5_dataset: Assertion `err != NOK' failed.
+[hpc069:104372] *** Process received signal ***
+[hpc069:104372] Signal: Aborted (6)
+[hpc069:104372] Signal code:  (-6)
+[hpc069:104372] [ 0] /lib64/libc.so.6(+0x4eb80)[0x155554298b80]
+[hpc069:104372] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155554298aff]
+[hpc069:104372] [ 2] /lib64/libc.so.6(abort+0x127)[0x15555426bea5]
+[hpc069:104372] [ 3] /lib64/libc.so.6(+0x21d79)[0x15555426bd79]
+[hpc069:104372] [ 4] /lib64/libc.so.6(+0x47456)[0x155554291456]
+[hpc069:104372] [ 5] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405cb7]
+[hpc069:104372] [ 6] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x405ff3]
+[hpc069:104372] [ 7] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4042bd]
+[hpc069:104372] [ 8] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x4021c4]
+[hpc069:104372] [ 9] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155554284d85]
+[hpc069:104372] [10] /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi[0x40317e]
+[hpc069:104372] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 0 with PID 104372 on node hpc069 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+
+real	37m4.467s
+user	5m56.278s
+sys	18m59.407s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1694599602951533693_c2_a8M_o2k_i100_u40_p26.h5
+Finished with job ID: 12518532

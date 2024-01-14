@@ -1,0 +1,126 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P4-48-c2_a1M_o16k_i100_u40_p26.h5 on Sat Dec 16 22:13:17 WET 2023
+*    JOB_NAME                : P4-48-c2_a1M_o16k_i100_u40_p26.h5
+*    JOB_ID                  : 14083904
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc068
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 48
+*    SLURM_NTASKS            : 48
+*    SLURM_CPUS_ON_NODE      : 48
+*    SLURM_TASKS_PER_NODE    : 48
+*    SLURM_JOB_CPUS_PER_NODE : 48
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P4
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P4/P4-48-c2_a1M_o16k_i100_u40_p26.h5.1702759099629628254.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 48 /users3/uaberta/eribeiro/laid-by-lines/bin/laid-by-lines -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o16k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o16k_i100_u40_p26.h5'
+Using 48 processes
+
+Initializing MPI Shared Dataset: [0.009140s]
+Reading dataset: [3.797195s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 16000 
+Sorting dataset: [0.131243s]
+Removing duplicates: [0.123821s]
+  41 duplicate(s) removed
+Checking classes: [0.000592s]
+  Class 0: 7987 item(s)
+  Class 1: 7972 item(s)
+Setting up JNSQ attributes: [0.001888s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Estimated disjoint matrix size: 7412.45GB
+  Number of lines in the disjoint matrix: 63672364
+    Process 0 will generate 1326507 lines [0 -> 1326506]
+    Process 1 will generate 1326508 lines [1326507 -> 2653014]
+    Process 2 will generate 1326507 lines [2653015 -> 3979521]
+    Process 3 will generate 1326508 lines [3979522 -> 5306029]
+    Process 4 will generate 1326507 lines [5306030 -> 6632536]
+    Process 5 will generate 1326508 lines [6632537 -> 7959044]
+    Process 6 will generate 1326508 lines [7959045 -> 9285552]
+    Process 7 will generate 1326507 lines [9285553 -> 10612059]
+    Process 8 will generate 1326508 lines [10612060 -> 11938567]
+    Process 9 will generate 1326507 lines [11938568 -> 13265074]
+    Process 10 will generate 1326508 lines [13265075 -> 14591582]
+    Process 11 will generate 1326508 lines [14591583 -> 15918090]
+    Process 12 will generate 1326507 lines [15918091 -> 17244597]
+    Process 13 will generate 1326508 lines [17244598 -> 18571105]
+    Process 14 will generate 1326507 lines [18571106 -> 19897612]
+    Process 15 will generate 1326508 lines [19897613 -> 21224120]
+    Process 16 will generate 1326507 lines [21224121 -> 22550627]
+    Process 17 will generate 1326508 lines [22550628 -> 23877135]
+    Process 18 will generate 1326508 lines [23877136 -> 25203643]
+    Process 19 will generate 1326507 lines [25203644 -> 26530150]
+    Process 20 will generate 1326508 lines [26530151 -> 27856658]
+    Process 21 will generate 1326507 lines [27856659 -> 29183165]
+    Process 22 will generate 1326508 lines [29183166 -> 30509673]
+    Process 23 will generate 1326508 lines [30509674 -> 31836181]
+    Process 24 will generate 1326507 lines [31836182 -> 33162688]
+    Process 25 will generate 1326508 lines [33162689 -> 34489196]
+    Process 26 will generate 1326507 lines [34489197 -> 35815703]
+    Process 27 will generate 1326508 lines [35815704 -> 37142211]
+    Process 28 will generate 1326507 lines [37142212 -> 38468718]
+    Process 29 will generate 1326508 lines [38468719 -> 39795226]
+    Process 30 will generate 1326508 lines [39795227 -> 41121734]
+    Process 31 will generate 1326507 lines [41121735 -> 42448241]
+    Process 32 will generate 1326508 lines [42448242 -> 43774749]
+    Process 33 will generate 1326507 lines [43774750 -> 45101256]
+    Process 34 will generate 1326508 lines [45101257 -> 46427764]
+    Process 35 will generate 1326508 lines [46427765 -> 47754272]
+    Process 36 will generate 1326507 lines [47754273 -> 49080779]
+    Process 37 will generate 1326508 lines [49080780 -> 50407287]
+    Process 38 will generate 1326507 lines [50407288 -> 51733794]
+    Process 39 will generate 1326508 lines [51733795 -> 53060302]
+    Process 40 will generate 1326507 lines [53060303 -> 54386809]
+    Process 41 will generate 1326508 lines [54386810 -> 55713317]
+    Process 42 will generate 1326508 lines [55713318 -> 57039825]
+    Process 43 will generate 1326507 lines [57039826 -> 58366332]
+    Process 44 will generate 1326508 lines [58366333 -> 59692840]
+    Process 45 will generate 1326507 lines [59692841 -> 61019347]
+    Process 46 will generate 1326508 lines [61019348 -> 62345855]
+    Process 47 will generate 1326508 lines [62345856 -> 63672363]
+Applying set covering algorithm:
+  Selected attribute #318038, covers 25514917 lines [283.559570s]
+  Selected attribute #578765, covers 15302679 lines [134.750473s]
+  Selected attribute #482750, covers 9179760 lines [83.957664s]
+  Selected attribute #36952, covers 5497407 lines [53.681194s]
+  Selected attribute #681453, covers 3306923 lines [32.053165s]
+  Selected attribute #193185, covers 1969348 lines [20.309700s]
+  Selected attribute #952972, covers 1175441 lines [13.612741s]
+  Selected attribute #116566, covers 700698 lines [9.109394s]
+  Selected attribute #825456, covers 416754 lines [6.954866s]
+  Selected attribute #597510, covers 247308 lines [5.638338s]
+  Selected attribute #156033, covers 147019 lines [4.383077s]
+  Selected attribute #490539, covers 87336 lines [3.799941s]
+  Selected attribute #470420, covers 51789 lines [3.426779s]
+  Selected attribute #151223, covers 30792 lines [3.156168s]
+  Selected attribute #519370, covers 18112 lines [3.042594s]
+  Selected attribute #54901, covers 10808 lines [2.980499s]
+  Selected attribute #242101, covers 6346 lines [2.937459s]
+  Selected attribute #653390, covers 3727 lines [2.912380s]
+  Selected attribute #370039, covers 2205 lines [3.047868s]
+  Selected attribute #802689, covers 1269 lines [3.036801s]
+  Selected attribute #690142, covers 734 lines [3.037373s]
+  Selected attribute #104133, covers 417 lines [3.023696s]
+  Selected attribute #533669, covers 241 lines [3.026010s]
+  Selected attribute #351042, covers 130 lines [3.021354s]
+  Selected attribute #1000000, covers 100 lines [3.012193s]
+  Selected attribute #642323, covers 64 lines [3.015127s]
+  Selected attribute #255438, covers 30 lines [3.148542s]
+  Selected attribute #2265, covers 10 lines [3.146529s]
+Solution: { 2265 36952 54901 104133 116566 151223 156033 193185 242101 255438 318038 351042 370039 470420 482750 490539 519370 533669 578765 597510 642323 653390 681453 690142 802689 825456 952972 1000000 }
+Solution has 28 attributes: 28 / 1000001 = 0.0028%
+All done! [705.791748s]
+
+real	11m48.280s
+user	560m16.295s
+sys	1m30.289s
+Finished with job ID: 14083904

@@ -1,0 +1,68 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P2-6-p.cavique_c2_a1000000_o2000_novo.h5 on Sun Dec  3 02:25:13 WET 2023
+*    JOB_NAME                : P2-6-p.cavique_c2_a1000000_o2000_novo.h5
+*    JOB_ID                  : 13605662
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[076-077]
+*    SLURM_NNODES            : 2
+*    SLURM_NPROCS            : 6
+*    SLURM_NTASKS            : 6
+*    SLURM_CPUS_ON_NODE      : 4
+*    SLURM_TASKS_PER_NODE    : 4,2
+*    SLURM_JOB_CPUS_PER_NODE : 4,2
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : hpc074.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/p.cavique/P2
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/p.cavique/P2/P2-6-p.cavique_c2_a1000000_o2000_novo.h5.1701546589467034173.sh
+* ----------------------------------------------------------------
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/p.cavique_c2_a1000000_o2000_novo.h5 /users3/uaberta/eribeiro/datasets/tmp/1701570314886149648_p.cavique_c2_a1000000_o2000_novo.h5
+=== Running ===
+mpiexec -np 6 /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1701570314886149648_p.cavique_c2_a1000000_o2000_novo.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1701570314886149648_p.cavique_c2_a1000000_o2000_novo.h5'
+Using 6 processes
+
+Disjoint matrix dataset not found.
+
+Initializing MPI RMA: [0.000254s]
+Reading dataset: [0.618739s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 2000 
+Sorting dataset: [0.033499s]
+Removing duplicates: [0.002666s]
+  0 duplicate(s) removed
+Checking classes: [0.000095s]
+  Class 0: 1700 item(s)
+  Class 1: 300 item(s)
+Setting up JNSQ attributes: [0.002015s]
+  Max JNSQ: 0 [0 bits]
+Calculating disjoint matrix lines to generate: [0.000893s]
+  Number of lines in the disjoint matrix: 510000
+    Process 0 will generate 85000 lines [0 -> 84999]
+    Process 1 will generate 85000 lines [85000 -> 169999]
+    Process 2 will generate 85000 lines [170000 -> 254999]
+    Process 3 will generate 85000 lines [255000 -> 339999]
+    Process 4 will generate 85000 lines [340000 -> 424999]
+    Process 5 will generate 85000 lines [425000 -> 509999]
+Building disjoint matrix:
+  Estimated disjoint matrix size: 59.37GB (x2)
+  Line dataset done: [635.488159s]
+  Column dataset done: [68.443878s]
+Applying set covering algorithm:
+  Selected attribute #33042, covers 509700 lines [0.018764s]
+  Selected attribute #33091, covers 300 lines [0.456248s]
+Solution: { 33042 33091 }
+Solution has 2 attributes: 2 / 1000000 = 0.0002%
+All done! [705.315125s]
+
+real	11m46.374s
+user	2m9.331s
+sys	2m40.223s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1701570314886149648_p.cavique_c2_a1000000_o2000_novo.h5
+Finished with job ID: 13605662
+Submitted batch job 13605729

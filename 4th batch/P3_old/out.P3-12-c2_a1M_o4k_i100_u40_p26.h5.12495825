@@ -1,0 +1,85 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-12-c2_a1M_o4k_i100_u40_p26.h5 on Mon Sep 11 19:58:43 WEST 2023
+*    JOB_NAME                : P3-12-c2_a1M_o4k_i100_u40_p26.h5
+*    JOB_ID                  : 12495825
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc079
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 12
+*    SLURM_NTASKS            : 12
+*    SLURM_CPUS_ON_NODE      : 12
+*    SLURM_TASKS_PER_NODE    : 12
+*    SLURM_JOB_CPUS_PER_NODE : 12
+*    SLURM_MEM_PER_CPU       : 8000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P3/P3-12-c2_a1M_o4k_i100_u40_p26.h5.1694456899610361579.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 12 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o4k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o4k_i100_u40_p26.h5'
+Using 12 processes
+
+Initializing MPI RMA: [0.002341s]
+Reading dataset: [0.192028s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 4000 
+Sorting dataset: [0.031495s]
+Removing duplicates: [0.030672s]
+  40 duplicate(s) removed
+Checking classes: [0.000144s]
+  Class 0: 1970 item(s)
+  Class 1: 1990 item(s)
+Setting up JNSQ attributes: [0.001293s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 3920300
+  Estimated disjoint matrix size: 456.38GB
+    Process 0 will manage 83328 attributes [0 -> 83327]
+    Process 1 will manage 83328 attributes [83328 -> 166655]
+    Process 2 will manage 83328 attributes [166656 -> 249983]
+    Process 3 will manage 83328 attributes [249984 -> 333311]
+    Process 4 will manage 83328 attributes [333312 -> 416639]
+    Process 5 will manage 83392 attributes [416640 -> 500031]
+    Process 6 will manage 83328 attributes [500032 -> 583359]
+    Process 7 will manage 83328 attributes [583360 -> 666687]
+    Process 8 will manage 83328 attributes [666688 -> 750015]
+    Process 9 will manage 83328 attributes [750016 -> 833343]
+    Process 10 will manage 83328 attributes [833344 -> 916671]
+    Process 11 will manage 83392 attributes [916672 -> 1000063]
+Applying set covering algorithm:
+  Selected attribute #776774, covers 1645878 lines [56.020603s]
+  Selected attribute #180414, covers 946677 lines [23.967798s]
+  Selected attribute #251128, covers 554159 lines [13.786126s]
+  Selected attribute #529432, covers 323077 lines [8.069084s]
+  Selected attribute #941504, covers 189370 lines [4.709635s]
+  Selected attribute #901639, covers 109888 lines [2.763842s]
+  Selected attribute #484350, covers 63576 lines [1.606075s]
+  Selected attribute #98578, covers 37132 lines [0.934930s]
+  Selected attribute #477510, covers 21445 lines [0.550330s]
+  Selected attribute #344983, covers 12341 lines [0.322927s]
+  Selected attribute #953964, covers 7169 lines [0.191180s]
+  Selected attribute #401626, covers 4169 lines [0.115348s]
+  Selected attribute #827478, covers 2330 lines [0.072520s]
+  Selected attribute #924312, covers 1345 lines [0.045746s]
+  Selected attribute #726983, covers 767 lines [0.031151s]
+  Selected attribute #376225, covers 419 lines [0.022645s]
+  Selected attribute #516575, covers 232 lines [0.017580s]
+  Selected attribute #389903, covers 127 lines [0.014962s]
+  Selected attribute #1000000, covers 99 lines [0.013604s]
+  Selected attribute #836998, covers 62 lines [0.012788s]
+  Selected attribute #959743, covers 30 lines [0.012282s]
+  Selected attribute #916856, covers 8 lines [0.011630s]
+Solution: { 98578 180414 251128 344983 376225 389903 401626 477510 484350 516575 529432 726983 776774 827478 836998 901639 916856 924312 941504 953964 959743 1000000 }
+Solution has 22 attributes: 22 / 1000001 = 0.0022%
+
+All done! [113.634216s]
+
+real	1m54.347s
+user	22m37.324s
+sys	0m3.006s
+Finished with job ID: 12495825

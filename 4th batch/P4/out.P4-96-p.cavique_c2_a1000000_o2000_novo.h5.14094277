@@ -1,0 +1,148 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P4-96-p.cavique_c2_a1000000_o2000_novo.h5 on Tue Dec 19 00:47:25 WET 2023
+*    JOB_NAME                : P4-96-p.cavique_c2_a1000000_o2000_novo.h5
+*    JOB_ID                  : 14094277
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[066-074]
+*    SLURM_NNODES            : 9
+*    SLURM_NPROCS            : 96
+*    SLURM_NTASKS            : 96
+*    SLURM_CPUS_ON_NODE      : 5
+*    SLURM_TASKS_PER_NODE    : 5,12(x7),7
+*    SLURM_JOB_CPUS_PER_NODE : 5,12(x7),7
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P4
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P4/P4-96-p.cavique_c2_a1000000_o2000_novo.h5.1702945597486710737.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 96 /users3/uaberta/eribeiro/laid-by-lines/bin/laid-by-lines -d dados -f /users3/uaberta/eribeiro/datasets/p.cavique_c2_a1000000_o2000_novo.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/p.cavique_c2_a1000000_o2000_novo.h5'
+Using 96 processes
+
+Initializing MPI Shared Dataset: [0.004352s]
+Reading dataset: [0.165191s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 2000 
+Sorting dataset: [0.033677s]
+Removing duplicates: [0.001586s]
+  0 duplicate(s) removed
+Checking classes: [0.000050s]
+  Class 0: 1700 item(s)
+  Class 1: 300 item(s)
+Setting up JNSQ attributes: [0.001129s]
+  Max JNSQ: 0 [0 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Estimated disjoint matrix size: 59.37GB
+  Number of lines in the disjoint matrix: 510000
+    Process 0 will generate 5312 lines [0 -> 5311]
+    Process 1 will generate 5313 lines [5312 -> 10624]
+    Process 2 will generate 5312 lines [10625 -> 15936]
+    Process 3 will generate 5313 lines [15937 -> 21249]
+    Process 4 will generate 5312 lines [21250 -> 26561]
+    Process 5 will generate 5313 lines [26562 -> 31874]
+    Process 6 will generate 5312 lines [31875 -> 37186]
+    Process 7 will generate 5313 lines [37187 -> 42499]
+    Process 8 will generate 5312 lines [42500 -> 47811]
+    Process 9 will generate 5313 lines [47812 -> 53124]
+    Process 10 will generate 5312 lines [53125 -> 58436]
+    Process 11 will generate 5313 lines [58437 -> 63749]
+    Process 12 will generate 5312 lines [63750 -> 69061]
+    Process 13 will generate 5313 lines [69062 -> 74374]
+    Process 14 will generate 5312 lines [74375 -> 79686]
+    Process 15 will generate 5313 lines [79687 -> 84999]
+    Process 16 will generate 5312 lines [85000 -> 90311]
+    Process 17 will generate 5313 lines [90312 -> 95624]
+    Process 18 will generate 5312 lines [95625 -> 100936]
+    Process 19 will generate 5313 lines [100937 -> 106249]
+    Process 20 will generate 5312 lines [106250 -> 111561]
+    Process 21 will generate 5313 lines [111562 -> 116874]
+    Process 22 will generate 5312 lines [116875 -> 122186]
+    Process 23 will generate 5313 lines [122187 -> 127499]
+    Process 24 will generate 5312 lines [127500 -> 132811]
+    Process 25 will generate 5313 lines [132812 -> 138124]
+    Process 26 will generate 5312 lines [138125 -> 143436]
+    Process 27 will generate 5313 lines [143437 -> 148749]
+    Process 28 will generate 5312 lines [148750 -> 154061]
+    Process 29 will generate 5313 lines [154062 -> 159374]
+    Process 30 will generate 5312 lines [159375 -> 164686]
+    Process 31 will generate 5313 lines [164687 -> 169999]
+    Process 32 will generate 5312 lines [170000 -> 175311]
+    Process 33 will generate 5313 lines [175312 -> 180624]
+    Process 34 will generate 5312 lines [180625 -> 185936]
+    Process 35 will generate 5313 lines [185937 -> 191249]
+    Process 36 will generate 5312 lines [191250 -> 196561]
+    Process 37 will generate 5313 lines [196562 -> 201874]
+    Process 38 will generate 5312 lines [201875 -> 207186]
+    Process 39 will generate 5313 lines [207187 -> 212499]
+    Process 40 will generate 5312 lines [212500 -> 217811]
+    Process 41 will generate 5313 lines [217812 -> 223124]
+    Process 42 will generate 5312 lines [223125 -> 228436]
+    Process 43 will generate 5313 lines [228437 -> 233749]
+    Process 44 will generate 5312 lines [233750 -> 239061]
+    Process 45 will generate 5313 lines [239062 -> 244374]
+    Process 46 will generate 5312 lines [244375 -> 249686]
+    Process 47 will generate 5313 lines [249687 -> 254999]
+    Process 48 will generate 5312 lines [255000 -> 260311]
+    Process 49 will generate 5313 lines [260312 -> 265624]
+    Process 50 will generate 5312 lines [265625 -> 270936]
+    Process 51 will generate 5313 lines [270937 -> 276249]
+    Process 52 will generate 5312 lines [276250 -> 281561]
+    Process 53 will generate 5313 lines [281562 -> 286874]
+    Process 54 will generate 5312 lines [286875 -> 292186]
+    Process 55 will generate 5313 lines [292187 -> 297499]
+    Process 56 will generate 5312 lines [297500 -> 302811]
+    Process 57 will generate 5313 lines [302812 -> 308124]
+    Process 58 will generate 5312 lines [308125 -> 313436]
+    Process 59 will generate 5313 lines [313437 -> 318749]
+    Process 60 will generate 5312 lines [318750 -> 324061]
+    Process 61 will generate 5313 lines [324062 -> 329374]
+    Process 62 will generate 5312 lines [329375 -> 334686]
+    Process 63 will generate 5313 lines [334687 -> 339999]
+    Process 64 will generate 5312 lines [340000 -> 345311]
+    Process 65 will generate 5313 lines [345312 -> 350624]
+    Process 66 will generate 5312 lines [350625 -> 355936]
+    Process 67 will generate 5313 lines [355937 -> 361249]
+    Process 68 will generate 5312 lines [361250 -> 366561]
+    Process 69 will generate 5313 lines [366562 -> 371874]
+    Process 70 will generate 5312 lines [371875 -> 377186]
+    Process 71 will generate 5313 lines [377187 -> 382499]
+    Process 72 will generate 5312 lines [382500 -> 387811]
+    Process 73 will generate 5313 lines [387812 -> 393124]
+    Process 74 will generate 5312 lines [393125 -> 398436]
+    Process 75 will generate 5313 lines [398437 -> 403749]
+    Process 76 will generate 5312 lines [403750 -> 409061]
+    Process 77 will generate 5313 lines [409062 -> 414374]
+    Process 78 will generate 5312 lines [414375 -> 419686]
+    Process 79 will generate 5313 lines [419687 -> 424999]
+    Process 80 will generate 5312 lines [425000 -> 430311]
+    Process 81 will generate 5313 lines [430312 -> 435624]
+    Process 82 will generate 5312 lines [435625 -> 440936]
+    Process 83 will generate 5313 lines [440937 -> 446249]
+    Process 84 will generate 5312 lines [446250 -> 451561]
+    Process 85 will generate 5313 lines [451562 -> 456874]
+    Process 86 will generate 5312 lines [456875 -> 462186]
+    Process 87 will generate 5313 lines [462187 -> 467499]
+    Process 88 will generate 5312 lines [467500 -> 472811]
+    Process 89 will generate 5313 lines [472812 -> 478124]
+    Process 90 will generate 5312 lines [478125 -> 483436]
+    Process 91 will generate 5313 lines [483437 -> 488749]
+    Process 92 will generate 5312 lines [488750 -> 494061]
+    Process 93 will generate 5313 lines [494062 -> 499374]
+    Process 94 will generate 5312 lines [499375 -> 504686]
+    Process 95 will generate 5313 lines [504687 -> 509999]
+Applying set covering algorithm:
+  Selected attribute #33042, covers 509700 lines [1.183179s]
+  Selected attribute #33091, covers 300 lines [0.115842s]
+Solution: { 33042 33091 }
+Solution has 2 attributes: 2 / 1000000 = 0.0002%
+All done! [1.619871s]
+
+real	0m3.095s
+user	0m6.934s
+sys	0m2.823s
+Finished with job ID: 14094277

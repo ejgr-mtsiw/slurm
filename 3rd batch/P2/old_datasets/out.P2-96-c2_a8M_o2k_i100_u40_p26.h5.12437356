@@ -1,0 +1,183 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P2-96-c2_a8M_o2k_i100_u40_p26.h5 on Wed Aug 30 08:12:08 WEST 2023
+*    JOB_NAME                : P2-96-c2_a8M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 12437356
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[071-072,078]
+*    SLURM_NNODES            : 3
+*    SLURM_NPROCS            : 96
+*    SLURM_NTASKS            : 96
+*    SLURM_CPUS_ON_NODE      : 94
+*    SLURM_TASKS_PER_NODE    : 94,1(x2)
+*    SLURM_JOB_CPUS_PER_NODE : 94,1(x2)
+*    SLURM_MEM_PER_CPU       : 4750
+*    SUBMIT_HOST             : hpc068.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm-files/3rd batch/P2
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm-files/3rd batch/P2/P2-96-c2_a8M_o2k_i100_u40_p26.h5.1693231513254351617.sh
+* ----------------------------------------------------------------
+/dev/shm/job12437356/slurm_script: line 41: /dataset-settings.sh: No such file or directory
+/dev/shm/job12437356/slurm_script: line 43: /load-module.sh: No such file or directory
+/dev/shm/job12437356/slurm_script: line 45: /set-partition-run.sh: No such file or directory
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1693379529797096492_c2_a8M_o2k_i100_u40_p26.h5
+=== Running ===
+mpiexec -np 96 /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1693379529797096492_c2_a8M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1693379529797096492_c2_a8M_o2k_i100_u40_p26.h5'
+Using 96 processes
+
+Disjoint matrix dataset not found.
+
+Initializing MPI RMA: [0.003997s]
+Reading dataset: [5.483024s]
+  Classes = 2 [1 bits]
+  Attributes = 8000000 
+  Observations = 2000 
+Sorting dataset: [0.136399s]
+Removing duplicates: [0.178206s]
+  42 duplicate(s) removed
+Checking classes: [0.000295s]
+  Class 0: 999 item(s)
+  Class 1: 959 item(s)
+Setting up JNSQ attributes: [0.006773s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000096s]
+  Number of lines in the disjoint matrix: 958041
+    Process 0 will generate 9979 lines [0 -> 9978]
+    Process 1 will generate 9980 lines [9979 -> 19958]
+    Process 2 will generate 9979 lines [19959 -> 29937]
+    Process 3 will generate 9980 lines [29938 -> 39917]
+    Process 4 will generate 9979 lines [39918 -> 49896]
+    Process 5 will generate 9980 lines [49897 -> 59876]
+    Process 6 will generate 9980 lines [59877 -> 69856]
+    Process 7 will generate 9979 lines [69857 -> 79835]
+    Process 8 will generate 9980 lines [79836 -> 89815]
+    Process 9 will generate 9979 lines [89816 -> 99794]
+    Process 10 will generate 9980 lines [99795 -> 109774]
+    Process 11 will generate 9980 lines [109775 -> 119754]
+    Process 12 will generate 9979 lines [119755 -> 129733]
+    Process 13 will generate 9980 lines [129734 -> 139713]
+    Process 14 will generate 9979 lines [139714 -> 149692]
+    Process 15 will generate 9980 lines [149693 -> 159672]
+    Process 16 will generate 9980 lines [159673 -> 169652]
+    Process 17 will generate 9979 lines [169653 -> 179631]
+    Process 18 will generate 9980 lines [179632 -> 189611]
+    Process 19 will generate 9979 lines [189612 -> 199590]
+    Process 20 will generate 9980 lines [199591 -> 209570]
+    Process 21 will generate 9980 lines [209571 -> 219550]
+    Process 22 will generate 9979 lines [219551 -> 229529]
+    Process 23 will generate 9980 lines [229530 -> 239509]
+    Process 24 will generate 9979 lines [239510 -> 249488]
+    Process 25 will generate 9980 lines [249489 -> 259468]
+    Process 26 will generate 9980 lines [259469 -> 269448]
+    Process 27 will generate 9979 lines [269449 -> 279427]
+    Process 28 will generate 9980 lines [279428 -> 289407]
+    Process 29 will generate 9979 lines [289408 -> 299386]
+    Process 30 will generate 9980 lines [299387 -> 309366]
+    Process 31 will generate 9980 lines [309367 -> 319346]
+    Process 32 will generate 9979 lines [319347 -> 329325]
+    Process 33 will generate 9980 lines [329326 -> 339305]
+    Process 34 will generate 9979 lines [339306 -> 349284]
+    Process 35 will generate 9980 lines [349285 -> 359264]
+    Process 36 will generate 9979 lines [359265 -> 369243]
+    Process 37 will generate 9980 lines [369244 -> 379223]
+    Process 38 will generate 9980 lines [379224 -> 389203]
+    Process 39 will generate 9979 lines [389204 -> 399182]
+    Process 40 will generate 9980 lines [399183 -> 409162]
+    Process 41 will generate 9979 lines [409163 -> 419141]
+    Process 42 will generate 9980 lines [419142 -> 429121]
+    Process 43 will generate 9980 lines [429122 -> 439101]
+    Process 44 will generate 9979 lines [439102 -> 449080]
+    Process 45 will generate 9980 lines [449081 -> 459060]
+    Process 46 will generate 9979 lines [459061 -> 469039]
+    Process 47 will generate 9980 lines [469040 -> 479019]
+    Process 48 will generate 9980 lines [479020 -> 488999]
+    Process 49 will generate 9979 lines [489000 -> 498978]
+    Process 50 will generate 9980 lines [498979 -> 508958]
+    Process 51 will generate 9979 lines [508959 -> 518937]
+    Process 52 will generate 9980 lines [518938 -> 528917]
+    Process 53 will generate 9980 lines [528918 -> 538897]
+    Process 54 will generate 9979 lines [538898 -> 548876]
+    Process 55 will generate 9980 lines [548877 -> 558856]
+    Process 56 will generate 9979 lines [558857 -> 568835]
+    Process 57 will generate 9980 lines [568836 -> 578815]
+    Process 58 will generate 9980 lines [578816 -> 588795]
+    Process 59 will generate 9979 lines [588796 -> 598774]
+    Process 60 will generate 9980 lines [598775 -> 608754]
+    Process 61 will generate 9979 lines [608755 -> 618733]
+    Process 62 will generate 9980 lines [618734 -> 628713]
+    Process 63 will generate 9980 lines [628714 -> 638693]
+    Process 64 will generate 9979 lines [638694 -> 648672]
+    Process 65 will generate 9980 lines [648673 -> 658652]
+    Process 66 will generate 9979 lines [658653 -> 668631]
+    Process 67 will generate 9980 lines [668632 -> 678611]
+    Process 68 will generate 9979 lines [678612 -> 688590]
+    Process 69 will generate 9980 lines [688591 -> 698570]
+    Process 70 will generate 9980 lines [698571 -> 708550]
+    Process 71 will generate 9979 lines [708551 -> 718529]
+    Process 72 will generate 9980 lines [718530 -> 728509]
+    Process 73 will generate 9979 lines [728510 -> 738488]
+    Process 74 will generate 9980 lines [738489 -> 748468]
+    Process 75 will generate 9980 lines [748469 -> 758448]
+    Process 76 will generate 9979 lines [758449 -> 768427]
+    Process 77 will generate 9980 lines [768428 -> 778407]
+    Process 78 will generate 9979 lines [778408 -> 788386]
+    Process 79 will generate 9980 lines [788387 -> 798366]
+    Process 80 will generate 9980 lines [798367 -> 808346]
+    Process 81 will generate 9979 lines [808347 -> 818325]
+    Process 82 will generate 9980 lines [818326 -> 828305]
+    Process 83 will generate 9979 lines [828306 -> 838284]
+    Process 84 will generate 9980 lines [838285 -> 848264]
+    Process 85 will generate 9980 lines [848265 -> 858244]
+    Process 86 will generate 9979 lines [858245 -> 868223]
+    Process 87 will generate 9980 lines [868224 -> 878203]
+    Process 88 will generate 9979 lines [878204 -> 888182]
+    Process 89 will generate 9980 lines [888183 -> 898162]
+    Process 90 will generate 9980 lines [898163 -> 908142]
+    Process 91 will generate 9979 lines [908143 -> 918121]
+    Process 92 will generate 9980 lines [918122 -> 928101]
+    Process 93 will generate 9979 lines [928102 -> 938080]
+    Process 94 will generate 9980 lines [938081 -> 948060]
+    Process 95 will generate 9980 lines [948061 -> 958040]
+Building disjoint matrix:
+  Estimated disjoint matrix size: 892.25GB (x2)
+  Line dataset done: [2348.647217s]
+  Column dataset done: [2553.349121s]
+Applying set covering algorithm:
+  Selected attribute #11, covers 389574 lines [0.246855s]
+  Selected attribute #49, covers 230083 lines [3412.909912s]
+  Selected attribute #0, covers 134740 lines [1622.116089s]
+  Selected attribute #61, covers 82190 lines [1037.766724s]
+  Selected attribute #8, covers 48831 lines [622.561157s]
+  Selected attribute #2, covers 29220 lines [429.703583s]
+  Selected attribute #17, covers 17482 lines [234.014618s]
+  Selected attribute #56, covers 10516 lines [147.396576s]
+  Selected attribute #7, covers 6199 lines [86.138008s]
+  Selected attribute #36, covers 3684 lines [55.708317s]
+  Selected attribute #20, covers 2164 lines [35.953445s]
+  Selected attribute #55, covers 1337 lines [19.074070s]
+  Selected attribute #3, covers 811 lines [14.435967s]
+  Selected attribute #37, covers 477 lines [8.063317s]
+  Selected attribute #44, covers 279 lines [4.632980s]
+  Selected attribute #18, covers 162 lines [3.967760s]
+  Selected attribute #8000000, covers 100 lines [1.790056s]
+  Selected attribute #24, covers 84 lines [1.197378s]
+  Selected attribute #45, covers 51 lines [1.096075s]
+  Selected attribute #10, covers 27 lines [0.639702s]
+  Selected attribute #63, covers 18 lines [0.346969s]
+  Selected attribute #23, covers 8 lines [0.260697s]
+  Selected attribute #29, covers 4 lines [0.335851s]
+Solution: { 0 2 3 7 8 10 11 17 18 20 23 24 29 36 37 44 45 49 55 56 61 63 8000000 }
+Solution has 23 attributes: 23 / 8000001 = 0.0003%
+All done! [12665.584961s]
+
+real	211m8.354s
+user	1782m20.084s
+sys	2176m0.223s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1693379529797096492_c2_a8M_o2k_i100_u40_p26.h5
+Finished with job ID: 12437356
+Submitted batch job 12442503
+srun: Warning: can't honor --ntasks-per-node set to 4 which doesn't match the requested tasks 96 with the number of requested nodes 3. Ignoring --ntasks-per-node.

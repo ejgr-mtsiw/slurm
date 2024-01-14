@@ -1,0 +1,83 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-12-c2_a8M_o2k_i100_u40_p26.h5 on Sun Dec  3 23:00:33 WET 2023
+*    JOB_NAME                : P3-12-c2_a8M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 13612521
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[066-068]
+*    SLURM_NNODES            : 3
+*    SLURM_NPROCS            : 12
+*    SLURM_NTASKS            : 12
+*    SLURM_CPUS_ON_NODE      : 4
+*    SLURM_TASKS_PER_NODE    : 4(x3)
+*    SLURM_JOB_CPUS_PER_NODE : 4(x3)
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/3rd batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/3rd batch/P3/P3-12-c2_a8M_o2k_i100_u40_p26.h5.1693231513510646255.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 12 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5'
+Using 12 processes
+
+Initializing MPI RMA: [0.001575s]
+Reading dataset: [1.220639s]
+  Classes = 2 [1 bits]
+  Attributes = 8000000 
+  Observations = 2000 
+Sorting dataset: [0.402617s]
+Removing duplicates: [0.458875s]
+  42 duplicate(s) removed
+Setting up JNSQ attributes: [0.019308s]
+  Max JNSQ: 1 [1 bits]
+Sorting dataset by class: [0.327251s]
+Checking classes: [0.000260s]
+  Class 0: 972 item(s)
+  Class 1: 986 item(s)
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 958392
+  Estimated disjoint matrix size: 892.57GB
+    Process 0 will manage 666624 attributes [0 -> 666623]
+    Process 1 will manage 666624 attributes [666624 -> 1333247]
+    Process 2 will manage 666624 attributes [1333248 -> 1999871]
+    Process 3 will manage 666624 attributes [1999872 -> 2666495]
+    Process 4 will manage 666624 attributes [2666496 -> 3333119]
+    Process 5 will manage 667136 attributes [3333120 -> 4000255]
+    Process 6 will manage 666624 attributes [4000256 -> 4666879]
+    Process 7 will manage 666624 attributes [4666880 -> 5333503]
+    Process 8 will manage 666624 attributes [5333504 -> 6000127]
+    Process 9 will manage 666624 attributes [6000128 -> 6666751]
+    Process 10 will manage 666624 attributes [6666752 -> 7333375]
+    Process 11 will manage 666626 attributes [7333376 -> 8000001]
+Applying set covering algorithm:
+  Selected attribute #5049279, covers 417312 lines [129.268646s]
+  Selected attribute #2686692, covers 234609 lines [55.583694s]
+  Selected attribute #5687643, covers 133397 lines [31.229702s]
+  Selected attribute #2052712, covers 75533 lines [18.286642s]
+  Selected attribute #2308517, covers 42551 lines [11.097005s]
+  Selected attribute #5813089, covers 24108 lines [7.053280s]
+  Selected attribute #7483437, covers 13581 lines [4.665328s]
+  Selected attribute #95111, covers 7658 lines [3.246961s]
+  Selected attribute #7396225, covers 4289 lines [2.409256s]
+  Selected attribute #3540151, covers 2414 lines [1.901358s]
+  Selected attribute #841023, covers 1320 lines [1.632098s]
+  Selected attribute #1030194, covers 731 lines [1.461828s]
+  Selected attribute #1059263, covers 403 lines [1.356396s]
+  Selected attribute #587174, covers 213 lines [1.294605s]
+  Selected attribute #8000000, covers 108 lines [1.252631s]
+  Selected attribute #121235, covers 98 lines [1.231268s]
+  Selected attribute #2197043, covers 46 lines [1.213778s]
+  Selected attribute #331937, covers 19 lines [1.203975s]
+  Selected attribute #1, covers 2 lines [1.199187s]
+Solution: { 1 95111 121235 331937 587174 841023 1030194 1059263 2052712 2197043 2308517 2686692 3540151 5049279 5687643 5813089 7396225 7483437 8000000 }
+Solution has 19 attributes: 19 / 8000001 = 0.0002%
+
+All done! [279.469299s]
+
+real	4m40.739s
+user	16m29.813s
+sys	2m2.973s
+Finished with job ID: 13612521

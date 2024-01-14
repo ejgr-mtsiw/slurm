@@ -1,0 +1,34 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P1-1-c2_a4M_o2k_i100_u40_p26.h5 on Sat Dec  9 21:29:28 WET 2023
+*    JOB_NAME                : P1-1-c2_a4M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 13781398
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc066
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 1
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 1
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : hpc067.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/1st batch/P1
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/1st batch/P1/P1-1-c2_a4M_o2k_i100_u40_p26.h5.1692308681793485421.sh
+* ----------------------------------------------------------------
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a4M_o2k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1702157368917556424_c2_a4M_o2k_i100_u40_p26.h5
+=== Running ===
+/users3/uaberta/eribeiro/laid-c/bin/laid -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1702157368917556424_c2_a4M_o2k_i100_u40_p26.h5
+/dev/shm/job13781398/slurm_script: line 80: 1411443 Killed                  "$EXE" -d "$DATASET_NAME" -f "$OUTPUT_DATASET_FILE"
+
+real	10m43.324s
+user	2m49.543s
+sys	7m25.537s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1702157368917556424_c2_a4M_o2k_i100_u40_p26.h5
+Finished with job ID: 13781398
+Submitted batch job 13781425
+slurmstepd: error: Detected 1 oom_kill event in StepId=13781398.batch. Some of the step tasks have been OOM Killed.

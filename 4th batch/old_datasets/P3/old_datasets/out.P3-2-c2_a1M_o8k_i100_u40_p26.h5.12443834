@@ -1,0 +1,85 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-2-c2_a1M_o8k_i100_u40_p26.h5 on Wed Aug 30 21:24:11 WEST 2023
+*    JOB_NAME                : P3-2-c2_a1M_o8k_i100_u40_p26.h5
+*    JOB_ID                  : 12443834
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc079
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 2
+*    SLURM_NTASKS            : 2
+*    SLURM_CPUS_ON_NODE      : 2
+*    SLURM_TASKS_PER_NODE    : 2
+*    SLURM_JOB_CPUS_PER_NODE : 2
+*    SLURM_MEM_PER_CPU       : 8000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm-files/4th batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm-files/4th batch/P3/P3-2-c2_a1M_o8k_i100_u40_p26.h5.1693413804159476418.sh
+* ----------------------------------------------------------------
+/dev/shm/job12443834/slurm_script: line 39: /dataset-settings.sh: No such file or directory
+/dev/shm/job12443834/slurm_script: line 41: /load-module.sh: No such file or directory
+/dev/shm/job12443834/slurm_script: line 43: /set-partition-run.sh: No such file or directory
+=== Running ===
+mpiexec -np 2 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o8k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o8k_i100_u40_p26.h5'
+Using 2 processes
+
+Initializing MPI RMA: [0.002675s]
+Reading dataset: [0.573216s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 8000 
+Sorting dataset: [0.108455s]
+Removing duplicates: [0.107406s]
+  41 duplicate(s) removed
+Checking classes: [0.000315s]
+  Class 0: 4000 item(s)
+  Class 1: 3959 item(s)
+Setting up JNSQ attributes: [0.003854s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 15836000
+  Estimated disjoint matrix size: 1843.55GB
+    Process 0 will manage 500032 attributes [0 -> 500031]
+    Process 1 will manage 500032 attributes [500032 -> 1000063]
+Applying set covering algorithm:
+  Selected attribute #46, covers 6234453 lines [1679.809570s]
+  Selected attribute #9, covers 3807821 lines [649.918335s]
+  Selected attribute #38, covers 2297228 lines [412.894836s]
+  Selected attribute #37, covers 1384593 lines [250.580048s]
+  Selected attribute #7, covers 836664 lines [151.022858s]
+  Selected attribute #59, covers 505646 lines [91.297516s]
+  Selected attribute #29, covers 305339 lines [55.188995s]
+  Selected attribute #47, covers 184041 lines [33.386925s]
+  Selected attribute #63, covers 110952 lines [20.151953s]
+  Selected attribute #56, covers 66891 lines [12.198102s]
+  Selected attribute #19, covers 40351 lines [7.400342s]
+  Selected attribute #61, covers 24664 lines [4.504812s]
+  Selected attribute #5, covers 14849 lines [2.793999s]
+  Selected attribute #12, covers 8940 lines [1.727177s]
+  Selected attribute #1, covers 5385 lines [1.081932s]
+  Selected attribute #4, covers 3263 lines [0.689943s]
+  Selected attribute #0, covers 1974 lines [0.459963s]
+  Selected attribute #34, covers 1179 lines [0.321018s]
+  Selected attribute #43, covers 695 lines [0.228839s]
+  Selected attribute #30, covers 396 lines [0.175426s]
+  Selected attribute #17, covers 247 lines [0.141379s]
+  Selected attribute #40, covers 151 lines [0.124681s]
+  Selected attribute #1000000, covers 100 lines [0.115385s]
+  Selected attribute #45, covers 91 lines [0.108722s]
+  Selected attribute #20, covers 44 lines [0.109463s]
+  Selected attribute #44, covers 23 lines [0.102653s]
+  Selected attribute #62, covers 12 lines [0.099798s]
+  Selected attribute #55, covers 6 lines [0.097037s]
+  Selected attribute #16, covers 2 lines [0.096037s]
+Solution: { 0 1 4 5 7 9 12 16 17 19 20 29 30 34 37 38 40 43 44 45 46 47 55 56 59 61 62 63 1000000 }
+Solution has 29 attributes: 29 / 1000001 = 0.0029%
+
+All done! [3377.747070s]
+
+real	56m18.210s
+user	112m10.208s
+sys	0m1.162s
+Finished with job ID: 12443834
