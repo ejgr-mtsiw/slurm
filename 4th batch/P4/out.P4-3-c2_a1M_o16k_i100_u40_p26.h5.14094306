@@ -1,0 +1,81 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P4-3-c2_a1M_o16k_i100_u40_p26.h5 on Tue Dec 19 00:56:38 WET 2023
+*    JOB_NAME                : P4-3-c2_a1M_o16k_i100_u40_p26.h5
+*    JOB_ID                  : 14094306
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc074
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 3
+*    SLURM_NTASKS            : 3
+*    SLURM_CPUS_ON_NODE      : 3
+*    SLURM_TASKS_PER_NODE    : 3
+*    SLURM_JOB_CPUS_PER_NODE : 3
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P4
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P4/P4-3-c2_a1M_o16k_i100_u40_p26.h5.1702945598931689418.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 3 /users3/uaberta/eribeiro/laid-by-lines/bin/laid-by-lines -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o16k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o16k_i100_u40_p26.h5'
+Using 3 processes
+
+Initializing MPI Shared Dataset: [0.002848s]
+Reading dataset: [1.261749s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 16000 
+Sorting dataset: [0.191751s]
+Removing duplicates: [0.206576s]
+  41 duplicate(s) removed
+Checking classes: [0.000554s]
+  Class 0: 7987 item(s)
+  Class 1: 7972 item(s)
+Setting up JNSQ attributes: [0.003049s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Estimated disjoint matrix size: 7412.45GB
+  Number of lines in the disjoint matrix: 63672364
+    Process 0 will generate 21224121 lines [0 -> 21224120]
+    Process 1 will generate 21224121 lines [21224121 -> 42448241]
+    Process 2 will generate 21224122 lines [42448242 -> 63672363]
+Applying set covering algorithm:
+  Selected attribute #318038, covers 25514917 lines [5981.979980s]
+  Selected attribute #578765, covers 15302679 lines [2405.628906s]
+  Selected attribute #482750, covers 9179760 lines [1472.172852s]
+  Selected attribute #36952, covers 5497407 lines [914.448853s]
+  Selected attribute #681453, covers 3306923 lines [558.528015s]
+  Selected attribute #193185, covers 1969348 lines [360.462952s]
+  Selected attribute #952972, covers 1175441 lines [235.420563s]
+  Selected attribute #116566, covers 700698 lines [170.218307s]
+  Selected attribute #825456, covers 416754 lines [124.497078s]
+  Selected attribute #597510, covers 247308 lines [93.732025s]
+  Selected attribute #156033, covers 147019 lines [80.473412s]
+  Selected attribute #490539, covers 87336 lines [72.810425s]
+  Selected attribute #470420, covers 51789 lines [67.292809s]
+  Selected attribute #151223, covers 30792 lines [61.739330s]
+  Selected attribute #519370, covers 18112 lines [59.785812s]
+  Selected attribute #54901, covers 10808 lines [57.125309s]
+  Selected attribute #242101, covers 6346 lines [55.959461s]
+  Selected attribute #653390, covers 3727 lines [56.296925s]
+  Selected attribute #370039, covers 2205 lines [57.195763s]
+  Selected attribute #802689, covers 1269 lines [54.323421s]
+  Selected attribute #690142, covers 734 lines [53.817169s]
+  Selected attribute #104133, covers 417 lines [54.541466s]
+  Selected attribute #533669, covers 241 lines [55.614975s]
+  Selected attribute #351042, covers 130 lines [54.647865s]
+  Selected attribute #1000000, covers 100 lines [54.235538s]
+  Selected attribute #642323, covers 64 lines [58.595139s]
+  Selected attribute #255438, covers 30 lines [59.377804s]
+  Selected attribute #2265, covers 10 lines [58.555386s]
+Solution: { 2265 36952 54901 104133 116566 151223 156033 193185 242101 255438 318038 351042 370039 470420 482750 490539 519370 533669 578765 597510 642323 653390 681453 690142 802689 825456 952972 1000000 }
+Solution has 28 attributes: 28 / 1000001 = 0.0028%
+All done! [13391.456055s]
+
+real	223m11.940s
+user	665m8.074s
+sys	0m2.476s
+Finished with job ID: 14094306

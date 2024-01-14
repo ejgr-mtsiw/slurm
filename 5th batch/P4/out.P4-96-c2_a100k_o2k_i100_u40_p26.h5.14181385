@@ -1,0 +1,165 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P4-96-c2_a100k_o2k_i100_u40_p26.h5 on Tue Jan  2 23:25:21 WET 2024
+*    JOB_NAME                : P4-96-c2_a100k_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 14181385
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[067,076-077]
+*    SLURM_NNODES            : 3
+*    SLURM_NPROCS            : 96
+*    SLURM_NTASKS            : 96
+*    SLURM_CPUS_ON_NODE      : 36
+*    SLURM_TASKS_PER_NODE    : 36,5,55
+*    SLURM_JOB_CPUS_PER_NODE : 36,5,55
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/5th batch/P4
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/5th batch/P4/P4-96-c2_a100k_o2k_i100_u40_p26.h5.1704055781142583088.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 96 /users3/uaberta/eribeiro/laid-by-lines/bin/laid-by-lines -d dados -f /users3/uaberta/eribeiro/datasets/c2_a100k_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a100k_o2k_i100_u40_p26.h5'
+Using 96 processes
+
+Initializing MPI Shared Dataset: [0.020105s]
+Reading dataset: [0.011353s]
+  Classes = 2 [1 bits]
+  Attributes = 100000 
+  Observations = 2000 
+Sorting dataset: [0.001582s]
+Removing duplicates: [0.000915s]
+  44 duplicate(s) removed
+Checking classes: [0.000034s]
+  Class 0: 1006 item(s)
+  Class 1: 950 item(s)
+Setting up JNSQ attributes: [0.000085s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Estimated disjoint matrix size: 11.13GB
+  Number of lines in the disjoint matrix: 955700
+    Process 0 will generate 9955 lines [0 -> 9954]
+    Process 1 will generate 9955 lines [9955 -> 19909]
+    Process 2 will generate 9955 lines [19910 -> 29864]
+    Process 3 will generate 9955 lines [29865 -> 39819]
+    Process 4 will generate 9956 lines [39820 -> 49775]
+    Process 5 will generate 9955 lines [49776 -> 59730]
+    Process 6 will generate 9955 lines [59731 -> 69685]
+    Process 7 will generate 9955 lines [69686 -> 79640]
+    Process 8 will generate 9955 lines [79641 -> 89595]
+    Process 9 will generate 9956 lines [89596 -> 99551]
+    Process 10 will generate 9955 lines [99552 -> 109506]
+    Process 11 will generate 9955 lines [109507 -> 119461]
+    Process 12 will generate 9955 lines [119462 -> 129416]
+    Process 13 will generate 9955 lines [129417 -> 139371]
+    Process 14 will generate 9956 lines [139372 -> 149327]
+    Process 15 will generate 9955 lines [149328 -> 159282]
+    Process 16 will generate 9955 lines [159283 -> 169237]
+    Process 17 will generate 9955 lines [169238 -> 179192]
+    Process 18 will generate 9955 lines [179193 -> 189147]
+    Process 19 will generate 9956 lines [189148 -> 199103]
+    Process 20 will generate 9955 lines [199104 -> 209058]
+    Process 21 will generate 9955 lines [209059 -> 219013]
+    Process 22 will generate 9955 lines [219014 -> 228968]
+    Process 23 will generate 9956 lines [228969 -> 238924]
+    Process 24 will generate 9955 lines [238925 -> 248879]
+    Process 25 will generate 9955 lines [248880 -> 258834]
+    Process 26 will generate 9955 lines [258835 -> 268789]
+    Process 27 will generate 9955 lines [268790 -> 278744]
+    Process 28 will generate 9956 lines [278745 -> 288700]
+    Process 29 will generate 9955 lines [288701 -> 298655]
+    Process 30 will generate 9955 lines [298656 -> 308610]
+    Process 31 will generate 9955 lines [308611 -> 318565]
+    Process 32 will generate 9955 lines [318566 -> 328520]
+    Process 33 will generate 9956 lines [328521 -> 338476]
+    Process 34 will generate 9955 lines [338477 -> 348431]
+    Process 35 will generate 9955 lines [348432 -> 358386]
+    Process 36 will generate 9955 lines [358387 -> 368341]
+    Process 37 will generate 9955 lines [368342 -> 378296]
+    Process 38 will generate 9956 lines [378297 -> 388252]
+    Process 39 will generate 9955 lines [388253 -> 398207]
+    Process 40 will generate 9955 lines [398208 -> 408162]
+    Process 41 will generate 9955 lines [408163 -> 418117]
+    Process 42 will generate 9955 lines [418118 -> 428072]
+    Process 43 will generate 9956 lines [428073 -> 438028]
+    Process 44 will generate 9955 lines [438029 -> 447983]
+    Process 45 will generate 9955 lines [447984 -> 457938]
+    Process 46 will generate 9955 lines [457939 -> 467893]
+    Process 47 will generate 9956 lines [467894 -> 477849]
+    Process 48 will generate 9955 lines [477850 -> 487804]
+    Process 49 will generate 9955 lines [487805 -> 497759]
+    Process 50 will generate 9955 lines [497760 -> 507714]
+    Process 51 will generate 9955 lines [507715 -> 517669]
+    Process 52 will generate 9956 lines [517670 -> 527625]
+    Process 53 will generate 9955 lines [527626 -> 537580]
+    Process 54 will generate 9955 lines [537581 -> 547535]
+    Process 55 will generate 9955 lines [547536 -> 557490]
+    Process 56 will generate 9955 lines [557491 -> 567445]
+    Process 57 will generate 9956 lines [567446 -> 577401]
+    Process 58 will generate 9955 lines [577402 -> 587356]
+    Process 59 will generate 9955 lines [587357 -> 597311]
+    Process 60 will generate 9955 lines [597312 -> 607266]
+    Process 61 will generate 9955 lines [607267 -> 617221]
+    Process 62 will generate 9956 lines [617222 -> 627177]
+    Process 63 will generate 9955 lines [627178 -> 637132]
+    Process 64 will generate 9955 lines [637133 -> 647087]
+    Process 65 will generate 9955 lines [647088 -> 657042]
+    Process 66 will generate 9955 lines [657043 -> 666997]
+    Process 67 will generate 9956 lines [666998 -> 676953]
+    Process 68 will generate 9955 lines [676954 -> 686908]
+    Process 69 will generate 9955 lines [686909 -> 696863]
+    Process 70 will generate 9955 lines [696864 -> 706818]
+    Process 71 will generate 9956 lines [706819 -> 716774]
+    Process 72 will generate 9955 lines [716775 -> 726729]
+    Process 73 will generate 9955 lines [726730 -> 736684]
+    Process 74 will generate 9955 lines [736685 -> 746639]
+    Process 75 will generate 9955 lines [746640 -> 756594]
+    Process 76 will generate 9956 lines [756595 -> 766550]
+    Process 77 will generate 9955 lines [766551 -> 776505]
+    Process 78 will generate 9955 lines [776506 -> 786460]
+    Process 79 will generate 9955 lines [786461 -> 796415]
+    Process 80 will generate 9955 lines [796416 -> 806370]
+    Process 81 will generate 9956 lines [806371 -> 816326]
+    Process 82 will generate 9955 lines [816327 -> 826281]
+    Process 83 will generate 9955 lines [826282 -> 836236]
+    Process 84 will generate 9955 lines [836237 -> 846191]
+    Process 85 will generate 9955 lines [846192 -> 856146]
+    Process 86 will generate 9956 lines [856147 -> 866102]
+    Process 87 will generate 9955 lines [866103 -> 876057]
+    Process 88 will generate 9955 lines [876058 -> 886012]
+    Process 89 will generate 9955 lines [886013 -> 895967]
+    Process 90 will generate 9955 lines [895968 -> 905922]
+    Process 91 will generate 9956 lines [905923 -> 915878]
+    Process 92 will generate 9955 lines [915879 -> 925833]
+    Process 93 will generate 9955 lines [925834 -> 935788]
+    Process 94 will generate 9955 lines [935789 -> 945743]
+    Process 95 will generate 9956 lines [945744 -> 955699]
+Applying set covering algorithm:
+  Selected attribute #73625, covers 404986 lines [0.254437s]
+  Selected attribute #44939, covers 234087 lines [0.134638s]
+  Selected attribute #71591, covers 134113 lines [0.099082s]
+  Selected attribute #89008, covers 77531 lines [0.045970s]
+  Selected attribute #39626, covers 44900 lines [0.053165s]
+  Selected attribute #62250, covers 26010 lines [0.021749s]
+  Selected attribute #72645, covers 14732 lines [0.024277s]
+  Selected attribute #25688, covers 8379 lines [0.018922s]
+  Selected attribute #39241, covers 4746 lines [0.011003s]
+  Selected attribute #2552, covers 2710 lines [0.011045s]
+  Selected attribute #43429, covers 1534 lines [0.010023s]
+  Selected attribute #39816, covers 870 lines [0.010390s]
+  Selected attribute #85414, covers 479 lines [0.011196s]
+  Selected attribute #65278, covers 268 lines [0.009229s]
+  Selected attribute #19027, covers 144 lines [0.009424s]
+  Selected attribute #100000, covers 103 lines [0.017098s]
+  Selected attribute #14965, covers 64 lines [0.015052s]
+  Selected attribute #89918, covers 31 lines [0.008365s]
+  Selected attribute #9730, covers 13 lines [0.008679s]
+Solution: { 2552 9730 14965 19027 25688 39241 39626 39816 43429 44939 62250 65278 71591 72645 73625 85414 89008 89918 100000 }
+Solution has 19 attributes: 19 / 100001 = 0.0190%
+All done! [0.897587s]
+
+real	0m4.753s
+user	0m30.701s
+sys	0m27.281s
+Finished with job ID: 14181385

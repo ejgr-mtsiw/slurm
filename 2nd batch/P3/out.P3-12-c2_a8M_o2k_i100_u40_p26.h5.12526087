@@ -1,0 +1,82 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-12-c2_a8M_o2k_i100_u40_p26.h5 on Thu Sep 14 15:11:01 WEST 2023
+*    JOB_NAME                : P3-12-c2_a8M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 12526087
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc069
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 12
+*    SLURM_NTASKS            : 12
+*    SLURM_CPUS_ON_NODE      : 12
+*    SLURM_TASKS_PER_NODE    : 12
+*    SLURM_JOB_CPUS_PER_NODE : 12
+*    SLURM_MEM_PER_CPU       : 8000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/2nd batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/2nd batch/P3/P3-12-c2_a8M_o2k_i100_u40_p26.h5.1692715001940107172.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 12 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5'
+Using 12 processes
+
+Initializing MPI RMA: [0.002744s]
+Reading dataset: [3.430529s]
+  Classes = 2 [1 bits]
+  Attributes = 8000000 
+  Observations = 2000 
+Sorting dataset: [0.132959s]
+Removing duplicates: [0.155327s]
+  42 duplicate(s) removed
+Checking classes: [0.000117s]
+  Class 0: 972 item(s)
+  Class 1: 986 item(s)
+Setting up JNSQ attributes: [0.007316s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 958392
+  Estimated disjoint matrix size: 892.57GB
+    Process 0 will manage 666624 attributes [0 -> 666623]
+    Process 1 will manage 666688 attributes [666624 -> 1333311]
+    Process 2 will manage 666688 attributes [1333312 -> 1999999]
+    Process 3 will manage 666688 attributes [2000000 -> 2666687]
+    Process 4 will manage 666624 attributes [2666688 -> 3333311]
+    Process 5 will manage 666688 attributes [3333312 -> 3999999]
+    Process 6 will manage 666688 attributes [4000000 -> 4666687]
+    Process 7 will manage 666688 attributes [4666688 -> 5333375]
+    Process 8 will manage 666624 attributes [5333376 -> 5999999]
+    Process 9 will manage 666688 attributes [6000000 -> 6666687]
+    Process 10 will manage 666688 attributes [6666688 -> 7333375]
+    Process 11 will manage 666688 attributes [7333376 -> 8000063]
+Applying set covering algorithm:
+  Selected attribute #5049279, covers 417312 lines [196.624924s]
+  Selected attribute #2686692, covers 234609 lines [89.816551s]
+  Selected attribute #5687643, covers 133397 lines [51.147579s]
+  Selected attribute #2052712, covers 75533 lines [29.169754s]
+  Selected attribute #2308517, covers 42551 lines [16.149578s]
+  Selected attribute #5813089, covers 24108 lines [9.378002s]
+  Selected attribute #7483437, covers 13581 lines [5.200459s]
+  Selected attribute #95111, covers 7658 lines [2.943862s]
+  Selected attribute #7396225, covers 4289 lines [1.706225s]
+  Selected attribute #3540151, covers 2414 lines [0.962116s]
+  Selected attribute #841023, covers 1320 lines [0.540548s]
+  Selected attribute #1030194, covers 731 lines [0.303099s]
+  Selected attribute #1059263, covers 403 lines [0.171531s]
+  Selected attribute #587174, covers 213 lines [0.094227s]
+  Selected attribute #8000000, covers 108 lines [0.051767s]
+  Selected attribute #6803277, covers 98 lines [0.027642s]
+  Selected attribute #4332983, covers 48 lines [0.020913s]
+  Selected attribute #6126546, covers 18 lines [0.012217s]
+  Selected attribute #7333380, covers 1 lines [0.006311s]
+Solution: { 95111 587174 841023 1030194 1059263 2052712 2308517 2686692 3540151 4332983 5049279 5687643 5813089 6126546 6803277 7333380 7396225 7483437 8000000 }
+Solution has 19 attributes: 19 / 8000001 = 0.0002%
+
+All done! [408.423676s]
+
+real	6m49.230s
+user	80m33.387s
+sys	0m7.938s
+Finished with job ID: 12526087

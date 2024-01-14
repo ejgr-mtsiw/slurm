@@ -1,0 +1,83 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-12-c2_a1M_o2k_i100_u40_p26.h5 on Sun Dec 17 14:34:53 WET 2023
+*    JOB_NAME                : P3-12-c2_a1M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 14085373
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc079
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 12
+*    SLURM_NTASKS            : 12
+*    SLURM_CPUS_ON_NODE      : 12
+*    SLURM_TASKS_PER_NODE    : 12
+*    SLURM_JOB_CPUS_PER_NODE : 12
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P3/P3-12-c2_a1M_o2k_i100_u40_p26.h5.1702819649680722621.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 12 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o2k_i100_u40_p26.h5'
+Using 12 processes
+
+Initializing MPI RMA: [0.004309s]
+Reading dataset: [0.119918s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 2000 
+Sorting dataset: [0.019129s]
+Removing duplicates: [0.018724s]
+  42 duplicate(s) removed
+Setting up JNSQ attributes: [0.001682s]
+  Max JNSQ: 1 [1 bits]
+Sorting dataset by class: [0.016011s]
+Checking classes: [0.000036s]
+  Class 0: 956 item(s)
+  Class 1: 1002 item(s)
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 957912
+  Estimated disjoint matrix size: 111.52GB
+    Process 0 will manage 82944 attributes [0 -> 82943]
+    Process 1 will manage 83456 attributes [82944 -> 166399]
+    Process 2 will manage 83456 attributes [166400 -> 249855]
+    Process 3 will manage 83456 attributes [249856 -> 333311]
+    Process 4 will manage 83456 attributes [333312 -> 416767]
+    Process 5 will manage 83456 attributes [416768 -> 500223]
+    Process 6 will manage 82944 attributes [500224 -> 583167]
+    Process 7 will manage 83456 attributes [583168 -> 666623]
+    Process 8 will manage 83456 attributes [666624 -> 750079]
+    Process 9 will manage 83456 attributes [750080 -> 833535]
+    Process 10 will manage 83456 attributes [833536 -> 916991]
+    Process 11 will manage 83010 attributes [916992 -> 1000001]
+Applying set covering algorithm:
+  Selected attribute #134165, covers 409120 lines [12.202707s]
+  Selected attribute #173348, covers 235250 lines [5.233086s]
+  Selected attribute #972221, covers 135135 lines [3.064432s]
+  Selected attribute #79552, covers 77063 lines [1.825542s]
+  Selected attribute #200490, covers 43989 lines [1.132269s]
+  Selected attribute #535196, covers 24907 lines [0.727448s]
+  Selected attribute #227373, covers 14184 lines [0.476931s]
+  Selected attribute #466148, covers 8040 lines [0.327041s]
+  Selected attribute #462975, covers 4488 lines [0.250851s]
+  Selected attribute #746136, covers 2565 lines [0.195215s]
+  Selected attribute #68384, covers 1419 lines [0.173157s]
+  Selected attribute #481027, covers 775 lines [0.151207s]
+  Selected attribute #197719, covers 440 lines [0.137554s]
+  Selected attribute #504082, covers 231 lines [0.135992s]
+  Selected attribute #727439, covers 123 lines [0.131909s]
+  Selected attribute #1000000, covers 93 lines [0.129443s]
+  Selected attribute #974025, covers 61 lines [0.133011s]
+  Selected attribute #167872, covers 24 lines [0.124383s]
+  Selected attribute #9, covers 5 lines [0.124617s]
+Solution: { 9 68384 79552 134165 167872 173348 197719 200490 227373 462975 466148 481027 504082 535196 727439 746136 972221 974025 1000000 }
+Solution has 19 attributes: 19 / 1000001 = 0.0019%
+
+All done! [26.911051s]
+
+real	0m27.814s
+user	5m22.295s
+sys	0m3.155s
+Finished with job ID: 14085373

@@ -1,0 +1,81 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P4-6-c2_a1M_o8k_i100_u40_p26.h5 on Sat Dec 16 22:29:01 WET 2023
+*    JOB_NAME                : P4-6-c2_a1M_o8k_i100_u40_p26.h5
+*    JOB_ID                  : 14083918
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc076
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 6
+*    SLURM_NTASKS            : 6
+*    SLURM_CPUS_ON_NODE      : 6
+*    SLURM_TASKS_PER_NODE    : 6
+*    SLURM_JOB_CPUS_PER_NODE : 6
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P4
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P4/P4-6-c2_a1M_o8k_i100_u40_p26.h5.1702759100232155120.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 6 /users3/uaberta/eribeiro/laid-by-lines/bin/laid-by-lines -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o8k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o8k_i100_u40_p26.h5'
+Using 6 processes
+
+Initializing MPI Shared Dataset: [0.002432s]
+Reading dataset: [0.625213s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 8000 
+Sorting dataset: [0.068574s]
+Removing duplicates: [0.066933s]
+  40 duplicate(s) removed
+Checking classes: [0.000254s]
+  Class 0: 4065 item(s)
+  Class 1: 3895 item(s)
+Setting up JNSQ attributes: [0.001497s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Estimated disjoint matrix size: 1843.23GB
+  Number of lines in the disjoint matrix: 15833175
+    Process 0 will generate 2638862 lines [0 -> 2638861]
+    Process 1 will generate 2638863 lines [2638862 -> 5277724]
+    Process 2 will generate 2638862 lines [5277725 -> 7916586]
+    Process 3 will generate 2638863 lines [7916587 -> 10555449]
+    Process 4 will generate 2638862 lines [10555450 -> 13194311]
+    Process 5 will generate 2638863 lines [13194312 -> 15833174]
+Applying set covering algorithm:
+  Selected attribute #988372, covers 6422317 lines [649.791260s]
+  Selected attribute #785868, covers 3836821 lines [241.585159s]
+  Selected attribute #966542, covers 2276381 lines [148.543777s]
+  Selected attribute #155077, covers 1350489 lines [87.118217s]
+  Selected attribute #410152, covers 800740 lines [54.683777s]
+  Selected attribute #757036, covers 471231 lines [34.101810s]
+  Selected attribute #808139, covers 278242 lines [22.645834s]
+  Selected attribute #978385, covers 163758 lines [15.723934s]
+  Selected attribute #32143, covers 96553 lines [12.207826s]
+  Selected attribute #699713, covers 56855 lines [9.511477s]
+  Selected attribute #51990, covers 33075 lines [9.052310s]
+  Selected attribute #774091, covers 19469 lines [7.747451s]
+  Selected attribute #314956, covers 11414 lines [6.552422s]
+  Selected attribute #198620, covers 6641 lines [7.003417s]
+  Selected attribute #814818, covers 3897 lines [6.191156s]
+  Selected attribute #70278, covers 2274 lines [6.043829s]
+  Selected attribute #681496, covers 1291 lines [6.061631s]
+  Selected attribute #299569, covers 739 lines [6.030478s]
+  Selected attribute #896045, covers 419 lines [6.167964s]
+  Selected attribute #647928, covers 236 lines [5.969485s]
+  Selected attribute #455718, covers 127 lines [5.913007s]
+  Selected attribute #1000000, covers 102 lines [5.959271s]
+  Selected attribute #30288, covers 64 lines [6.354887s]
+  Selected attribute #706145, covers 30 lines [7.024186s]
+  Selected attribute #44058, covers 10 lines [6.156497s]
+Solution: { 30288 32143 44058 51990 70278 155077 198620 299569 314956 410152 455718 647928 681496 699713 706145 757036 774091 785868 808139 814818 896045 966542 978385 988372 1000000 }
+Solution has 25 attributes: 25 / 1000001 = 0.0025%
+All done! [1375.074097s]
+
+real	22m55.745s
+user	136m37.315s
+sys	0m2.507s
+Finished with job ID: 14083918

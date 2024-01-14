@@ -1,0 +1,56 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-2-p.cavique_c2_a1000000_o2000_novo.h5 on Sun Dec 17 14:52:29 WET 2023
+*    JOB_NAME                : P3-2-p.cavique_c2_a1000000_o2000_novo.h5
+*    JOB_ID                  : 14085395
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc069
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 2
+*    SLURM_NTASKS            : 2
+*    SLURM_CPUS_ON_NODE      : 2
+*    SLURM_TASKS_PER_NODE    : 2
+*    SLURM_JOB_CPUS_PER_NODE : 2
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P3/P3-2-p.cavique_c2_a1000000_o2000_novo.h5.1702819650635221353.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 2 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/p.cavique_c2_a1000000_o2000_novo.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/p.cavique_c2_a1000000_o2000_novo.h5'
+Using 2 processes
+
+Initializing MPI RMA: [0.003096s]
+Reading dataset: [0.185577s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 2000 
+Sorting dataset: [0.035888s]
+Removing duplicates: [0.001739s]
+  0 duplicate(s) removed
+Setting up JNSQ attributes: [0.001841s]
+  Max JNSQ: 0 [0 bits]
+Sorting dataset by class: [0.025234s]
+Checking classes: [0.000044s]
+  Class 0: 1700 item(s)
+  Class 1: 300 item(s)
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 510000
+  Estimated disjoint matrix size: 59.37GB
+    Process 0 will manage 500224 attributes [0 -> 500223]
+    Process 1 will manage 499777 attributes [500224 -> 1000000]
+Applying set covering algorithm:
+  Selected attribute #33042, covers 509700 lines [50.322426s]
+  Selected attribute #33091, covers 300 lines [0.596094s]
+Solution: { 33042 33091 }
+Solution has 2 attributes: 2 / 1000000 = 0.0002%
+
+All done! [51.185673s]
+
+real	0m51.675s
+user	1m41.949s
+sys	0m0.616s
+Finished with job ID: 14085395

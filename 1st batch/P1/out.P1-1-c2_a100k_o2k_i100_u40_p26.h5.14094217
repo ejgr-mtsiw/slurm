@@ -1,0 +1,75 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P1-1-c2_a100k_o2k_i100_u40_p26.h5 on Tue Dec 19 00:26:33 WET 2023
+*    JOB_NAME                : P1-1-c2_a100k_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 14094217
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc066
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 1
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 1
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/1st batch/P1
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/1st batch/P1/P1-1-c2_a100k_o2k_i100_u40_p26.h5.1692308681283789258.sh
+* ----------------------------------------------------------------
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a100k_o2k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1702945594215162869_c2_a100k_o2k_i100_u40_p26.h5
+=== Running ===
+/users3/uaberta/eribeiro/laid-c/bin/laid -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1702945594215162869_c2_a100k_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1702945594215162869_c2_a100k_o2k_i100_u40_p26.h5'
+Disjoint matrix dataset not found.
+
+Reading dataset: [0.007561s]
+  Classes = 2 [1 bits]
+  Attributes = 100000 
+  Observations = 2000 
+Sorting dataset: [0.001683s]
+Removing duplicates: [0.001124s]
+  44 duplicate(s) removed
+Checking classes: [0.000010s]
+  Class 0: 1006 item(s)
+  Class 1: 950 item(s)
+Setting up JNSQ attributes: [0.000152s]
+  Max JNSQ: 1 [1 bits]
+Building disjoint matrix: [0.003087s]
+  Number of lines in the disjoint matrix: 955700
+  Estimated disjoint matrix size: 11.13GB (x2)
+  Line dataset done: [21.408583s]
+  Column dataset done: [28.934191s]
+Applying set covering algorithm:
+  Selected attribute #73625, covers 404986 lines [0.000442s]
+  Selected attribute #44939, covers 234087 lines [80.842468s]
+  Selected attribute #71591, covers 134113 lines [75.283562s]
+  Selected attribute #89008, covers 77531 lines [53.174709s]
+  Selected attribute #39626, covers 44900 lines [36.768333s]
+  Selected attribute #62250, covers 26010 lines [19.092800s]
+  Selected attribute #72645, covers 14732 lines [12.330637s]
+  Selected attribute #25688, covers 8379 lines [7.196148s]
+  Selected attribute #39241, covers 4746 lines [3.855101s]
+  Selected attribute #2552, covers 2710 lines [2.198546s]
+  Selected attribute #43429, covers 1534 lines [1.189521s]
+  Selected attribute #39816, covers 870 lines [0.770531s]
+  Selected attribute #85414, covers 479 lines [0.443360s]
+  Selected attribute #65278, covers 268 lines [0.246656s]
+  Selected attribute #19027, covers 144 lines [0.134150s]
+  Selected attribute #100000, covers 103 lines [0.066223s]
+  Selected attribute #14965, covers 64 lines [0.056044s]
+  Selected attribute #89918, covers 31 lines [0.022527s]
+  Selected attribute #9730, covers 13 lines [0.002643s]
+Solution: { 2552 9730 14965 19027 25688 39241 39626 39816 43429 44939 62250 65278 71591 72645 73625 85414 89008 89918 100000 }
+Solution has 19 attributes: 19 / 100001 = 0.0190%
+All done! [344.037079s]
+
+real	5m44.077s
+user	1m47.686s
+sys	1m3.148s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1702945594215162869_c2_a100k_o2k_i100_u40_p26.h5
+Finished with job ID: 14094217
+Submitted batch job 14094317

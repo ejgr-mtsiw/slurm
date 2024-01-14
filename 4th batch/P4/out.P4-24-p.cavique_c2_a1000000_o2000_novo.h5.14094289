@@ -1,0 +1,76 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P4-24-p.cavique_c2_a1000000_o2000_novo.h5 on Tue Dec 19 00:55:11 WET 2023
+*    JOB_NAME                : P4-24-p.cavique_c2_a1000000_o2000_novo.h5
+*    JOB_ID                  : 14094289
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[072-074]
+*    SLURM_NNODES            : 3
+*    SLURM_NPROCS            : 24
+*    SLURM_NTASKS            : 24
+*    SLURM_CPUS_ON_NODE      : 5
+*    SLURM_TASKS_PER_NODE    : 5,12,7
+*    SLURM_JOB_CPUS_PER_NODE : 5,12,7
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P4
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P4/P4-24-p.cavique_c2_a1000000_o2000_novo.h5.1702945598055485158.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 24 /users3/uaberta/eribeiro/laid-by-lines/bin/laid-by-lines -d dados -f /users3/uaberta/eribeiro/datasets/p.cavique_c2_a1000000_o2000_novo.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/p.cavique_c2_a1000000_o2000_novo.h5'
+Using 24 processes
+
+Initializing MPI Shared Dataset: [0.002371s]
+Reading dataset: [0.143237s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 2000 
+Sorting dataset: [0.024821s]
+Removing duplicates: [0.001185s]
+  0 duplicate(s) removed
+Checking classes: [0.000045s]
+  Class 0: 1700 item(s)
+  Class 1: 300 item(s)
+Setting up JNSQ attributes: [0.000801s]
+  Max JNSQ: 0 [0 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Estimated disjoint matrix size: 59.37GB
+  Number of lines in the disjoint matrix: 510000
+    Process 0 will generate 21250 lines [0 -> 21249]
+    Process 1 will generate 21250 lines [21250 -> 42499]
+    Process 2 will generate 21250 lines [42500 -> 63749]
+    Process 3 will generate 21250 lines [63750 -> 84999]
+    Process 4 will generate 21250 lines [85000 -> 106249]
+    Process 5 will generate 21250 lines [106250 -> 127499]
+    Process 6 will generate 21250 lines [127500 -> 148749]
+    Process 7 will generate 21250 lines [148750 -> 169999]
+    Process 8 will generate 21250 lines [170000 -> 191249]
+    Process 9 will generate 21250 lines [191250 -> 212499]
+    Process 10 will generate 21250 lines [212500 -> 233749]
+    Process 11 will generate 21250 lines [233750 -> 254999]
+    Process 12 will generate 21250 lines [255000 -> 276249]
+    Process 13 will generate 21250 lines [276250 -> 297499]
+    Process 14 will generate 21250 lines [297500 -> 318749]
+    Process 15 will generate 21250 lines [318750 -> 339999]
+    Process 16 will generate 21250 lines [340000 -> 361249]
+    Process 17 will generate 21250 lines [361250 -> 382499]
+    Process 18 will generate 21250 lines [382500 -> 403749]
+    Process 19 will generate 21250 lines [403750 -> 424999]
+    Process 20 will generate 21250 lines [425000 -> 446249]
+    Process 21 will generate 21250 lines [446250 -> 467499]
+    Process 22 will generate 21250 lines [467500 -> 488749]
+    Process 23 will generate 21250 lines [488750 -> 509999]
+Applying set covering algorithm:
+  Selected attribute #33042, covers 509700 lines [4.418688s]
+  Selected attribute #33091, covers 300 lines [0.152375s]
+Solution: { 33042 33091 }
+Solution has 2 attributes: 2 / 1000000 = 0.0002%
+All done! [4.755877s]
+
+real	0m5.943s
+user	0m23.161s
+sys	0m2.039s
+Finished with job ID: 14094289

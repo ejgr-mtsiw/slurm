@@ -1,0 +1,106 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P2-48-c2_a8M_o2k_i100_u40_p26.h5 on Sun Dec  3 00:10:34 WET 2023
+*    JOB_NAME                : P2-48-c2_a8M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 13603999
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc079
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 48
+*    SLURM_NTASKS            : 48
+*    SLURM_CPUS_ON_NODE      : 48
+*    SLURM_TASKS_PER_NODE    : 48
+*    SLURM_JOB_CPUS_PER_NODE : 48
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : hpc074.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/2nd batch/P2
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/2nd batch/P2/P2-48-c2_a8M_o2k_i100_u40_p26.h5.1692715001729823344.sh
+* ----------------------------------------------------------------
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1701562235434123777_c2_a8M_o2k_i100_u40_p26.h5
+=== Running ===
+mpiexec -np 48 /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1701562235434123777_c2_a8M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1701562235434123777_c2_a8M_o2k_i100_u40_p26.h5'
+Using 48 processes
+
+Disjoint matrix dataset not found.
+
+Initializing MPI RMA: [0.001140s]
+Reading dataset: [0.978340s]
+  Classes = 2 [1 bits]
+  Attributes = 8000000 
+  Observations = 2000 
+Sorting dataset: [0.141642s]
+Removing duplicates: [0.153588s]
+  42 duplicate(s) removed
+Checking classes: [0.000086s]
+  Class 0: 972 item(s)
+  Class 1: 986 item(s)
+Setting up JNSQ attributes: [0.009147s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000144s]
+  Number of lines in the disjoint matrix: 958392
+    Process 0 will generate 19966 lines [0 -> 19965]
+    Process 1 will generate 19967 lines [19966 -> 39932]
+    Process 2 will generate 19966 lines [39933 -> 59898]
+    Process 3 will generate 19967 lines [59899 -> 79865]
+    Process 4 will generate 19966 lines [79866 -> 99831]
+    Process 5 will generate 19967 lines [99832 -> 119798]
+    Process 6 will generate 19966 lines [119799 -> 139764]
+    Process 7 will generate 19967 lines [139765 -> 159731]
+    Process 8 will generate 19966 lines [159732 -> 179697]
+    Process 9 will generate 19967 lines [179698 -> 199664]
+    Process 10 will generate 19966 lines [199665 -> 219630]
+    Process 11 will generate 19967 lines [219631 -> 239597]
+    Process 12 will generate 19966 lines [239598 -> 259563]
+    Process 13 will generate 19967 lines [259564 -> 279530]
+    Process 14 will generate 19966 lines [279531 -> 299496]
+    Process 15 will generate 19967 lines [299497 -> 319463]
+    Process 16 will generate 19966 lines [319464 -> 339429]
+    Process 17 will generate 19967 lines [339430 -> 359396]
+    Process 18 will generate 19966 lines [359397 -> 379362]
+    Process 19 will generate 19967 lines [379363 -> 399329]
+    Process 20 will generate 19966 lines [399330 -> 419295]
+    Process 21 will generate 19967 lines [419296 -> 439262]
+    Process 22 will generate 19966 lines [439263 -> 459228]
+    Process 23 will generate 19967 lines [459229 -> 479195]
+    Process 24 will generate 19966 lines [479196 -> 499161]
+    Process 25 will generate 19967 lines [499162 -> 519128]
+    Process 26 will generate 19966 lines [519129 -> 539094]
+    Process 27 will generate 19967 lines [539095 -> 559061]
+    Process 28 will generate 19966 lines [559062 -> 579027]
+    Process 29 will generate 19967 lines [579028 -> 598994]
+    Process 30 will generate 19966 lines [598995 -> 618960]
+    Process 31 will generate 19967 lines [618961 -> 638927]
+    Process 32 will generate 19966 lines [638928 -> 658893]
+    Process 33 will generate 19967 lines [658894 -> 678860]
+    Process 34 will generate 19966 lines [678861 -> 698826]
+    Process 35 will generate 19967 lines [698827 -> 718793]
+    Process 36 will generate 19966 lines [718794 -> 738759]
+    Process 37 will generate 19967 lines [738760 -> 758726]
+    Process 38 will generate 19966 lines [758727 -> 778692]
+    Process 39 will generate 19967 lines [778693 -> 798659]
+    Process 40 will generate 19966 lines [798660 -> 818625]
+    Process 41 will generate 19967 lines [818626 -> 838592]
+    Process 42 will generate 19966 lines [838593 -> 858558]
+    Process 43 will generate 19967 lines [858559 -> 878525]
+    Process 44 will generate 19966 lines [878526 -> 898491]
+    Process 45 will generate 19967 lines [898492 -> 918458]
+    Process 46 will generate 19966 lines [918459 -> 938424]
+    Process 47 will generate 19967 lines [938425 -> 958391]
+Building disjoint matrix:
+  Estimated disjoint matrix size: 892.57GB (x2)
+  Line dataset done: [21.027992s]
+  Column dataset done: [42.359066s]
+Applying set covering algorithm:
+[67.792923s]
+
+real	1m10.215s
+user	53m14.309s
+sys	1m35.595s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1701562235434123777_c2_a8M_o2k_i100_u40_p26.h5
+Finished with job ID: 13603999
+Submitted batch job 13604780

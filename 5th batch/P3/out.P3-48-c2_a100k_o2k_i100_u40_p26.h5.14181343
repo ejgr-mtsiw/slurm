@@ -1,0 +1,119 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-48-c2_a100k_o2k_i100_u40_p26.h5 on Tue Jan  2 23:27:02 WET 2024
+*    JOB_NAME                : P3-48-c2_a100k_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 14181343
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[067,075-077]
+*    SLURM_NNODES            : 4
+*    SLURM_NPROCS            : 48
+*    SLURM_NTASKS            : 48
+*    SLURM_CPUS_ON_NODE      : 15
+*    SLURM_TASKS_PER_NODE    : 15(x2),11,7
+*    SLURM_JOB_CPUS_PER_NODE : 15(x2),11,7
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/5th batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/5th batch/P3/P3-48-c2_a100k_o2k_i100_u40_p26.h5.1704055774416871956.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 48 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c2_a100k_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a100k_o2k_i100_u40_p26.h5'
+Using 48 processes
+
+Initializing MPI RMA: [0.002501s]
+Reading dataset: [0.015104s]
+  Classes = 2 [1 bits]
+  Attributes = 100000 
+  Observations = 2000 
+Sorting dataset: [0.001444s]
+Removing duplicates: [0.000847s]
+  44 duplicate(s) removed
+Setting up JNSQ attributes: [0.000103s]
+  Max JNSQ: 1 [1 bits]
+Sorting dataset by class: [0.000711s]
+Checking classes: [0.000006s]
+  Class 0: 1006 item(s)
+  Class 1: 950 item(s)
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 955700
+  Estimated disjoint matrix size: 11.13GB
+    Process 0 will manage 2048 attributes [0 -> 2047]
+    Process 1 will manage 2048 attributes [2048 -> 4095]
+    Process 2 will manage 2048 attributes [4096 -> 6143]
+    Process 3 will manage 2048 attributes [6144 -> 8191]
+    Process 4 will manage 2048 attributes [8192 -> 10239]
+    Process 5 will manage 2048 attributes [10240 -> 12287]
+    Process 6 will manage 2048 attributes [12288 -> 14335]
+    Process 7 will manage 2048 attributes [14336 -> 16383]
+    Process 8 will manage 2048 attributes [16384 -> 18431]
+    Process 9 will manage 2048 attributes [18432 -> 20479]
+    Process 10 will manage 2048 attributes [20480 -> 22527]
+    Process 11 will manage 2560 attributes [22528 -> 25087]
+    Process 12 will manage 2048 attributes [25088 -> 27135]
+    Process 13 will manage 2048 attributes [27136 -> 29183]
+    Process 14 will manage 2048 attributes [29184 -> 31231]
+    Process 15 will manage 2048 attributes [31232 -> 33279]
+    Process 16 will manage 2048 attributes [33280 -> 35327]
+    Process 17 will manage 2048 attributes [35328 -> 37375]
+    Process 18 will manage 2048 attributes [37376 -> 39423]
+    Process 19 will manage 2048 attributes [39424 -> 41471]
+    Process 20 will manage 2048 attributes [41472 -> 43519]
+    Process 21 will manage 2048 attributes [43520 -> 45567]
+    Process 22 will manage 2048 attributes [45568 -> 47615]
+    Process 23 will manage 2560 attributes [47616 -> 50175]
+    Process 24 will manage 2048 attributes [50176 -> 52223]
+    Process 25 will manage 2048 attributes [52224 -> 54271]
+    Process 26 will manage 2048 attributes [54272 -> 56319]
+    Process 27 will manage 2048 attributes [56320 -> 58367]
+    Process 28 will manage 2048 attributes [58368 -> 60415]
+    Process 29 will manage 2048 attributes [60416 -> 62463]
+    Process 30 will manage 2048 attributes [62464 -> 64511]
+    Process 31 will manage 2048 attributes [64512 -> 66559]
+    Process 32 will manage 2048 attributes [66560 -> 68607]
+    Process 33 will manage 2048 attributes [68608 -> 70655]
+    Process 34 will manage 2048 attributes [70656 -> 72703]
+    Process 35 will manage 2560 attributes [72704 -> 75263]
+    Process 36 will manage 2048 attributes [75264 -> 77311]
+    Process 37 will manage 2048 attributes [77312 -> 79359]
+    Process 38 will manage 2048 attributes [79360 -> 81407]
+    Process 39 will manage 2048 attributes [81408 -> 83455]
+    Process 40 will manage 2048 attributes [83456 -> 85503]
+    Process 41 will manage 2048 attributes [85504 -> 87551]
+    Process 42 will manage 2048 attributes [87552 -> 89599]
+    Process 43 will manage 2048 attributes [89600 -> 91647]
+    Process 44 will manage 2048 attributes [91648 -> 93695]
+    Process 45 will manage 2048 attributes [93696 -> 95743]
+    Process 46 will manage 2048 attributes [95744 -> 97791]
+    Process 47 will manage 2210 attributes [97792 -> 100001]
+Applying set covering algorithm:
+  Selected attribute #73625, covers 404986 lines [0.492723s]
+  Selected attribute #44939, covers 234087 lines [0.176965s]
+  Selected attribute #71591, covers 134113 lines [0.103144s]
+  Selected attribute #89008, covers 77531 lines [0.061654s]
+  Selected attribute #39626, covers 44900 lines [0.038538s]
+  Selected attribute #62250, covers 26010 lines [0.025304s]
+  Selected attribute #72645, covers 14732 lines [0.017381s]
+  Selected attribute #25688, covers 8379 lines [0.012875s]
+  Selected attribute #39241, covers 4746 lines [0.010249s]
+  Selected attribute #2552, covers 2710 lines [0.008558s]
+  Selected attribute #43429, covers 1534 lines [0.007636s]
+  Selected attribute #39816, covers 870 lines [0.007150s]
+  Selected attribute #85414, covers 479 lines [0.006979s]
+  Selected attribute #65278, covers 268 lines [0.006707s]
+  Selected attribute #19027, covers 144 lines [0.006559s]
+  Selected attribute #100000, covers 103 lines [0.006378s]
+  Selected attribute #14965, covers 64 lines [0.006091s]
+  Selected attribute #89918, covers 31 lines [0.006445s]
+  Selected attribute #9730, covers 13 lines [0.006401s]
+Solution: { 2552 9730 14965 19027 25688 39241 39626 39816 43429 44939 62250 65278 71591 72645 73625 85414 89008 89918 100000 }
+Solution has 19 attributes: 19 / 100001 = 0.0190%
+
+All done! [1.066655s]
+
+real	0m2.808s
+user	0m15.603s
+sys	0m9.461s
+Finished with job ID: 14181343

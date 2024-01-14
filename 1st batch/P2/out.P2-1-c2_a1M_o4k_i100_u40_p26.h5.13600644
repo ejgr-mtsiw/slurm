@@ -1,0 +1,83 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P2-1-c2_a1M_o4k_i100_u40_p26.h5 on Fri Dec  1 17:46:25 WET 2023
+*    JOB_NAME                : P2-1-c2_a1M_o4k_i100_u40_p26.h5
+*    JOB_ID                  : 13600644
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc076
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 1
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 1
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : hpc068.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/1st batch/P2
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/1st batch/P2/P2-1-c2_a1M_o4k_i100_u40_p26.h5.1692308682027216551.sh
+* ----------------------------------------------------------------
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a1M_o4k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1701452786235612662_c2_a1M_o4k_i100_u40_p26.h5
+=== Running ===
+mpiexec -np 1 /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1701452786235612662_c2_a1M_o4k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1701452786235612662_c2_a1M_o4k_i100_u40_p26.h5'
+Using 1 processes
+
+Disjoint matrix dataset not found.
+
+Initializing MPI RMA: [0.000133s]
+Reading dataset: [0.160190s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 4000 
+Sorting dataset: [0.040080s]
+Removing duplicates: [0.040805s]
+  40 duplicate(s) removed
+Checking classes: [0.000084s]
+  Class 0: 1970 item(s)
+  Class 1: 1990 item(s)
+Setting up JNSQ attributes: [0.001442s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.014185s]
+  Number of lines in the disjoint matrix: 3920300
+    Process 0 will generate 3920300 lines [0 -> 3920299]
+Building disjoint matrix:
+  Estimated disjoint matrix size: 456.38GB (x2)
+  Line dataset done: [752.496460s]
+  Column dataset done: [1662.354370s]
+Applying set covering algorithm:
+  Selected attribute #776774, covers 1645878 lines [0.005228s]
+  Selected attribute #180414, covers 946677 lines [6405.180176s]
+  Selected attribute #251128, covers 554159 lines [3562.760742s]
+  Selected attribute #529432, covers 323077 lines [2342.033447s]
+  Selected attribute #941504, covers 189370 lines [1733.537109s]
+  Selected attribute #901639, covers 109888 lines [1181.455078s]
+  Selected attribute #484350, covers 63576 lines [823.536926s]
+  Selected attribute #98578, covers 37132 lines [556.151550s]
+  Selected attribute #477510, covers 21445 lines [353.658447s]
+  Selected attribute #168051, covers 12341 lines [333.384735s]
+  Selected attribute #918042, covers 7199 lines [131.317535s]
+  Selected attribute #757697, covers 4081 lines [77.601929s]
+  Selected attribute #922782, covers 2366 lines [49.521301s]
+  Selected attribute #873357, covers 1350 lines [30.279158s]
+  Selected attribute #804587, covers 771 lines [13.808256s]
+  Selected attribute #731005, covers 426 lines [7.842364s]
+  Selected attribute #30900, covers 233 lines [5.094941s]
+  Selected attribute #293887, covers 127 lines [2.354141s]
+  Selected attribute #1000000, covers 102 lines [1.795549s]
+  Selected attribute #987750, covers 67 lines [1.223920s]
+  Selected attribute #171154, covers 28 lines [0.844714s]
+  Selected attribute #2113, covers 7 lines [0.031431s]
+Solution: { 2113 30900 98578 168051 171154 180414 251128 293887 477510 484350 529432 731005 757697 776774 804587 873357 901639 918042 922782 941504 987750 1000000 }
+Solution has 22 attributes: 22 / 1000001 = 0.0022%
+All done! [20028.576172s]
+
+real	333m49.590s
+user	98m18.017s
+sys	39m40.190s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1701452786235612662_c2_a1M_o4k_i100_u40_p26.h5
+Finished with job ID: 13600644
+Submitted batch job 13601348

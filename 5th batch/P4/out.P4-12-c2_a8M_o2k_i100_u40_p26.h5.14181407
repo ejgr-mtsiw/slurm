@@ -1,0 +1,81 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P4-12-c2_a8M_o2k_i100_u40_p26.h5 on Tue Jan  2 23:41:51 WET 2024
+*    JOB_NAME                : P4-12-c2_a8M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 14181407
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[067-068,072-073]
+*    SLURM_NNODES            : 4
+*    SLURM_NPROCS            : 12
+*    SLURM_NTASKS            : 12
+*    SLURM_CPUS_ON_NODE      : 4
+*    SLURM_TASKS_PER_NODE    : 4(x2),1,3
+*    SLURM_JOB_CPUS_PER_NODE : 4(x2),1,3
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/5th batch/P4
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/5th batch/P4/P4-12-c2_a8M_o2k_i100_u40_p26.h5.1704055782133504272.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 12 /users3/uaberta/eribeiro/laid-by-lines/bin/laid-by-lines -d dados -f /users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5'
+Using 12 processes
+
+Initializing MPI Shared Dataset: [0.002296s]
+Reading dataset: [0.931831s]
+  Classes = 2 [1 bits]
+  Attributes = 8000000 
+  Observations = 2000 
+Sorting dataset: [0.141770s]
+Removing duplicates: [0.163777s]
+  42 duplicate(s) removed
+Checking classes: [0.000094s]
+  Class 0: 972 item(s)
+  Class 1: 986 item(s)
+Setting up JNSQ attributes: [0.008052s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Estimated disjoint matrix size: 892.57GB
+  Number of lines in the disjoint matrix: 958392
+    Process 0 will generate 79866 lines [0 -> 79865]
+    Process 1 will generate 79866 lines [79866 -> 159731]
+    Process 2 will generate 79866 lines [159732 -> 239597]
+    Process 3 will generate 79866 lines [239598 -> 319463]
+    Process 4 will generate 79866 lines [319464 -> 399329]
+    Process 5 will generate 79866 lines [399330 -> 479195]
+    Process 6 will generate 79866 lines [479196 -> 559061]
+    Process 7 will generate 79866 lines [559062 -> 638927]
+    Process 8 will generate 79866 lines [638928 -> 718793]
+    Process 9 will generate 79866 lines [718794 -> 798659]
+    Process 10 will generate 79866 lines [798660 -> 878525]
+    Process 11 will generate 79866 lines [878526 -> 958391]
+Applying set covering algorithm:
+  Selected attribute #5049279, covers 417312 lines [192.687897s]
+  Selected attribute #2686692, covers 234609 lines [79.139526s]
+  Selected attribute #5687643, covers 133397 lines [39.285648s]
+  Selected attribute #2052712, covers 75533 lines [26.940641s]
+  Selected attribute #2308517, covers 42551 lines [15.057368s]
+  Selected attribute #5813089, covers 24108 lines [9.929722s]
+  Selected attribute #7483437, covers 13581 lines [6.584014s]
+  Selected attribute #95111, covers 7658 lines [4.340714s]
+  Selected attribute #7396225, covers 4289 lines [3.774841s]
+  Selected attribute #3540151, covers 2414 lines [2.844881s]
+  Selected attribute #841023, covers 1320 lines [2.459860s]
+  Selected attribute #1030194, covers 731 lines [2.511286s]
+  Selected attribute #1059263, covers 403 lines [2.191694s]
+  Selected attribute #587174, covers 213 lines [2.330355s]
+  Selected attribute #8000000, covers 108 lines [2.676289s]
+  Selected attribute #121235, covers 98 lines [2.173799s]
+  Selected attribute #2197043, covers 46 lines [2.268919s]
+  Selected attribute #331937, covers 19 lines [2.267678s]
+  Selected attribute #1, covers 2 lines [2.229010s]
+Solution: { 1 95111 121235 331937 587174 841023 1030194 1059263 2052712 2197043 2308517 2686692 3540151 5049279 5687643 5813089 7396225 7483437 8000000 }
+Solution has 19 attributes: 19 / 8000001 = 0.0002%
+All done! [402.993622s]
+
+real	6m44.207s
+user	20m30.748s
+sys	6m11.033s
+Finished with job ID: 14181407

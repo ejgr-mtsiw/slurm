@@ -1,0 +1,85 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P3-6-c2_a1M_o8k_i100_u40_p26.h5 on Sat Dec 16 22:27:27 WET 2023
+*    JOB_NAME                : P3-6-c2_a1M_o8k_i100_u40_p26.h5
+*    JOB_ID                  : 14083878
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc[077-079]
+*    SLURM_NNODES            : 3
+*    SLURM_NPROCS            : 6
+*    SLURM_NTASKS            : 6
+*    SLURM_CPUS_ON_NODE      : 3
+*    SLURM_TASKS_PER_NODE    : 3,2,1
+*    SLURM_JOB_CPUS_PER_NODE : 3,2,1
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P3
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P3/P3-6-c2_a1M_o8k_i100_u40_p26.h5.1702759098536725876.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 6 /users3/uaberta/eribeiro/laid-by-columns/bin/laid-by-columns -d dados -f /users3/uaberta/eribeiro/datasets/c2_a1M_o8k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/c2_a1M_o8k_i100_u40_p26.h5'
+Using 6 processes
+
+Initializing MPI RMA: [0.177978s]
+Reading dataset: [0.914543s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 8000 
+Sorting dataset: [0.142467s]
+Removing duplicates: [0.153462s]
+  40 duplicate(s) removed
+Setting up JNSQ attributes: [0.015228s]
+  Max JNSQ: 1 [1 bits]
+Sorting dataset by class: [0.134891s]
+Checking classes: [0.000172s]
+  Class 0: 4065 item(s)
+  Class 1: 3895 item(s)
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Number of lines in the disjoint matrix: 15833175
+  Estimated disjoint matrix size: 1843.23GB
+    Process 0 will manage 166400 attributes [0 -> 166399]
+    Process 1 will manage 166912 attributes [166400 -> 333311]
+    Process 2 will manage 166912 attributes [333312 -> 500223]
+    Process 3 will manage 166400 attributes [500224 -> 666623]
+    Process 4 will manage 166912 attributes [666624 -> 833535]
+    Process 5 will manage 166466 attributes [833536 -> 1000001]
+Applying set covering algorithm:
+  Selected attribute #988372, covers 6422317 lines [896.955322s]
+  Selected attribute #785868, covers 3836821 lines [312.565216s]
+  Selected attribute #966542, covers 2276381 lines [186.429230s]
+  Selected attribute #155077, covers 1350489 lines [110.833847s]
+  Selected attribute #410152, covers 800740 lines [66.958916s]
+  Selected attribute #757036, covers 471231 lines [42.693775s]
+  Selected attribute #808139, covers 278242 lines [28.330002s]
+  Selected attribute #978385, covers 163758 lines [19.430561s]
+  Selected attribute #32143, covers 96553 lines [14.034906s]
+  Selected attribute #699713, covers 56855 lines [10.804519s]
+  Selected attribute #51990, covers 33075 lines [8.838314s]
+  Selected attribute #774091, covers 19469 lines [7.697722s]
+  Selected attribute #314956, covers 11414 lines [7.044144s]
+  Selected attribute #198620, covers 6641 lines [6.600564s]
+  Selected attribute #814818, covers 3897 lines [6.426826s]
+  Selected attribute #70278, covers 2274 lines [6.264611s]
+  Selected attribute #681496, covers 1291 lines [6.139535s]
+  Selected attribute #299569, covers 739 lines [6.151017s]
+  Selected attribute #896045, covers 419 lines [6.104769s]
+  Selected attribute #647928, covers 236 lines [6.030184s]
+  Selected attribute #455718, covers 127 lines [5.998893s]
+  Selected attribute #1000000, covers 102 lines [6.006960s]
+  Selected attribute #30288, covers 64 lines [5.981393s]
+  Selected attribute #706145, covers 30 lines [5.945074s]
+  Selected attribute #44058, covers 10 lines [6.046014s]
+Solution: { 30288 32143 44058 51990 70278 155077 198620 299569 314956 410152 455718 647928 681496 699713 706145 757036 774091 785868 808139 814818 896045 966542 978385 988372 1000000 }
+Solution has 25 attributes: 25 / 1000001 = 0.0025%
+
+All done! [1788.114014s]
+
+real	29m49.328s
+user	87m26.097s
+sys	0m18.470s
+Finished with job ID: 14083878
+srun: Job 14083878 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=14083878.1

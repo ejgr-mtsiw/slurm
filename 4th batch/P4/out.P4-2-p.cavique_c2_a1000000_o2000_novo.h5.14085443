@@ -1,0 +1,54 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P4-2-p.cavique_c2_a1000000_o2000_novo.h5 on Sun Dec 17 14:53:32 WET 2023
+*    JOB_NAME                : P4-2-p.cavique_c2_a1000000_o2000_novo.h5
+*    JOB_ID                  : 14085443
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc069
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 2
+*    SLURM_NTASKS            : 2
+*    SLURM_CPUS_ON_NODE      : 2
+*    SLURM_TASKS_PER_NODE    : 2
+*    SLURM_JOB_CPUS_PER_NODE : 2
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/4th batch/P4
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/4th batch/P4/P4-2-p.cavique_c2_a1000000_o2000_novo.h5.1702819652677742095.sh
+* ----------------------------------------------------------------
+=== Running ===
+mpiexec -np 2 /users3/uaberta/eribeiro/laid-by-lines/bin/laid-by-lines -d dados -f /users3/uaberta/eribeiro/datasets/p.cavique_c2_a1000000_o2000_novo.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/p.cavique_c2_a1000000_o2000_novo.h5'
+Using 2 processes
+
+Initializing MPI Shared Dataset: [0.002821s]
+Reading dataset: [0.137333s]
+  Classes = 2 [1 bits]
+  Attributes = 1000000 
+  Observations = 2000 
+Sorting dataset: [0.024599s]
+Removing duplicates: [0.001329s]
+  0 duplicate(s) removed
+Checking classes: [0.000045s]
+  Class 0: 1700 item(s)
+  Class 1: 300 item(s)
+Setting up JNSQ attributes: [0.000862s]
+  Max JNSQ: 0 [0 bits]
+Calculating disjoint matrix lines to generate: [0.000000s]
+  Estimated disjoint matrix size: 59.37GB
+  Number of lines in the disjoint matrix: 510000
+    Process 0 will generate 255000 lines [0 -> 254999]
+    Process 1 will generate 255000 lines [255000 -> 509999]
+Applying set covering algorithm:
+  Selected attribute #33042, covers 509700 lines [53.203938s]
+  Selected attribute #33091, covers 300 lines [0.786372s]
+Solution: { 33042 33091 }
+Solution has 2 attributes: 2 / 1000000 = 0.0002%
+All done! [54.195305s]
+
+real	0m54.715s
+user	1m47.932s
+sys	0m0.577s
+Finished with job ID: 14085443
