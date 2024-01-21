@@ -46,3 +46,36 @@ Calculating disjoint matrix lines to generate: [0.001358s]
     Process 1 will generate 479196 lines [479196 -> 958391]
 Building disjoint matrix:
   Estimated disjoint matrix size: 892.57GB (x2)
+  Line dataset done: [2179.200439s]
+  Column dataset done: [2317.051758s]
+Applying set covering algorithm:
+  Selected attribute #5049279, covers 417312 lines [0.014028s]
+  Selected attribute #2686692, covers 234609 lines [10654.374023s]
+  Selected attribute #5687643, covers 133397 lines [3585.028320s]
+  Selected attribute #2052712, covers 75533 lines [1971.130859s]
+  Selected attribute #2308517, covers 42551 lines [993.945801s]
+  Selected attribute #5813089, covers 24108 lines [628.948914s]
+  Selected attribute #7483437, covers 13581 lines [344.374725s]
+  Selected attribute #95111, covers 7658 lines [176.824524s]
+  Selected attribute #7396225, covers 4289 lines [113.867172s]
+  Selected attribute #3540151, covers 2414 lines [66.845985s]
+  Selected attribute #841023, covers 1320 lines [41.150265s]
+  Selected attribute #1030194, covers 731 lines [20.715017s]
+  Selected attribute #1059263, covers 403 lines [10.431201s]
+  Selected attribute #587174, covers 213 lines [5.431432s]
+  Selected attribute #8000000, covers 108 lines [2.880357s]
+  Selected attribute #121235, covers 98 lines [2.460203s]
+  Selected attribute #2197043, covers 46 lines [1.322803s]
+  Selected attribute #331937, covers 19 lines [1.365429s]
+  Selected attribute #1, covers 2 lines [0.339665s]
+Solution: { 1 95111 121235 331937 587174 841023 1030194 1059263 2052712 2197043 2308517 2686692 3540151 5049279 5687643 5813089 7396225 7483437 8000000 }
+Solution has 19 attributes: 19 / 8000001 = 0.0002%
+All done! [23122.074219s]
+
+real	385m22.533s
+user	126m20.317s
+sys	55m45.711s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1705244345538047651_c2_a8M_o2k_i100_u40_p26.h5
+Finished with job ID: 14580577
+Submitted batch job 14581277

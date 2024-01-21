@@ -1,0 +1,103 @@
+* ----------------------------------------------------------------
+* Running PROLOG for P2-24-c2_a8M_o2k_i100_u40_p26.h5 on Mon Jan 15 16:15:10 WET 2024
+*    JOB_NAME                : P2-24-c2_a8M_o2k_i100_u40_p26.h5
+*    JOB_ID                  : 14584170
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : eribeiro
+*    JOB_ACCOUNT             : uaberta
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc078
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 24
+*    SLURM_NTASKS            : 24
+*    SLURM_CPUS_ON_NODE      : 24
+*    SLURM_TASKS_PER_NODE    : 24
+*    SLURM_JOB_CPUS_PER_NODE : 24
+*    SLURM_MEM_PER_CPU       : 5000
+*    SUBMIT_HOST             : hpc078.a.incd.pt
+*    WORK_DIR                : /users3/uaberta/eribeiro/slurm/2nd batch/P2
+*    JOB_SCRIPT              : /users3/uaberta/eribeiro/slurm/2nd batch/P2/P2-24-c2_a8M_o2k_i100_u40_p26.h5.1692715001710747405.sh
+* ----------------------------------------------------------------
+=== Making a copy of the dataset ===
+cp /users3/uaberta/eribeiro/datasets/c2_a8M_o2k_i100_u40_p26.h5 /users3/uaberta/eribeiro/datasets/tmp/1705335311109320068_c2_a8M_o2k_i100_u40_p26.h5
+=== Running ===
+mpiexec -np 24 /users3/uaberta/eribeiro/laid-matrix-in-dataset/bin/laid-hdf5-mpi -d dados -f /users3/uaberta/eribeiro/datasets/tmp/1705335311109320068_c2_a8M_o2k_i100_u40_p26.h5
+Using dataset '/users3/uaberta/eribeiro/datasets/tmp/1705335311109320068_c2_a8M_o2k_i100_u40_p26.h5'
+Using 24 processes
+
+Disjoint matrix dataset not found.
+
+Initializing MPI RMA: [0.000520s]
+Reading dataset: [1.222472s]
+  Classes = 2 [1 bits]
+  Attributes = 8000000 
+  Observations = 2000 
+Sorting dataset: [0.192945s]
+Removing duplicates: [0.221159s]
+  42 duplicate(s) removed
+Checking classes: [0.000094s]
+  Class 0: 972 item(s)
+  Class 1: 986 item(s)
+Setting up JNSQ attributes: [0.008584s]
+  Max JNSQ: 1 [1 bits]
+Calculating disjoint matrix lines to generate: [0.000278s]
+  Number of lines in the disjoint matrix: 958392
+    Process 0 will generate 39933 lines [0 -> 39932]
+    Process 1 will generate 39933 lines [39933 -> 79865]
+    Process 2 will generate 39933 lines [79866 -> 119798]
+    Process 3 will generate 39933 lines [119799 -> 159731]
+    Process 4 will generate 39933 lines [159732 -> 199664]
+    Process 5 will generate 39933 lines [199665 -> 239597]
+    Process 6 will generate 39933 lines [239598 -> 279530]
+    Process 7 will generate 39933 lines [279531 -> 319463]
+    Process 8 will generate 39933 lines [319464 -> 359396]
+    Process 9 will generate 39933 lines [359397 -> 399329]
+    Process 10 will generate 39933 lines [399330 -> 439262]
+    Process 11 will generate 39933 lines [439263 -> 479195]
+    Process 12 will generate 39933 lines [479196 -> 519128]
+    Process 13 will generate 39933 lines [519129 -> 559061]
+    Process 14 will generate 39933 lines [559062 -> 598994]
+    Process 15 will generate 39933 lines [598995 -> 638927]
+    Process 16 will generate 39933 lines [638928 -> 678860]
+    Process 17 will generate 39933 lines [678861 -> 718793]
+    Process 18 will generate 39933 lines [718794 -> 758726]
+    Process 19 will generate 39933 lines [758727 -> 798659]
+    Process 20 will generate 39933 lines [798660 -> 838592]
+    Process 21 will generate 39933 lines [838593 -> 878525]
+    Process 22 will generate 39933 lines [878526 -> 918458]
+    Process 23 will generate 39933 lines [918459 -> 958391]
+Building disjoint matrix:
+  Estimated disjoint matrix size: 892.57GB (x2)
+  Line dataset done: [2392.276123s]
+  Column dataset done: [3556.435303s]
+Applying set covering algorithm:
+  Selected attribute #5049279, covers 417312 lines [0.084192s]
+  Selected attribute #2686692, covers 234609 lines [8161.240234s]
+  Selected attribute #5687643, covers 133397 lines [1646.501831s]
+  Selected attribute #2052712, covers 75533 lines [1053.378418s]
+  Selected attribute #2308517, covers 42551 lines [734.473633s]
+  Selected attribute #5813089, covers 24108 lines [414.327881s]
+  Selected attribute #7483437, covers 13581 lines [239.676270s]
+  Selected attribute #95111, covers 7658 lines [139.631531s]
+  Selected attribute #7396225, covers 4289 lines [77.155998s]
+  Selected attribute #3540151, covers 2414 lines [41.391155s]
+  Selected attribute #841023, covers 1320 lines [26.410208s]
+  Selected attribute #1030194, covers 731 lines [13.695352s]
+  Selected attribute #1059263, covers 403 lines [8.290166s]
+  Selected attribute #587174, covers 213 lines [4.835493s]
+  Selected attribute #8000000, covers 108 lines [3.570886s]
+  Selected attribute #121235, covers 98 lines [1.140406s]
+  Selected attribute #2197043, covers 46 lines [2.359097s]
+  Selected attribute #331937, covers 19 lines [0.713439s]
+  Selected attribute #1, covers 2 lines [0.427866s]
+Solution: { 1 95111 121235 331937 587174 841023 1030194 1059263 2052712 2197043 2308517 2686692 3540151 5049279 5687643 5813089 7396225 7483437 8000000 }
+Solution has 19 attributes: 19 / 8000001 = 0.0002%
+All done! [18520.859375s]
+
+real	308m42.052s
+user	631m25.053s
+sys	271m29.683s
+=== Removing dataset ===
+rm /users3/uaberta/eribeiro/datasets/tmp/1705335311109320068_c2_a8M_o2k_i100_u40_p26.h5
+Finished with job ID: 14584170
+Submitted batch job 14587974
